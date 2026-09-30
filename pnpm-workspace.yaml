@@ -1,8 +1,10 @@
-onlyBuiltDependencies:
-  - '@firebase/util'
-  - '@google/genai'
-  - '@parcel/watcher'
-  - esbuild
-  - lmdb
-  - msgpackr-extract
-  - protobufjs
+allowBuilds:
+  '@firebase/util': true
+  '@google/genai': true
+  '@parcel/watcher': true
+  esbuild: true
+  lmdb: true
+  msgpackr-extract: true
+  protobufjs: true
+minimumReleaseAgeExclude:
+  - browserslist@4.29.3

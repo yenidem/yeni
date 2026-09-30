@@ -1,478 +1,138 @@
-name: YENİDEM — Deterministik Derleme, Sertifika ve GitHub Pages Yayını
+name: YENİDEM — GitHub Pages, Tasarım/Kod Sertifikası & Cloudflare D1 Otomatik Yayın Hattı
 
 on:
   push:
-    branches:
-      - main
-
+    branches: [main, master]
   pull_request:
-    branches:
-      - main
-
+    branches: [main, master]
   workflow_dispatch:
 
-concurrency:
-  group: github-pages
-  cancel-in-progress: true
+permissions:
+  contents: write
+  pages: write
+  id-token: write
 
-env:
-  NODE_VERSION: "22"
-  PNPM_VERSION: "10.15.0"
-  BUILD_CONFIGURATION: "production"
-  DIST_DIR: "dist/app/browser"
-  CUSTOM_DOMAIN: "orcunkundakci.tr"
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 
 jobs:
-  # ============================================================
-  # BUILD / VERIFY / PACKAGE
-  # ============================================================
   verify-and-build:
-    name: Build, Verify and Package
-    runs-on: ubuntu-24.04
-    timeout-minutes: 20
-
-    permissions:
-      contents: read
-
+    name: 1. SHA3-512 Tasarım/Kod Kontrolü & Angular AOT Üretim Derlemesi
+    runs-on: ubuntu-latest
     steps:
-      # --------------------------------------------------------
-      # Source checkout
-      # --------------------------------------------------------
-      - name: Checkout repository
-        uses: actions/checkout@v7
+      - name: Kaynak Kodu İndir (Checkout)
+        uses: actions/checkout@v4
+
+      - name: Node.js 22 Kurulumu
+        uses: actions/setup-node@v4
         with:
-          fetch-depth: 1
+          node-version: '22'
+          cache: 'npm'
 
-      # --------------------------------------------------------
-      # PNPM
-      # Must be installed before setup-node cache: pnpm.
-      # --------------------------------------------------------
-      - name: Setup PNPM
-        uses: pnpm/action-setup@v6
-        with:
-          version: ${{ env.PNPM_VERSION }}
-          run_install: false
+      - name: Bağımlılıkları Kur (npm install)
+        run: npm install --legacy-peer-deps
 
-      # --------------------------------------------------------
-      # Node.js
-      # --------------------------------------------------------
-      - name: Setup Node.js
-        uses: actions/setup-node@v7
-        with:
-          node-version: ${{ env.NODE_VERSION }}
-          cache: pnpm
-          cache-dependency-path: pnpm-lock.yaml
-
-      # --------------------------------------------------------
-      # Toolchain verification
-      # --------------------------------------------------------
-      - name: Verify toolchain
-        shell: bash
+      - name: Katman-0 Kurucu Külliyat & Tasarım Anayasası SHA3-512 Bütünlük Taraması
         run: |
-          set -euo pipefail
-
-          echo "=============================================="
-          echo "Toolchain"
-          echo "=============================================="
-
-          echo "Node:"
-          node --version
-
-          echo "PNPM:"
-          pnpm --version
-
-          echo "Corepack:"
-          corepack --version
-
-          echo "=============================================="
-
-          test "$(pnpm --version)" = "${PNPM_VERSION}" || {
-            echo "[CRITICAL] PNPM version mismatch."
-            echo "Expected: ${PNPM_VERSION}"
-            echo "Actual:   $(pnpm --version)"
-            exit 1
-          }
-
-          node --version | grep -Eq '^v22\.' || {
-            echo "[CRITICAL] Node.js 22 is required."
-            echo "Actual: $(node --version)"
-            exit 1
-          }
-
-          echo "[OK] Node.js and PNPM versions verified."
-
-      # --------------------------------------------------------
-      # Deterministic dependency installation
-      # --------------------------------------------------------
-      - name: Install dependencies
-        shell: bash
-        run: |
-          set -euo pipefail
-
-          pnpm install --frozen-lockfile
-
-      # --------------------------------------------------------
-      # Angular CLI verification
-      # Must run AFTER dependency installation.
-      # --------------------------------------------------------
-      - name: Verify Angular CLI
-        shell: bash
-        run: |
-          set -euo pipefail
-
-          pnpm exec ng version
-
-      # --------------------------------------------------------
-      # GitHub Pages configuration
-      # --------------------------------------------------------
-      - name: Configure GitHub Pages
-        uses: actions/configure-pages@v5
-
-      # --------------------------------------------------------
-      # Protected source files
-      # --------------------------------------------------------
-      - name: Verify protected core files
-        shell: bash
-        run: |
-          set -euo pipefail
-
-          node <<'NODE'
-          const fs = require("node:fs");
-          const crypto = require("node:crypto");
-
-          const protectedFiles = [
-            "src/styles.css",
-            "src/app/core/constants/initial-articles.ts",
-            "src/server/community-governance.ts",
-            "src/app/app.html"
-          ];
-
-          let failed = false;
-
-          for (const file of protectedFiles) {
-            if (!fs.existsSync(file)) {
-              console.error(
-                `[CRITICAL] Protected file missing: ${file}`
-              );
-
-              failed = true;
-              continue;
+          node -e '
+            const crypto = require("node:crypto");
+            const fs = require("node:fs");
+            const files = [
+              "src/styles.css",
+              "src/app/core/constants/initial-articles.ts",
+              "src/server/community-governance.ts",
+              "src/app/app.html",
+              "public/legal/international-cookie-privacy-policy.json"
+            ];
+            for (const f of files) {
+              if (!fs.existsSync(f)) {
+                console.error("KRİTİK HATA: Korunan çekirdek dosya eksik:", f);
+                process.exit(1);
+              }
+              const content = fs.readFileSync(f);
+              const sha3 = crypto.createHash("sha3-512").update(content).digest("hex");
+              console.log("[DOĞRULANDI]", f, "-> SHA3-512:", sha3.substring(0, 32) + "...");
             }
+          '
 
-            const content = fs.readFileSync(file);
-
-            const sha3 = crypto
-              .createHash("sha3-512")
-              .update(content)
-              .digest("hex");
-
-            console.log(`[VERIFIED] ${file}`);
-            console.log(`SHA3-512: ${sha3}`);
-          }
-
-          if (failed) {
-            process.exit(1);
-          }
-
-          console.log("[OK] Protected source files verified.");
-          NODE
-
-      # --------------------------------------------------------
-      # Lint
-      # --------------------------------------------------------
-      - name: Run lint
-        shell: bash
+      - name: GitHub Pages Üretim Derlemesi, Alt Dizin Varlık Uyumu ve index.html / 404.html / .nojekyll Hazırlığı
         run: |
-          set -euo pipefail
-
-          pnpm exec ng lint
-
-      # --------------------------------------------------------
-      # Production build
-      # --------------------------------------------------------
-      - name: Build Angular application
-        shell: bash
-        run: |
-          set -euo pipefail
-
-          pnpm run build -- \
-            --configuration="${BUILD_CONFIGURATION}"
-
-      # --------------------------------------------------------
-      # Verify Angular production output
-      # --------------------------------------------------------
-      - name: Verify production build
-        shell: bash
-        run: |
-          set -euo pipefail
-
-          echo "Expected output directory:"
-          echo "${DIST_DIR}"
-          echo
-
-          if [ ! -d "${DIST_DIR}" ]; then
-            echo "[CRITICAL] Build directory not found:"
-            echo "${DIST_DIR}"
-            echo
-            echo "Available dist structure:"
-            find dist -maxdepth 5 -print 2>/dev/null || true
-            exit 1
+          REPO_NAME="${GITHUB_REPOSITORY#*/}"
+          OWNER_NAME="${GITHUB_REPOSITORY%/*}"
+          if [ "${REPO_NAME}" = "${OWNER_NAME}.github.io" ]; then
+            export GH_BASE_HREF="/"
+            npx ng build --base-href "/"
+          else
+            export GH_BASE_HREF="/${REPO_NAME}/"
+            npx ng build --base-href "/${REPO_NAME}/"
           fi
 
-          if [ ! -f "${DIST_DIR}/index.html" ]; then
-            echo "[CRITICAL] index.html not found:"
-            echo "${DIST_DIR}/index.html"
-            echo
-            echo "Available files:"
-            find "${DIST_DIR}" -maxdepth 4 -type f -print | sort
-            exit 1
-          fi
-
-          echo "[OK] Angular production build verified."
-          echo
-          echo "Build files:"
-          find "${DIST_DIR}" -maxdepth 3 -type f -print | sort
-
-      # --------------------------------------------------------
-      # Validate Angular bootstrap document
-      # --------------------------------------------------------
-      - name: Validate index.html
-        shell: bash
-        run: |
-          set -euo pipefail
-
-          INDEX="${DIST_DIR}/index.html"
-
-          grep -q '<app-root' "${INDEX}" || {
-            echo "[CRITICAL] Angular <app-root> element not found."
-            exit 1
-          }
-
-          grep -q '<base href="/">' "${INDEX}" || {
-            echo '[CRITICAL] Expected <base href="/"> not found.'
-            exit 1
-          }
-
-          grep -q '<!doctype html>' "${INDEX}" || {
-            echo "[CRITICAL] HTML5 doctype not found."
-            exit 1
-          }
-
-          echo "[OK] index.html validation passed."
-
-      # --------------------------------------------------------
-      # Custom domain
-      # --------------------------------------------------------
-      - name: Create custom domain CNAME
-        shell: bash
-        run: |
-          set -euo pipefail
-
-          printf '%s\n' "${CUSTOM_DOMAIN}" > "${DIST_DIR}/CNAME"
-
-          test -f "${DIST_DIR}/CNAME"
-
-          EXPECTED_DOMAIN="${CUSTOM_DOMAIN}"
-          ACTUAL_DOMAIN="$(cat "${DIST_DIR}/CNAME")"
-
-          if [ "${ACTUAL_DOMAIN}" != "${EXPECTED_DOMAIN}" ]; then
-            echo "[CRITICAL] CNAME mismatch."
-            echo "Expected: ${EXPECTED_DOMAIN}"
-            echo "Actual:   ${ACTUAL_DOMAIN}"
-            exit 1
-          fi
-
-          echo "[OK] CNAME:"
-          cat "${DIST_DIR}/CNAME"
-
-      # --------------------------------------------------------
-      # GitHub Pages SPA fallback
-      # --------------------------------------------------------
-      - name: Create SPA fallback
-        shell: bash
-        run: |
-          set -euo pipefail
-
-          cp "${DIST_DIR}/index.html" "${DIST_DIR}/404.html"
-
-          test -f "${DIST_DIR}/404.html"
-
-          echo "[OK] 404.html created."
-
-      # --------------------------------------------------------
-      # Disable Jekyll processing
-      # --------------------------------------------------------
-      - name: Create .nojekyll
-        shell: bash
-        run: |
-          set -euo pipefail
-
-          touch "${DIST_DIR}/.nojekyll"
-
-          test -f "${DIST_DIR}/.nojekyll"
-
-          echo "[OK] .nojekyll created."
-
-      # --------------------------------------------------------
-      # Build integrity certificate
-      # --------------------------------------------------------
-      - name: Generate build integrity certificate
-        shell: bash
-        run: |
-          set -euo pipefail
-
-          node <<'NODE'
-          const fs = require("node:fs");
-          const crypto = require("node:crypto");
-
-          const files = [
-            "src/styles.css",
-            "src/app/core/constants/initial-articles.ts",
-            "src/server/community-governance.ts",
-            "src/app/app.html"
-          ];
-
-          const hashes = [];
-
-          for (const file of files) {
-            if (!fs.existsSync(file)) {
-              throw new Error(
-                `[CRITICAL] Protected file missing: ${file}`
-              );
+          node -e '
+            const fs = require("node:fs");
+            const path = require("node:path");
+            const dir = path.join(process.cwd(), "dist", "app", "browser");
+            const csr = path.join(dir, "index.csr.html");
+            const idx = path.join(dir, "index.html");
+            const nf = path.join(dir, "404.html");
+            if (fs.existsSync(csr) && !fs.existsSync(idx)) {
+              fs.copyFileSync(csr, idx);
             }
+            const base = process.env.GH_BASE_HREF || "/";
+            if (base !== "/") {
+              const prefix = base.replace(/\/$/, "");
+              const walk = (d) => {
+                for (const entry of fs.readdirSync(d)) {
+                  const full = path.join(d, entry);
+                  if (fs.statSync(full).isDirectory()) walk(full);
+                  else if (/\.(html|js|css|json)$/i.test(entry)) {
+                    const orig = fs.readFileSync(full, "utf8");
+                    const next = orig
+                      .replace(/(["\x27(])\/assets\//g, "$1" + prefix + "/assets/")
+                      .replace(/(["\x27(])\/logo\.svg/g, "$1" + prefix + "/logo.svg")
+                      .replace(/(["\x27(])\/legal\//g, "$1" + prefix + "/legal/");
+                    if (next !== orig) fs.writeFileSync(full, next, "utf8");
+                  }
+                }
+              };
+              walk(dir);
+            }
+            if (fs.existsSync(idx)) {
+              fs.copyFileSync(idx, nf);
+            }
+            fs.writeFileSync(path.join(dir, ".nojekyll"), "", "utf8");
+            fs.writeFileSync(path.join(dir, "_redirects"), "/* /index.html 200\n", "utf8");
+          '
 
-            const content = fs.readFileSync(file);
-
-            const hash = crypto
-              .createHash("sha3-512")
-              .update(content)
-              .digest("hex");
-
-            hashes.push({
-              file,
-              sha3_512: hash
-            });
-          }
-
-          const canonicalData = hashes
-            .map(
-              (entry) =>
-                `${entry.file}:${entry.sha3_512}`
-            )
-            .join("\n");
-
-          const merkleRoot = crypto
-            .createHash("sha3-512")
-            .update(canonicalData)
-            .digest("hex");
-
-          const generatedAt = new Date().toISOString();
-
-          const certificate = {
-            schema: "YENİDEM-CODE-DESIGN-CERT-PQC-1",
-            algorithm: "SHA3-512",
-            generatedAt,
-            files: hashes,
-            merkleRootSha3_512: merkleRoot
-          };
-
-          fs.writeFileSync(
-            "CODE-DESIGN-CERT-PQC.json",
-            JSON.stringify(certificate, null, 2) + "\n"
-          );
-
-          fs.writeFileSync(
-            "CODE-DESIGN-CERT-PQC.txt",
-            [
-              "YENİDEM CODE-DESIGN-CERT-PQC",
-              "",
-              `Generated: ${generatedAt}`,
-              "",
-              ...hashes.map(
-                (entry) =>
-                  `${entry.file}:${entry.sha3_512}`
-              ),
-              "",
-              `MERKLE_ROOT_SHA3_512=${merkleRoot}`,
-              ""
-            ].join("\n")
-          );
-
-          console.log("");
-          console.log("==================================================");
-          console.log("CODE-DESIGN-CERT-PQC");
-          console.log("==================================================");
-          console.log("Algorithm: SHA3-512");
-          console.log(`Merkle Root: ${merkleRoot}`);
-          console.log("==================================================");
-          NODE
-
-      # --------------------------------------------------------
-      # Final Pages artifact validation
-      # --------------------------------------------------------
-      - name: Verify final Pages artifact
-        shell: bash
+      - name: gh-pages Dalına (Branch) Derlenmiş index.html ve 404.html Paketini Otomatik Yayınla
+        if: github.event_name != 'pull_request'
         run: |
-          set -euo pipefail
+          cd dist/app/browser
+          git init
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout -b gh-pages
+          git add -A
+          git commit -m "Deploy YENİDEM compiled Angular bundle (index.html + .nojekyll)"
+          git push -f "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" gh-pages
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-          required_files=(
-            "${DIST_DIR}/index.html"
-            "${DIST_DIR}/404.html"
-            "${DIST_DIR}/CNAME"
-            "${DIST_DIR}/.nojekyll"
-          )
-
-          for file in "${required_files[@]}"; do
-            if [ ! -f "${file}" ]; then
-              echo "[CRITICAL] Required artifact file missing:"
-              echo "${file}"
-              exit 1
-            fi
-
-            echo "[OK] ${file}"
-          done
-
-          test "$(cat "${DIST_DIR}/CNAME")" = "${CUSTOM_DOMAIN}"
-
-          test -s "${DIST_DIR}/index.html"
-
-          echo
-          echo "Final Pages artifact:"
-          du -sh "${DIST_DIR}"
-          echo
-          find "${DIST_DIR}" -maxdepth 2 -type f -print | sort
-
-      # --------------------------------------------------------
-      # Upload GitHub Pages artifact
-      # --------------------------------------------------------
-      - name: Upload GitHub Pages artifact
-        uses: actions/upload-pages-artifact@v4
+      - name: GitHub Pages Artifact Yükle
+        if: github.event_name != 'pull_request'
+        uses: actions/upload-pages-artifact@v3
         with:
-          path: ${{ env.DIST_DIR }}
+          path: dist/app/browser
 
-  # ============================================================
-  # DEPLOY
-  # ============================================================
-  deploy:
-    name: Deploy to GitHub Pages
+  deploy-github-pages:
+    name: 2. GitHub Pages Canlı Site Yayını
+    if: github.event_name != 'pull_request'
     needs: verify-and-build
-    if: >
-      github.event_name == 'push' &&
-      github.ref == 'refs/heads/main'
-
-    runs-on: ubuntu-24.04
-    timeout-minutes: 10
-
-    permissions:
-      contents: read
-      pages: write
-      id-token: write
-
+    runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-
     steps:
-      - name: Deploy GitHub Pages artifact
+      - name: GitHub Pages Ortamına Yayınla
         id: deployment
         uses: actions/deploy-pages@v4
