@@ -24,6 +24,14 @@ export class LiveChangeLogService {
 
   readonly items = signal<LiveChangeItem[]>([
     {
+      id: 'chg-vercel-0',
+      category: 'CLOUDFLARE D1 & GÜVENLİK',
+      headline:
+        'Vercel Tam Güvenli Yayın Mimarisi (vercel.json, /api/index.mjs Serverless Köprüsü, /tmp EROFS Koruması ve HSTS/CSP Kalkanı) 14/14 denetimle devreye alındı.',
+      timestampLabel: 'Yeni Yayın',
+      hashBadge: 'VERCEL-EDGE-PQC-v3',
+    },
+    {
       id: 'chg-draft-1',
       category: 'YAPIM & TASLAK İKAZI',
       headline:

@@ -2,9 +2,9 @@ import {Express, Request, Response} from 'express';
 import {join} from 'node:path';
 import {existsSync, mkdirSync, readFileSync, writeFileSync} from 'node:fs';
 import {createHash, createHmac} from 'node:crypto';
-import {insertBlockchainBlock, logAuditEvent, BlockchainCategory} from './db';
+import {insertBlockchainBlock, logAuditEvent, BlockchainCategory, resolveWritableDataDir} from './db';
 
-const dataDir = join(process.cwd(), 'data');
+const dataDir = resolveWritableDataDir();
 const governanceFilePath = join(dataDir, 'community-governance.json');
 
 export interface VerifiedMemberRecord {

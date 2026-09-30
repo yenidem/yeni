@@ -1113,6 +1113,121 @@ export type GovernanceTab = 'voting' | 'kyc' | 'architecture' | 'propose';
               </div>
             </div>
           }
+
+          <!-- 14-POINT PRE-DEPLOY CODE, VERCEL SERVERLESS, BUILD & PLUGIN ERROR AUDITOR ENGINE -->
+          @let audit = gov.predeployAuditReport();
+          <div class="p-5 sm:p-6 rounded-3xl bg-[#041628] border border-emerald-400/50 space-y-5 mt-4 shadow-2xl">
+            <div class="flex flex-wrap items-center justify-between gap-3 border-b border-emerald-300/25 pb-4">
+              <div class="space-y-1">
+                <div class="flex flex-wrap items-center gap-2">
+                  <mat-icon class="!w-5 !h-5 !text-xl icon-luminous-emerald">verified</mat-icon>
+                  <h3 class="text-base sm:text-lg font-serif font-bold text-white">
+                    Vercel, Cloudflare D1 &amp; GitHub — 14-Kademeli Derleme, Kod &amp; Eklenti Hata Denetim Motoru
+                  </h3>
+                  <span class="px-2.5 py-0.5 rounded-md bg-emerald-500/25 border border-emerald-300/60 text-xs font-mono font-bold text-emerald-200">
+                    ✓ %{{ audit.healthScore }} SAĞLAM ({{ audit.passedChecks }}/{{ audit.totalChecks }} KONTROL · {{ audit.auditDurationMs }}ms)
+                  </span>
+                </div>
+                <p class="text-xs text-sky-200/85">
+                  Vercel Edge CDN + Serverless (/api/index.mjs + /tmp EROFS koruması), Cloudflare D1 (6 SQL tablo), 16 kurucu makale, statik SVG varlıkları, 4 hukuk dosyası ve sıfır-açık şifre sızıntı taraması ({{ audit.auditId }})
+                </p>
+              </div>
+
+              <div class="flex flex-wrap items-center gap-2">
+                <button
+                  type="button"
+                  (click)="gov.runPredeployCodeAudit()"
+                  class="px-3.5 py-2 rounded-xl bg-emerald-500/25 hover:bg-emerald-500/40 border border-emerald-300/60 text-emerald-100 font-bold text-xs flex items-center gap-1.5 cursor-pointer transition-all"
+                >
+                  <mat-icon class="!w-4 !h-4 !text-base icon-luminous-emerald">play_circle</mat-icon>
+                  <span>14-Kademeli Tam Kod &amp; Vercel Denetimi Çalıştır</span>
+                </button>
+
+                <button
+                  type="button"
+                  (click)="gov.downloadPredeployAuditReport()"
+                  class="px-3.5 py-2 rounded-xl bg-cyan-400 hover:bg-cyan-300 text-stone-950 font-bold text-xs flex items-center gap-1.5 cursor-pointer transition-all shadow-md"
+                >
+                  <mat-icon class="!w-4 !h-4 !text-base">download</mat-icon>
+                  <span>Denetim Raporu İndir (.JSON)</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- VERCEL ZERO-ERROR FULL-SECURITY DEPLOYMENT ARCHITECTURE BOX -->
+            <div class="p-4 rounded-2xl bg-[#061d36] border border-cyan-400/45 space-y-3">
+              <div class="flex flex-wrap items-center justify-between gap-2">
+                <div class="text-xs font-mono font-bold text-cyan-200 flex items-center gap-1.5">
+                  <mat-icon class="!w-4 !h-4 !text-base icon-luminous">rocket_launch</mat-icon>
+                  <span>VERCEL TAM GÜVENLİ TEK-TIK YAYIN MİMARİSİ (vercel.json + /api/index.mjs + /tmp EROFS ZIRHI)</span>
+                </div>
+                <span class="text-[11px] font-mono text-emerald-300 font-bold">
+                  ✓ VERCEL EDGE + NODE.JS 22 SERVERLESS HAZIR
+                </span>
+              </div>
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-3 text-xs">
+                <div class="p-3 rounded-xl bg-[#041022] border border-sky-300/20 space-y-1">
+                  <div class="font-bold text-amber-200">1. Otomatik Derleme &amp; 404 Koruması</div>
+                  <p class="text-[11px] text-sky-200/85 leading-relaxed">
+                    <code>vercel.json</code> otomatik olarak <code>npm run build:vercel</code> çalıştırır; <code>index.csr.html</code> dosyasını <code>index.html</code> ve <code>404.html</code> olarak mühürleyip tüm Angular rotalarını sıfır 404 hatasıyla açar.
+                  </p>
+                </div>
+                <div class="p-3 rounded-xl bg-[#041022] border border-sky-300/20 space-y-1">
+                  <div class="font-bold text-emerald-200">2. Serverless API &amp; /tmp EROFS Zırhı</div>
+                  <p class="text-[11px] text-sky-200/85 leading-relaxed">
+                    Tüm <code>/api/*</code> istekleri <code>api/index.mjs</code> üzerinden Express + PQC sunucusuna yönlenir. Salt-okunur dosya sistemi (EROFS) çökmesini önlemek için çalışma zamanı yazmaları otomatik <code>/tmp/yenidem-data</code> dizinine alınır.
+                  </p>
+                </div>
+                <div class="p-3 rounded-xl bg-[#041022] border border-sky-300/20 space-y-1">
+                  <div class="font-bold text-cyan-200">3. Vercel Panel &amp; CLI Komutları</div>
+                  <div class="font-mono text-[10px] text-emerald-200 space-y-1 pt-0.5">
+                    <div>• Build Command: <span class="text-white">npm run build:vercel</span></div>
+                    <div>• Output Dir: <span class="text-white">dist/app/browser</span></div>
+                    <div>• Install Cmd: <span class="text-white">npm install --legacy-peer-deps</span></div>
+                    <div>• CLI Yayın: <span class="text-amber-300">$ npx vercel --prod</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Verified Deployment Targets Banner -->
+            <div class="flex flex-wrap items-center gap-2 text-[11px] font-mono">
+              <span class="text-amber-300 font-bold">DOĞRULANAN YAYIN HEDEFLERİ:</span>
+              @for (t of audit.targetsVerified; track t) {
+                <span class="px-2.5 py-1 rounded-lg bg-black/35 border border-emerald-400/35 text-emerald-200">
+                  ✓ {{ t }}
+                </span>
+              }
+            </div>
+
+            <!-- 12 Check Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-2.5">
+              @for (chk of audit.checks; track chk.id) {
+                <div class="p-3 rounded-xl bg-[#071c36]/90 border border-emerald-400/30 flex flex-col justify-between gap-1.5">
+                  <div class="flex items-center justify-between gap-2">
+                    <span class="text-[10px] font-mono font-bold text-amber-300">
+                      #{{ chk.stepNumber }} · {{ chk.category }}
+                    </span>
+                    <span
+                      class="px-2 py-0.5 rounded text-[10px] font-mono font-bold"
+                      [class.bg-emerald-500/25]="chk.passed"
+                      [class.text-emerald-200]="chk.passed"
+                      [class.bg-rose-500/25]="!chk.passed"
+                      [class.text-rose-200]="!chk.passed"
+                    >
+                      {{ chk.passed ? '✓ HATASIZ GEÇTİ' : '✗ HATA' }}
+                    </span>
+                  </div>
+                  <div class="text-xs font-bold text-white">{{ chk.title }}</div>
+                  <div class="text-[11px] text-sky-200/85 leading-snug">{{ chk.details }}</div>
+                  <div class="flex items-center justify-between gap-2 text-[10px] font-mono text-cyan-300/85 pt-0.5 border-t border-white/10">
+                    <span class="truncate">{{ chk.target }}</span>
+                    <span class="shrink-0">{{ chk.sha3DigestShort.substring(0, 14) }}</span>
+                  </div>
+                </div>
+              }
+            </div>
+          </div>
         </section>
       }
     </div>

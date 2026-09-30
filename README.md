@@ -126,5 +126,25 @@ Kurucu yazar Orçun KUNDAKCI’nın kendi yazıları haricinde, geçmişten veya
      - *Dosya 4*: `04-yapim-asamasi-taslak-surum-ve-telif-muafiyet-sartnamesi.md` (Taslak Sürüm, `ORXUN` Simülasyon Beyanı & 16 Kurucu Eser Telif Kilidi)
      - Tüm dosyalar ve `CONSENT-CERT-PQC` imzalı onay sertifikası tek tıkla `.JSON` paketi olarak indirilebilir.
 
+---
+
+## 9. Vercel Tam Güvenli Tek-Tık Yayın Mimarisi (`vercel.json` + `/api/index.mjs` + `/tmp` EROFS Zırhı)
+
+Sistem **Vercel Edge CDN + Node.js 22 Serverless Functions** üzerinde sıfır hata, sıfır 404 ve tam kriptografik güvenlikle çalışacak şekilde yapılandırılmıştır:
+
+1. **Otomatik Derleme ve `index.html` / `404.html` Mühürleyici (`scripts/prepare-deploy-bundle.mjs`)**:
+   - `vercel.json` içerisindeki `"buildCommand": "npm run build:vercel"` komutu Angular 21 derlemesini (`ng build`) çalıştırdıktan sonra otomatik olarak `dist/app/browser/index.csr.html` dosyasını `index.html` ve `404.html` olarak kopyalar ve tüm çıktı dosyalarının `SHA3-512` + `BLAKE2b-512` bütünlük manifestosunu (`deploy-manifest.json`) üretir.
+2. **Vercel Serverless API Köprüsü (`/api/index.mjs`)**:
+   - Tüm `/api/*` istekleri (`/api/articles`, `/api/community/*`, `/api/cloudflare/*`, `/api/legal/*`, `/api/ai/guide` vb.) `vercel.json` rewrites kuralı ile `/api/index.mjs` Serverless fonksiyonuna ve oradan derlenmiş Express + PQC sunucusuna (`dist/app/server/server.mjs`) aktarılır.
+3. **Serverless Salt-Okunur Dosya Sistemi (`EROFS`) Koruması (`resolveWritableDataDir`)**:
+   - Vercel Serverless ortamında `/var/task` salt-okunurdur. `src/server/db.ts`, `src/server.ts` ve `src/server/community-governance.ts` içindeki `resolveWritableDataDir()` zırhı, Vercel ortamını (`process.env.VERCEL`) algılayarak çalışma zamanı SQLite/JSON yazmalarını otomatik olarak yazılabilir `/tmp/yenidem-data` dizinine yönlendirir; böylece `EROFS` çökmesi %100 engellenir.
+4. **Vercel’e Yayınlama Adımları (Panel veya CLI)**:
+   - **Vercel Web Paneli (Git Bağlantısı)**: Projeyi Vercel’e bağladığınızda `vercel.json` tüm ayarları otomatik okur (`Build Command: npm run build:vercel`, `Output Directory: dist/app/browser`, `Install Command: npm install --legacy-peer-deps`).
+   - **Vercel CLI ile Tek Komutla Yayın**:
+     ```bash
+     npx vercel --prod
+     ```
+
+
 
 

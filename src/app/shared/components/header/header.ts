@@ -26,9 +26,9 @@ import {MobileDrawer} from './components/mobile-drawer';
     <app-header-ribbon (searchTrigger)="searchTrigger.emit()" />
 
     <!-- Main Navigation Masthead (Vibrant Electric & Royal Blue) -->
-    <header class=" bg-gradient-to-r from-[#07152e]/95 via-[#0b2147]/95 to-[#07152e]/95 backdrop-blur-2xl border-b border-sky-400/30 text-stone-100 shadow-[0_10px_30px_rgba(2,8,23,0.65)]">
-      <div class="max-w-[1840px] mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex items-center justify-between gap-4 h-18 sm:h-20">
+    <header class="w-full max-w-full bg-gradient-to-r from-[#07152e]/95 via-[#0b2147]/95 to-[#07152e]/95 backdrop-blur-2xl border-b border-sky-300/35 text-stone-100 shadow-[0_6px_20px_-4px_rgba(125,211,252,0.16)]">
+      <div class="max-w-[1840px] w-full mx-auto px-2.5 sm:px-4 lg:px-6">
+        <div class="flex items-center justify-between gap-2 xl:gap-3 h-18 sm:h-20 min-w-0">
           
           <app-header-brand (brandClick)="filterBy('all')" />
 

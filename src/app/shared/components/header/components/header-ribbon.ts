@@ -18,7 +18,7 @@ import {UserCustomizationService} from '../../../../core/services/user-customiza
       <div
         role="region"
         aria-label="Blok Zinciri ve Topluluk Odaklı Fikir Platformu İnşa Bildirimi"
-        class="pioneer-red-bar py-1 text-[11px] sm:text-xs text-white select-none relative z-50"
+        class="pioneer-red-bar py-1 text-[11px] sm:text-xs text-white select-none relative z-50 w-full max-w-full overflow-hidden"
       >
         <div class="max-w-[1840px] mx-auto px-2.5 sm:px-5 lg:px-8 flex items-center justify-between gap-2">
           <!-- Left Red Ear-Tag + Pulsing White Pioneer Message -->

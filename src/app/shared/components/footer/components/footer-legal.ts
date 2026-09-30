@@ -60,6 +60,16 @@ import {CookieConsentService} from '../../../../core/services/cookie-consent.ser
           </button>
           <button
             type="button"
+            (click)="gov.downloadPredeployAuditReport()"
+            class="px-3 py-1.5 rounded-xl bg-emerald-500/20 hover:bg-emerald-500/30 border border-emerald-300/45 text-emerald-100 font-bold text-[11px] flex items-center gap-1.5 cursor-pointer transition-all"
+            title="Yayın Öncesi 12-Kademeli Derleme, Kod ve Eklenti Hata Denetim Raporunu (.JSON) İndir"
+          >
+            <mat-icon class="!w-3.5 !h-3.5 !text-sm icon-luminous-emerald">fact_check</mat-icon>
+            <span>12-Kademeli Kod &amp; Eklenti Denetimi (%{{ gov.predeployAuditReport().healthScore }})</span>
+          </button>
+
+          <button
+            type="button"
             (click)="cookieService.openGateModal('overview')"
             class="px-3 py-1.5 rounded-xl bg-teal-500/20 hover:bg-teal-500/30 border border-teal-300/45 text-teal-100 font-bold text-[11px] flex items-center gap-1.5 cursor-pointer transition-all"
             title="Uluslararası Çerez Politikası, KVKK/GDPR Dosyaları ve Zaman Ayarlı İkaz Ayarları"

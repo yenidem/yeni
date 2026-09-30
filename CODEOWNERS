@@ -13,9 +13,12 @@
 /src/app/shared/components/header/ @orcunkundakci
 /src/app/shared/components/footer/ @orcunkundakci
 
-# 3. %96 Konsensüs, Cloudflare D1 Güvenlik, Uluslararası Hukuk/Çerez ve Kriptografi Çekirdeği
+# 3. %96 Konsensüs, Vercel Serverless, Cloudflare D1 Güvenlik, Uluslararası Hukuk/Çerez ve Kriptografi Çekirdeği
 /src/server/ @orcunkundakci
 /src/server.ts @orcunkundakci
+/vercel.json @orcunkundakci
+/api/ @orcunkundakci
+/scripts/ @orcunkundakci
 /wrangler.toml @orcunkundakci
 /cloudflare-d1-schema.sql @orcunkundakci
 /public/legal/ @orcunkundakci

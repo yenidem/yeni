@@ -52,6 +52,7 @@ import {
   verifyPassword,
   logAuditEvent,
   hashPasswordWithSalt,
+  resolveWritableDataDir,
 } from './server/db';
 import {registerHeritageSlidesRoutes} from './server/heritage-slides';
 import {registerCommunityGovernanceRoutes} from './server/community-governance';
@@ -59,14 +60,18 @@ import {registerCloudflareEdgeSecurityRoutes} from './server/cloudflare-edge-sec
 import {INITIAL_ARTICLES as FULL_SEED_ARTICLES} from './app/core/constants/initial-articles';
 
 const browserDistFolder = join(__dirname, '../browser');
-const dataDir = join(process.cwd(), 'data');
+const dataDir = resolveWritableDataDir();
 const uploadsDir = join(dataDir, 'uploads');
 const articlesFilePath = join(dataDir, 'articles.json');
 const securityFilePath = join(dataDir, 'security.json');
 
-// Ensure uploads directory exists
-if (!existsSync(uploadsDir)) {
-  mkdirSync(uploadsDir, {recursive: true});
+// Ensure uploads directory exists (EROFS-safe on Vercel Serverless)
+try {
+  if (!existsSync(uploadsDir)) {
+    mkdirSync(uploadsDir, {recursive: true});
+  }
+} catch {
+  // Handled by resolveWritableDataDir /tmp fallback on Serverless
 }
 
 // Interface definition
@@ -704,9 +709,19 @@ function getGemini(): GoogleGenAI {
   return genAIClient;
 }
 
-// Lazy Initialize Firebase Admin
-const firebaseConfigRaw = readFileSync(join(process.cwd(), 'firebase-applet-config.json'), 'utf-8');
-const fbCfg = JSON.parse(firebaseConfigRaw) as { projectId?: string; firestoreDatabaseId?: string };
+// Lazy Initialize Firebase Admin (safe for Vercel & Cloud containers)
+let fbCfg: { projectId?: string; firestoreDatabaseId?: string } = {
+  projectId: 'ai-studio-orunkundakcifels',
+};
+try {
+  const fbConfigPath = join(process.cwd(), 'firebase-applet-config.json');
+  if (existsSync(fbConfigPath)) {
+    const firebaseConfigRaw = readFileSync(fbConfigPath, 'utf-8');
+    fbCfg = JSON.parse(firebaseConfigRaw) as { projectId?: string; firestoreDatabaseId?: string };
+  }
+} catch {
+  // Use default projectId if config file is unavailable in serverless bundle
+}
 
 let firestoreInstance: Firestore | null = null;
 
@@ -2191,7 +2206,7 @@ if (isMainModule(import.meta.url) || process.env['pm_id']) {
 }
 
 /**
- * Request handler used by the Angular CLI (for dev-server and during build) or Firebase Cloud Functions.
+ * Request handler used by the Angular CLI (for dev-server and during build), Vercel Serverless, or Firebase Cloud Functions.
  */
 export const reqHandler = createNodeRequestHandler(app);
 

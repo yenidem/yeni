@@ -256,49 +256,52 @@ html[data-card-density="compact"] .workspace-main {
   gap: 0.85rem;
 }
 
-/* Primary Section Containers */
+/* Primary Section Containers — Luminous Interior + Subtle Cloud-Blue Bottom Glow & Rim */
 .bg-glass-blue {
   position: relative;
   background: linear-gradient(
     180deg,
-    #091e44 0%,
-    #0d2a5e 64%,
-    #13397c 100%
+    #0a2048 0%,
+    #0e2d62 64%,
+    #143c80 100%
   );
-  border: 1px solid rgba(125, 211, 252, 0.36);
+  border: 1px solid rgba(186, 230, 253, 0.34);
+  border-bottom-color: rgba(186, 230, 253, 0.54);
   box-shadow:
-    0 20px 46px -12px rgba(2, 8, 23, 0.82),
-    0 8px 24px -6px rgba(14, 165, 233, 0.2),
+    0 8px 20px -5px rgba(125, 211, 252, 0.18),
+    0 3px 8px -2px rgba(186, 230, 253, 0.14),
     inset 0 1px 0 rgba(224, 242, 254, 0.28),
-    inset 0 -22px 38px -12px rgba(186, 230, 253, 0.2);
+    inset 0 -16px 28px -12px rgba(186, 230, 253, 0.18);
 }
 
 .bg-glass-blue::after {
   content: '';
   position: absolute;
   bottom: 0;
-  left: 12%;
-  right: 12%;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, rgba(224, 242, 254, 0.85), rgba(56, 189, 248, 0.8), transparent);
+  left: 10%;
+  right: 10%;
+  height: 1.5px;
+  background: linear-gradient(90deg, transparent, rgba(186, 230, 253, 0.78), rgba(125, 211, 252, 0.72), transparent);
   border-radius: 9999px;
   pointer-events: none;
 }
 
-/* Article & Content Cards */
+/* Article & Content Cards — Subtle Bottom Cloud-Blue Glow Without Darkening Interior */
 .bg-glass-card {
   position: relative;
   background: linear-gradient(
     180deg,
-    #0a214a 0%,
-    #0f2e64 66%,
-    #153d82 100%
+    #0b234d 0%,
+    #103068 66%,
+    #164086 100%
   );
-  border: 1px solid rgba(125, 211, 252, 0.32);
+  border: 1px solid rgba(186, 230, 253, 0.32);
+  border-bottom-color: rgba(186, 230, 253, 0.5);
   box-shadow:
-    0 14px 30px -8px rgba(2, 8, 23, 0.72),
+    0 7px 16px -4px rgba(125, 211, 252, 0.16),
+    0 2px 6px -1px rgba(186, 230, 253, 0.13),
     inset 0 1px 0 rgba(224, 242, 254, 0.24),
-    inset 0 -16px 28px -10px rgba(186, 230, 253, 0.18);
+    inset 0 -14px 24px -10px rgba(186, 230, 253, 0.16);
   transition: transform 0.2s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.2s ease, box-shadow 0.2s ease;
   will-change: transform;
 }
@@ -307,24 +310,25 @@ html[data-card-density="compact"] .workspace-main {
   content: '';
   position: absolute;
   bottom: 0;
-  left: 16%;
-  right: 16%;
+  left: 14%;
+  right: 14%;
   height: 1.5px;
-  background: linear-gradient(90deg, transparent, rgba(224, 242, 254, 0.75), rgba(56, 189, 248, 0.7), transparent);
+  background: linear-gradient(90deg, transparent, rgba(186, 230, 253, 0.74), rgba(125, 211, 252, 0.68), transparent);
   border-radius: 9999px;
-  opacity: 0.65;
+  opacity: 0.72;
   transition: opacity 0.2s ease;
   pointer-events: none;
 }
 
 .bg-glass-card:hover {
-  border-color: rgba(186, 230, 253, 0.68);
+  border-color: rgba(186, 230, 253, 0.62);
+  border-bottom-color: rgba(224, 242, 254, 0.78);
   transform: translate3d(0, -2px, 0);
   box-shadow:
-    0 20px 38px -10px rgba(2, 8, 23, 0.82),
-    0 8px 24px -4px rgba(56, 189, 248, 0.24),
+    0 10px 22px -4px rgba(125, 211, 252, 0.24),
+    0 3px 9px -1px rgba(186, 230, 253, 0.18),
     inset 0 1px 0 rgba(224, 242, 254, 0.34),
-    inset 0 -18px 32px -10px rgba(186, 230, 253, 0.24);
+    inset 0 -16px 28px -10px rgba(186, 230, 253, 0.22);
 }
 
 .bg-glass-card:hover::after {
@@ -336,16 +340,28 @@ html[data-card-density="compact"] .workspace-main {
   position: relative;
   background: linear-gradient(
     180deg,
-    #091f46 0%,
-    #0d2a5c 48%,
-    #113572 85%,
-    #16418a 100%
+    #0a2149 0%,
+    #0e2c60 48%,
+    #123876 85%,
+    #17448e 100%
   );
-  border: 1px solid rgba(125, 211, 252, 0.36);
+  border: 1px solid rgba(186, 230, 253, 0.35);
+  border-bottom-color: rgba(186, 230, 253, 0.54);
   box-shadow:
-    0 24px 52px -14px rgba(2, 8, 23, 0.82),
+    0 9px 22px -5px rgba(125, 211, 252, 0.18),
+    0 3px 8px -2px rgba(186, 230, 253, 0.14),
     inset 0 1px 0 rgba(224, 242, 254, 0.28),
-    inset 0 -24px 44px -14px rgba(186, 230, 253, 0.2);
+    inset 0 -18px 32px -12px rgba(186, 230, 253, 0.18);
+}
+
+/* Universal Subtle Cloud-Blue Bottom Illumination for Inner Boxes & Cards (Without Darkening Interior) */
+.workspace-shell :where(div.rounded-xl, div.rounded-2xl, div.rounded-3xl, section.rounded-2xl, section.rounded-3xl, article.rounded-2xl, article.rounded-3xl),
+footer :where(div.rounded-xl, div.rounded-2xl) {
+  border-bottom-color: rgba(186, 230, 253, 0.38);
+  box-shadow:
+    0 5px 14px -4px rgba(125, 211, 252, 0.14),
+    0 2px 5px -1px rgba(186, 230, 253, 0.11),
+    inset 0 -8px 16px -10px rgba(186, 230, 253, 0.09);
 }
 
 /* Flicker-Free Reveal Animation */
@@ -405,15 +421,17 @@ html[data-card-density="compact"] .workspace-main {
 .drawer-glass-right {
   background: linear-gradient(
     180deg,
-    #081c40 0%,
-    #0c295c 68%,
-    #12387a 100%
+    #091e44 0%,
+    #0d2b60 68%,
+    #133a7e 100%
   );
-  border: 1px solid rgba(125, 211, 252, 0.34);
+  border: 1px solid rgba(186, 230, 253, 0.34);
+  border-bottom-color: rgba(186, 230, 253, 0.54);
   box-shadow:
-    0 20px 44px -12px rgba(2, 8, 23, 0.82),
-    inset 0 1px 0 rgba(224, 242, 254, 0.22),
-    inset 0 -20px 36px -12px rgba(186, 230, 253, 0.18);
+    0 8px 20px -5px rgba(125, 211, 252, 0.17),
+    0 3px 8px -2px rgba(186, 230, 253, 0.14),
+    inset 0 1px 0 rgba(224, 242, 254, 0.24),
+    inset 0 -16px 28px -12px rgba(186, 230, 253, 0.18);
 }
 
 .workspace-shell {
@@ -598,9 +616,10 @@ html[data-card-density="compact"] .workspace-main {
   font-size: 0.8125rem;
   font-weight: 600;
   color: #f1f5f9;
-  background: linear-gradient(180deg, rgba(15, 44, 96, 0.9) 0%, rgba(9, 28, 64, 0.95) 100%);
-  border: 1px solid rgba(125, 211, 252, 0.32);
-  box-shadow: 0 2px 10px rgba(2, 8, 23, 0.45), inset 0 1px 0 rgba(224, 242, 254, 0.2);
+  background: linear-gradient(180deg, rgba(16, 46, 100, 0.92) 0%, rgba(11, 32, 72, 0.96) 100%);
+  border: 1px solid rgba(186, 230, 253, 0.32);
+  border-bottom-color: rgba(186, 230, 253, 0.48);
+  box-shadow: 0 4px 10px -2px rgba(125, 211, 252, 0.14), inset 0 1px 0 rgba(224, 242, 254, 0.22);
   transition: transform 0.18s ease, border-color 0.18s ease, background 0.18s ease, color 0.18s ease;
   cursor: pointer;
   white-space: nowrap;

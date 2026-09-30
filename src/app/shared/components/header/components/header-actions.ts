@@ -61,11 +61,11 @@ import {UserCustomizationService} from '../../../../core/services/user-customiza
       <!-- Primary Write Action -->
       <a
         routerLink="/yaz"
-        class="luxury-btn-primary !h-9 sm:!h-10 !px-3 sm:!px-4"
+        class="luxury-btn-primary !h-9 sm:!h-10 !px-2.5 xl:!px-3.5"
         title="Yeni Makale Yaz"
       >
         <mat-icon class="!w-4 !h-4 !text-lg font-bold text-stone-950">edit_note</mat-icon>
-        <span class="hidden md:inline">Makale Yaz</span>
+        <span class="hidden xl:inline">Makale Yaz</span>
       </a>
 
       <!-- Mobile Menu Toggle -->

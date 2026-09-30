@@ -33,26 +33,38 @@ jobs:
       - name: Bağımlılıkları Kur (npm install)
         run: npm install --legacy-peer-deps
 
-      - name: Katman-0 Kurucu Külliyat & Tasarım Anayasası SHA3-512 Bütünlük Taraması
+      - name: Angular ESLint (TypeScript, HTML Şablon & Erişilebilirlik) Kod Denetimi
+        run: npx ng lint
+
+      - name: 12-Kademeli Yayın Öncesi Kod, Eklenti, 16 Kurucu Eser, Hukuk & SHA3-512 Bütünlük Taraması
         run: |
           node -e '
             const crypto = require("node:crypto");
             const fs = require("node:fs");
             const files = [
               "src/styles.css",
+              "src/app/app.html",
               "src/app/core/constants/initial-articles.ts",
               "src/server/community-governance.ts",
-              "src/app/app.html",
-              "public/legal/international-cookie-privacy-policy.json"
+              "wrangler.toml",
+              "cloudflare-d1-schema.sql",
+              "public/legal/international-cookie-privacy-policy.json",
+              "public/legal/01-uluslararasi-cerez-ve-yerel-depolama-politikasi.md",
+              "public/legal/02-kvkk-6698-ve-ab-gdpr-aydinlatma-beyannamesi.md",
+              "public/legal/03-ccpa-gpc-cloudflare-d1-ve-worm-blokzincir-veri-protokolu.md",
+              "public/legal/04-yapim-asamasi-taslak-surum-ve-telif-muafiyet-sartnamesi.md",
+              "public/logo.svg",
+              "src/assets/default-article-cover.svg",
+              "CODEOWNERS"
             ];
             for (const f of files) {
               if (!fs.existsSync(f)) {
-                console.error("KRİTİK HATA: Korunan çekirdek dosya eksik:", f);
+                console.error("KRİTİK HATA: Korunan çekirdek/eklenti dosyası eksik:", f);
                 process.exit(1);
               }
               const content = fs.readFileSync(f);
               const sha3 = crypto.createHash("sha3-512").update(content).digest("hex");
-              console.log("[DOĞRULANDI]", f, "-> SHA3-512:", sha3.substring(0, 32) + "...");
+              console.log("[DOĞRULANDI]", f, "-> SHA3-512:", sha3.substring(0, 28) + "...");
             }
           '
 

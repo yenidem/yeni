@@ -1,19 +1,49 @@
 import { join } from 'node:path';
+import { tmpdir } from 'node:os';
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { pbkdf2Sync, scryptSync, randomBytes, timingSafeEqual } from 'node:crypto';
 import { createRequire } from 'node:module';
 const require = createRequire(import.meta.url);
 import type { AcademicArticle } from '../app/core/models/article.model';
 
-const dataDir = join(process.cwd(), 'data');
+/**
+ * Resolves a guaranteed writable directory for SQLite & JSON persistence.
+ * On Vercel Serverless / AWS Lambda (/var/task is read-only EROFS), automatically
+ * redirects runtime writes to os.tmpdir()/yenidem-data while keeping ./data for local dev.
+ */
+export function resolveWritableDataDir(): string {
+  const isServerlessReadOnly = Boolean(
+    process.env['VERCEL'] ||
+      process.env['VERCEL_ENV'] ||
+      process.env['NOW_REGION'] ||
+      process.env['AWS_LAMBDA_FUNCTION_NAME']
+  );
+  const preferredDir = isServerlessReadOnly
+    ? join(tmpdir(), 'yenidem-data')
+    : join(process.cwd(), 'data');
+
+  try {
+    if (!existsSync(preferredDir)) {
+      mkdirSync(preferredDir, { recursive: true });
+    }
+    return preferredDir;
+  } catch {
+    const fallbackTmp = join(tmpdir(), 'yenidem-data');
+    try {
+      if (!existsSync(fallbackTmp)) {
+        mkdirSync(fallbackTmp, { recursive: true });
+      }
+    } catch {
+      // ignore if already exists
+    }
+    return fallbackTmp;
+  }
+}
+
+const dataDir = resolveWritableDataDir();
 const sqliteDbPath = join(dataDir, 'kulliyat.sqlite');
 const jsonBackupPath = join(dataDir, 'articles.json');
 const ledgerBackupPath = join(dataDir, 'blockchain-ledger.json');
-
-// Ensure data directory exists
-if (!existsSync(dataDir)) {
-  mkdirSync(dataDir, { recursive: true });
-}
 
 export interface AdminUserRecord {
   id: string;

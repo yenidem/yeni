@@ -8,17 +8,17 @@ import {DisciplineType} from '../../../../core/models/article.model';
   imports: [RouterLink, RouterLinkActive, MatIconModule],
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
-    class: 'hidden lg:flex items-center',
+    class: 'hidden lg:flex items-center min-w-0 shrink',
     '(document:click)': 'onDocumentClick($event)',
     '(document:keydown.escape)': 'closeDropdowns()',
   },
   template: `
-    <nav class="flex items-center gap-2 font-sans relative" aria-label="Ana Akademik Navigasyon">
+    <nav class="flex items-center gap-1.5 xl:gap-2 font-sans relative min-w-0" aria-label="Ana Akademik Navigasyon">
       <!-- 1. KÜLLİYAT (Direct Primary Button) -->
       <button
         type="button"
         (click)="onKulliyatClick()"
-        class="nav-pill-btn group"
+        class="nav-pill-btn !px-2.5 xl:!px-3.5 group"
         [class.nav-pill-btn-active]="selectedDiscipline() === 'all' && isHome()"
         title="Tüm Akademik Külliyat (16 Eser)"
       >
@@ -32,11 +32,12 @@ import {DisciplineType} from '../../../../core/models/article.model';
           type="button"
           (click)="toggleMenu('archive', $event)"
           [attr.aria-expanded]="openMenu() === 'archive'"
-          class="nav-pill-btn"
+          class="nav-pill-btn !px-2.5 xl:!px-3.5"
           [class.nav-pill-btn-active]="openMenu() === 'archive' || isArchiveRouteActive()"
         >
           <mat-icon class="!w-4 !h-4 !text-base icon-luminous-amber">collections_bookmark</mat-icon>
-          <span>Kürsü &amp; Arşiv</span>
+          <span class="hidden xl:inline">Kürsü &amp; Arşiv</span>
+          <span class="xl:hidden">Arşiv</span>
           <mat-icon
             class="!w-4 !h-4 !text-sm transition-transform duration-200"
             [class.rotate-180]="openMenu() === 'archive'"
@@ -47,7 +48,7 @@ import {DisciplineType} from '../../../../core/models/article.model';
 
         @if (openMenu() === 'archive') {
           <div
-            class="absolute left-0 top-full mt-2.5 w-80 rounded-2xl bg-[#071838] border border-sky-300/45 shadow-[0_22px_55px_rgba(2,8,23,0.92)] p-2.5 z-50 space-y-1 reveal-up"
+            class="absolute left-0 top-full mt-2.5 w-76 sm:w-80 max-w-[calc(100vw-2rem)] rounded-2xl bg-[#071838] border border-sky-300/45 shadow-[0_14px_34px_-6px_rgba(125,211,252,0.22)] p-2.5 z-50 space-y-1 reveal-up"
             role="menu"
           >
             <div class="px-2.5 py-1 text-[10px] font-mono font-bold uppercase tracking-wider text-amber-300 border-b border-sky-300/20 mb-1">
@@ -127,11 +128,12 @@ import {DisciplineType} from '../../../../core/models/article.model';
           type="button"
           (click)="toggleMenu('lab', $event)"
           [attr.aria-expanded]="openMenu() === 'lab'"
-          class="nav-pill-btn"
+          class="nav-pill-btn !px-2.5 xl:!px-3.5"
           [class.nav-pill-btn-active]="openMenu() === 'lab' || isLabRouteActive()"
         >
           <mat-icon class="!w-4 !h-4 !text-base icon-luminous-emerald">science</mat-icon>
-          <span>Laboratuvar &amp; Lügat</span>
+          <span class="hidden xl:inline">Laboratuvar &amp; Lügat</span>
+          <span class="xl:hidden">Lügat &amp; Lab</span>
           <mat-icon
             class="!w-4 !h-4 !text-sm transition-transform duration-200"
             [class.rotate-180]="openMenu() === 'lab'"
@@ -142,7 +144,7 @@ import {DisciplineType} from '../../../../core/models/article.model';
 
         @if (openMenu() === 'lab') {
           <div
-            class="absolute left-0 top-full mt-2.5 w-80 rounded-2xl bg-[#071838] border border-sky-300/45 shadow-[0_22px_55px_rgba(2,8,23,0.92)] p-2.5 z-50 space-y-1 reveal-up"
+            class="absolute right-0 xl:left-0 xl:right-auto top-full mt-2.5 w-76 sm:w-80 max-w-[calc(100vw-2rem)] rounded-2xl bg-[#071838] border border-sky-300/45 shadow-[0_14px_34px_-6px_rgba(125,211,252,0.22)] p-2.5 z-50 space-y-1 reveal-up"
             role="menu"
           >
             <div class="px-2.5 py-1 text-[10px] font-mono font-bold uppercase tracking-wider text-cyan-300 border-b border-sky-300/20 mb-1">
@@ -205,11 +207,12 @@ import {DisciplineType} from '../../../../core/models/article.model';
         routerLink="/topluluk-onayi"
         routerLinkActive="nav-pill-btn-active"
         (click)="closeDropdowns()"
-        class="nav-pill-btn !border-amber-400/50"
+        class="nav-pill-btn !px-2.5 xl:!px-3.5 !border-amber-400/50"
         title="Kuantum-Dirençli SHA3-512 + BLAKE2b-512 Ön-Konsensüs Emanet Zinciri, 1.000.000 Üye Barajı ve %96 Blok Zinciri Oylaması"
       >
         <mat-icon class="!w-4 !h-4 !text-base icon-luminous-amber">shield_lock</mat-icon>
-        <span>%96 Konsensüs &amp; Kuantum Mühür</span>
+        <span class="hidden 2xl:inline">%96 Konsensüs &amp; Kuantum Mühür</span>
+        <span class="2xl:hidden">%96 Konsensüs</span>
       </a>
     </nav>
   `,

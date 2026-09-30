@@ -1,0 +1,73 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "version": 2,
+  "framework": null,
+  "installCommand": "npm install --legacy-peer-deps",
+  "buildCommand": "npx ng build && node scripts/prepare-deploy-bundle.mjs",
+  "outputDirectory": "dist/app/browser",
+  "functions": {
+    "api/index.mjs": {
+      "maxDuration": 30,
+      "memory": 1024,
+      "includeFiles": "{dist/app/server/**,public/legal/**,public/logo.svg,src/styles.css,src/app/app.html,src/app/core/constants/initial-articles.ts,src/server/community-governance.ts,src/server/db.ts,src/assets/**,wrangler.toml,cloudflare-d1-schema.sql,CODEOWNERS}"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "/api/index.mjs"
+    },
+    {
+      "source": "/((?!api/|assets/|src/assets/|legal/|logo\\.svg|favicon\\.ico|deploy-manifest\\.json|.*\\..*).*)",
+      "destination": "/index.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=()"
+        },
+        {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=63072000; includeSubDomains; preload"
+        },
+        {
+          "key": "X-Yenidem-Edge-Engine",
+          "value": "Vercel-Edge-Serverless-Cloudflare-D1-PQC"
+        },
+        {
+          "key": "X-Yenidem-PQC-Hash",
+          "value": "SHA3-512+BLAKE2b-512+SLH-DSA"
+        }
+      ]
+    },
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
+  ]
+}
