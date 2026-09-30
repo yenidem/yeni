@@ -1,0 +1,79 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Default deny
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // Helper functions
+    function isSignedIn() {
+      return request.auth != null;
+    }
+    
+    function isEmailVerified() {
+      return isSignedIn() && request.auth.token.email_verified == true;
+    }
+
+    function isOwner(userId) {
+      return isSignedIn() && request.auth.uid == userId;
+    }
+
+    function isAdmin() {
+      return isSignedIn() && exists(/databases/$(database)/documents/admins/$(request.auth.uid));
+    }
+
+    function isValidId(id) {
+      return id is string && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$');
+    }
+
+    // Entity Validations
+    function isValidArticle(data) {
+      return data.title is string && data.title.size() <= 200
+        && data.content is string
+        && data.category in ['Edebiyat', 'Felsefe', 'Dil', 'Eleştiri']
+        && data.authorId == request.auth.uid
+        && data.createdAt == request.time;
+    }
+
+    function isValidDictionaryEntry(data) {
+      return data.word is string && data.word.size() <= 100
+        && data.definition is string;
+    }
+
+    // Collection Matches
+    match /articles/{articleId} {
+      allow read: if true; // Publicly readable
+      allow create: if isEmailVerified() && isValidArticle(request.resource.data);
+      allow update: if isEmailVerified() && isOwner(resource.data.authorId)
+        && isValidArticle(request.resource.data)
+        && request.resource.data.authorId == resource.data.authorId;
+      allow delete: if isEmailVerified() && isOwner(resource.data.authorId);
+    }
+
+    match /dictionary/{entryId} {
+      allow read: if true; // Publicly readable
+      allow write: if isAdmin(); // Only admins can modify the lügat
+    }
+
+    match /meterAnalyses/{analysisId} {
+      allow read: if isOwner(resource.data.authorId);
+      allow create: if isSignedIn() && request.resource.data.authorId == request.auth.uid;
+    }
+
+    match /users/{userId} {
+      allow read: if true;
+      allow write: if isOwner(userId);
+    }
+    
+    match /issues/{issueId} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+    
+    match /admins/{adminId} {
+      allow read: if isSignedIn();
+      allow write: if false; // Managed via Firebase Console or special script
+    }
+  }
+}

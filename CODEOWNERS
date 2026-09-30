@@ -1,0 +1,22 @@
+# ============================================================================
+# YENİDEM — GITHUB CODEOWNERS (KURUCU TASARIM & ÇEKİRDEK KORUMA KİLİDİ)
+# Topluluk GitHub üzerinden Pull Request (PR) açtığında aşağıdaki çekirdek,
+# tasarım ve kurucu külliyat dosyaları Kurucu Müellif onayı olmadan birleştirilemez.
+# ============================================================================
+
+# 1. Kurucu 16 Makale Külliyatı (Katman-0 Dokunulmazlık Zırhı)
+/src/app/core/constants/initial-articles.ts @orcunkundakci
+
+# 2. Site Tasarım Anayasası ve Görsel Kimlik (Asil Safir, Altın ve Başköşe)
+/src/styles.css @orcunkundakci
+/src/app/app.html @orcunkundakci
+/src/app/shared/components/header/ @orcunkundakci
+/src/app/shared/components/footer/ @orcunkundakci
+
+# 3. %96 Konsensüs, Cloudflare D1 Güvenlik, Uluslararası Hukuk/Çerez ve Kriptografi Çekirdeği
+/src/server/ @orcunkundakci
+/src/server.ts @orcunkundakci
+/wrangler.toml @orcunkundakci
+/cloudflare-d1-schema.sql @orcunkundakci
+/public/legal/ @orcunkundakci
+/.github/ @orcunkundakci

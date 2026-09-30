@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <radialGradient id="tdeBg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#090514" />
+    </radialGradient>
+    <linearGradient id="tdeGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="50%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#b45309" />
+    </linearGradient>
+  </defs>
+  <circle cx="100" cy="100" r="90" fill="url(#tdeBg)" stroke="url(#tdeGold)" stroke-width="3" />
+  <circle cx="100" cy="100" r="82" fill="none" stroke="#fbbf24" stroke-width="1" stroke-dasharray="3,4" opacity="0.6" />
+  
+  <!-- Stylized Ottoman / Divan Manuscript Book & Traditional Reed Pen (Kamış Kalem) -->
+  <!-- Open Manuscript Pages -->
+  <path d="M 45 130 C 65 120 85 125 100 135 C 115 125 135 120 155 130 L 155 75 C 135 65 115 70 100 80 C 85 70 65 65 45 75 Z" fill="#2e1065" stroke="url(#tdeGold)" stroke-width="2" />
+  <!-- Center Book Spine -->
+  <line x1="100" y1="80" x2="100" y2="135" stroke="#fbbf24" stroke-width="2" />
+  <!-- Classical Reed Pen (Kamış Kalem / Divit) Crossing Elegantly -->
+  <path d="M 140 45 L 148 53 L 88 125 L 75 130 L 80 117 Z" fill="url(#tdeGold)" />
+  <circle cx="75" cy="130" r="1.5" fill="#ffffff" />
+  <!-- Tulip Motif Accent (Lâle) -->
+  <path d="M 100 35 C 92 48 95 60 100 65 C 105 60 108 48 100 35 Z" fill="#f43f5e" opacity="0.85" />
+</svg>

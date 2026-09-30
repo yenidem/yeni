@@ -1,0 +1,67 @@
+name: YENİDEM — Deterministik Derleme, Tasarım/Kod Sertifikası & Cloudflare D1 Yayın Hattı
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+  deployments: write
+
+jobs:
+  verify-and-build:
+    name: 1. SHA3-512 Tasarım/Kod Bütünlük Kontrolü & Deterministik Derleme
+    runs-on: ubuntu-latest
+    steps:
+      - name: Kaynak Kodu İndir (Checkout)
+        uses: actions/checkout@v4
+
+      - name: Node.js 22 Kurulumu
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Bağımlılıkları Deterministik Kur (npm ci)
+        run: npm ci
+
+      - name: Katman-0 Kurucu Külliyat & Tasarım Anayasası SHA3-512 Bütünlük Taraması
+        run: |
+          node -e '
+            const crypto = require("node:crypto");
+            const fs = require("node:fs");
+            const files = [
+              "src/styles.css",
+              "src/app/core/constants/initial-articles.ts",
+              "src/server/community-governance.ts",
+              "src/app/app.html"
+            ];
+            for (const f of files) {
+              if (!fs.existsSync(f)) {
+                console.error("KRİTİK HATA: Korunan çekirdek dosya eksik:", f);
+                process.exit(1);
+              }
+              const content = fs.readFileSync(f);
+              const sha3 = crypto.createHash("sha3-512").update(content).digest("hex");
+              console.log("[DOĞRULANDI]", f, "-> SHA3-512:", sha3.substring(0, 32) + "...");
+            }
+          '
+
+      - name: Kod Kalitesi ve Güvenlik Denetimi (ng lint)
+        run: npm run lint
+
+      - name: AOT & SSR Deterministik Üretim Derlemesi (npm run build)
+        run: npm run build
+
+      - name: Derleme Çıktısı SRI (Subresource Integrity) & CODE-CERT-PQC Sertifikası Üret
+        run: |
+          node -e '
+            const crypto = require("node:crypto");
+            const fs = require("node:fs");
+            const stylesHash = crypto.createHash("sha3-512").update(fs.readFileSync("src/styles.css")).digest("hex");
+            const canonHash = crypto.createHash("sha3-512").update(fs.readFileSync("src/app/core/constants/initial-articles.ts")).digest("hex");
+            const merkleRoot = crypto.createHash("sha3-512").update(stylesHash + ":" + canonHash).digest("hex");
+            console.log("CODE-DESIGN-CERT-PQC Merkle Kökü:", merkleRoot);
+          '

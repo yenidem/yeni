@@ -1,0 +1,88 @@
+{
+  "documentBundleId": "YENIDEM-INTL-LEGAL-COOKIE-BUNDLE-2026-v3.0",
+  "platform": "YENİDEM — Edebiyat, Felsefe ve Tefekkür Mecmuası",
+  "founderAndDataController": "Orçun KUNDAKCI",
+  "platformStatus": "CONSTRUCTION_AND_DRAFT_PREVIEW (Yapım Aşamasında · Mimari Taslak Sürümü)",
+  "effectiveDateUtc": "2026-09-29T00:00:00.000Z",
+  "jurisdictionsCovered": [
+    "TR — 6698 Sayılı Kişisel Verilerin Korunması Kanunu (KVKK)",
+    "EU/EEA — General Data Protection Regulation (GDPR - Regulation (EU) 2016/679)",
+    "EU — ePrivacy Directive (2002/58/EC & 2009/136/EC Cookie Law)",
+    "US/CA — California Consumer Privacy Act & Privacy Rights Act (CCPA / CPRA)",
+    "UK — UK GDPR & Data Protection Act 2018",
+    "INTL — ISO/IEC 27701 & NIST FIPS 202/205 Post-Quantum Cryptographic Data Integrity"
+  ],
+  "constructionAndDraftDisclaimer": {
+    "badge": "YAPIM AŞAMASINDA · TASLAK SÜRÜM İKAZI",
+    "summaryTr": "Bu platform şu anda aktif yapım, kriptografik test ve mimari inşa aşamasındadır (Taslak Sürüm). Sitedeki ORXUN ödül jetonları, 1.000.000 üye barajı sayacı ve Rust ana zincir köprüsü simülasyon modunda çalışmaktadır. Kurucu müellif Orçun KUNDAKCI'ya ait 16 temel makale tam telif ve SHA3-512 koruması altındadır.",
+    "summaryEn": "This platform is currently under active construction and architectural draft testing. Simulated tokens (ORXUN) carry no financial solicitation. All 16 founding academic articles by Orçun KUNDAKCI are protected under international copyright and SHA3-512 cryptographic locks."
+  },
+  "files": [
+    {
+      "fileId": "DOC-01-INTL-COOKIE-POLICY",
+      "fileName": "01-uluslararasi-cerez-ve-yerel-depolama-politikasi.md",
+      "title": "Dosya 1: Uluslararası Çerez (Cookie) ve Kriptografik Yerel Depolama Politikası",
+      "standard": "EU ePrivacy Directive 2002/58/EC, GDPR Art. 6(1)(a) & KVKK Tebliği"
+    },
+    {
+      "fileId": "DOC-02-KVKK-GDPR-NOTICE",
+      "fileName": "02-kvkk-6698-ve-ab-gdpr-aydinlatma-beyannamesi.md",
+      "title": "Dosya 2: KVKK (6698) ve AB GDPR (2016/679) Uluslararası Veri Koruma Aydınlatma Metni",
+      "standard": "KVKK Madde 10 & GDPR Articles 12, 13, 14, 15-22"
+    },
+    {
+      "fileId": "DOC-03-CCPA-CLOUDFLARE-WORM",
+      "fileName": "03-ccpa-gpc-cloudflare-d1-ve-worm-blokzincir-veri-protokolu.md",
+      "title": "Dosya 3: CCPA/CPRA, Küresel Gizlilik Kontrolü (GPC) ve Cloudflare D1 / WORM Blok Zinciri Beyanı",
+      "standard": "CCPA Cal. Civ. Code § 1798.100 & W3C Global Privacy Control"
+    },
+    {
+      "fileId": "DOC-04-DRAFT-CONSTRUCTION-CHARTER",
+      "fileName": "04-yapim-asamasi-taslak-surum-ve-telif-muafiyet-sartnamesi.md",
+      "title": "Dosya 4: Yapım Aşamasında (Taslak) Sistem İkazı, Fikrî Mülkiyet ve Sorumluluk Sınırları",
+      "standard": "5846 Sayılı FSEK, Berne Convention & WIPO Copyright Treaty"
+    }
+  ],
+  "cookieAndStorageInventory": [
+    {
+      "key": "yenidem_intl_cookie_consent_v1",
+      "category": "strictly_necessary",
+      "provider": "YENİDEM Hukuk & Kriptografi Çekirdeği",
+      "purpose": "Kullanıcının uluslararası çerez tercihlerini, zaman ayarlı ikaz süresini ve SHA3-512 onay sertifikasını (CONSENT-CERT-PQC) saklar.",
+      "retention": "Seçime göre 1 Saat / 24 Saat / 30 Gün / 180 Gün",
+      "encryption": "SHA3-512 + Yerel JSON Mührü"
+    },
+    {
+      "key": "cf_clearance / __cf_bm",
+      "category": "strictly_necessary",
+      "provider": "Cloudflare Edge WAF & Turnstile",
+      "purpose": "Katman-7 DDoS saldırılarını, botları ve otomatik kazıyıcıları engellemek için kullanılan zorunlu güvenlik çerezi.",
+      "retention": "30 Dakika - 24 Saat",
+      "encryption": "Cloudflare TLS 1.3 + HMAC"
+    },
+    {
+      "key": "yenidem_author_session_token",
+      "category": "strictly_necessary",
+      "provider": "YENİDEM Zero-Plaintext Auth (scrypt + PBKDF2 + 2FA)",
+      "purpose": "RFC 6238 2FA doğrulaması yapan kurucu yazar oturum anahtarı.",
+      "retention": "Oturum Süresi (Max 12 Saat)",
+      "encryption": "256-bit Kriptografik Oturum Jetonu"
+    },
+    {
+      "key": "yenidem_site_customization_v1",
+      "category": "functional_comfort",
+      "provider": "YENİDEM Okuma Konforu & Özelleştirme Stüdyosu",
+      "purpose": "Seçilen site temasını (Safir/Kehribar/Zümrüt/OLED), yazı boyutunu (%90-%135), mavi ışık filtresini ve titremesiz mod ayarını korur.",
+      "retention": "180 Gün (Kullanıcı sildiğinde anında sıfırlanır)",
+      "encryption": "Tarayıcı İçi İzole Depolama"
+    },
+    {
+      "key": "yenidem_verified_member_v2",
+      "category": "web3_governance",
+      "provider": "YENİDEM %96 Konsensüs & ORXUN Cüzdan Motoru",
+      "purpose": "Simüle edilen ORXUN ödül bakiyesini (1.00 ORXUN hoş geldin hediyesi dahil) ve KYC-4 doğrulama mührünü (SEAL-PQC) saklar.",
+      "retention": "90 Gün",
+      "encryption": "SHA3-512 + BLAKE2b-512 Özeti"
+    }
+  ]
+}

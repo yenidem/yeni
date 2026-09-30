@@ -1,0 +1,14 @@
+{
+  "authorEmail": "orcunkundakci@gmail.com",
+  "authorName": "Orçun Kundakcı",
+  "totpSecret": "ORCUN2FAKUNDAKCI77SECUREKEY2026",
+  "backupCodes": [
+    "948102",
+    "512839",
+    "773194",
+    "420918",
+    "831620"
+  ],
+  "twoFactorEnabled": true,
+  "activeSessions": {}
+}

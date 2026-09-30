@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <radialGradient id="sphereBg" cx="50%" cy="46%" r="48%" fx="50%" fy="34%">
+      <stop offset="0%" stop-color="#0c4fd6" />
+      <stop offset="40%" stop-color="#062880" />
+      <stop offset="80%" stop-color="#031347" />
+      <stop offset="100%" stop-color="#010926" />
+    </radialGradient>
+    <linearGradient id="outerRim" x1="15%" y1="5%" x2="85%" y2="95%">
+      <stop offset="0%" stop-color="#e0f2fe" />
+      <stop offset="35%" stop-color="#38bdf8" />
+      <stop offset="75%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#bae6fd" />
+    </linearGradient>
+    <linearGradient id="wingFill" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7dd3fc" />
+      <stop offset="50%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+  </defs>
+  <circle cx="250" cy="250" r="236" fill="url(#sphereBg)" stroke="url(#outerRim)" stroke-width="12" />
+  <path
+    d="M 242 82 A 168 168 0 0 0 120 162 L 196 238 L 196 258 L 120 334 A 168 168 0 0 0 228 412 L 228 382 A 138 138 0 0 1 154 326 L 218 262 L 218 234 L 154 170 A 138 138 0 0 1 242 112 Z"
+    fill="url(#wingFill)"
+    stroke="#e0f2fe"
+    stroke-width="3"
+  />
+  <path
+    d="M 258 82 A 168 168 0 0 1 380 162 L 304 238 L 304 258 L 380 334 A 168 168 0 0 1 272 412 L 272 382 A 138 138 0 0 0 346 326 L 282 262 L 282 234 L 346 170 A 138 138 0 0 0 258 112 Z"
+    fill="url(#wingFill)"
+    stroke="#e0f2fe"
+    stroke-width="3"
+  />
+  <path d="M 241 302 L 250 322 L 259 302 L 259 418 L 241 418 Z" fill="url(#wingFill)" stroke="#7dd3fc" stroke-width="2" />
+  <path d="M 250 196 L 262 236 L 286 248 L 262 260 L 250 300 L 238 260 L 214 248 L 238 236 Z" fill="#bae6fd" stroke="#ffffff" stroke-width="2" />
+</svg>

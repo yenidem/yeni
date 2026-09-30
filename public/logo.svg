@@ -1,0 +1,275 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <!-- Outer Sky-Blue Backdrop Glow -->
+    <radialGradient id="outerAura" cx="50%" cy="48%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.35" />
+      <stop offset="75%" stop-color="#0284c7" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- 3D Glass Sphere Interior Gradient (Matches uploaded logo exactly) -->
+    <radialGradient id="sphereBg" cx="50%" cy="46%" r="48%" fx="50%" fy="34%">
+      <stop offset="0%" stop-color="#0c4fd6" />
+      <stop offset="35%" stop-color="#062880" />
+      <stop offset="72%" stop-color="#031347" />
+      <stop offset="92%" stop-color="#010926" />
+      <stop offset="100%" stop-color="#02184f" />
+    </radialGradient>
+
+    <!-- Top Specular Glass Reflection -->
+    <radialGradient id="topGlassLight" cx="42%" cy="14%" r="42%">
+      <stop offset="0%" stop-color="#e0f2fe" stop-opacity="0.55" />
+      <stop offset="45%" stop-color="#38bdf8" stop-opacity="0.18" />
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Bottom Horizon Internal Glow -->
+    <radialGradient id="bottomInternalGlow" cx="50%" cy="92%" r="36%">
+      <stop offset="0%" stop-color="#7dd3fc" stop-opacity="0.65" />
+      <stop offset="45%" stop-color="#0ea5e9" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Outer Metallic-Glass Rim Gradient -->
+    <linearGradient id="outerRim" x1="15%" y1="5%" x2="85%" y2="95%">
+      <stop offset="0%" stop-color="#e0f2fe" />
+      <stop offset="22%" stop-color="#38bdf8" />
+      <stop offset="55%" stop-color="#0369a1" />
+      <stop offset="82%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#bae6fd" />
+    </linearGradient>
+
+    <!-- Inner Specular Ring Gradient -->
+    <linearGradient id="innerRim" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9" />
+      <stop offset="18%" stop-color="#7dd3fc" stop-opacity="0.75" />
+      <stop offset="55%" stop-color="#0284c7" stop-opacity="0.35" />
+      <stop offset="85%" stop-color="#38bdf8" stop-opacity="0.65" />
+      <stop offset="100%" stop-color="#e0f2fe" stop-opacity="0.9" />
+    </linearGradient>
+
+    <!-- Main Hourglass Wing Ribbon Gradient -->
+    <linearGradient id="wingFill" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7dd3fc" />
+      <stop offset="18%" stop-color="#22d3ee" />
+      <stop offset="50%" stop-color="#0284c7" />
+      <stop offset="82%" stop-color="#1d4ed8" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+
+    <!-- Wing Bevel Edge Stroke -->
+    <linearGradient id="wingStroke" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e0f2fe" />
+      <stop offset="50%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#7dd3fc" />
+    </linearGradient>
+
+    <!-- Central Vertical Pillar Gradient -->
+    <linearGradient id="pillarGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7dd3fc" />
+      <stop offset="30%" stop-color="#0ea5e9" />
+      <stop offset="75%" stop-color="#0369a1" />
+      <stop offset="100%" stop-color="#1e40af" />
+    </linearGradient>
+
+    <!-- Halftone Dot Gradient -->
+    <linearGradient id="dotGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#67e8f9" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+
+    <filter id="dropShadow" x="-15%" y="-15%" width="130%" height="135%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#00071a" flood-opacity="0.65" />
+    </filter>
+  </defs>
+
+  <!-- Soft Bottom Pedestal Shadow -->
+  <ellipse cx="250" cy="476" rx="145" ry="12" fill="#010924" opacity="0.65" />
+  <ellipse cx="250" cy="473" rx="65" ry="5" fill="#7dd3fc" opacity="0.45" />
+
+  <!-- Main 3D Sphere Body -->
+  <circle cx="250" cy="248" r="226" fill="url(#sphereBg)" stroke="url(#outerRim)" stroke-width="7" />
+
+  <!-- Top & Bottom Internal Glass Lighting -->
+  <circle cx="250" cy="248" r="222" fill="url(#topGlassLight)" />
+  <circle cx="250" cy="248" r="222" fill="url(#bottomInternalGlow)" />
+
+  <!-- Inner Glass Rim Ring -->
+  <circle cx="250" cy="248" r="214" fill="none" stroke="url(#innerRim)" stroke-width="3.5" />
+
+  <!-- Top-Left Bright Specular Glint Arc (Matches uploaded 3D sphere highlight) -->
+  <path
+    d="M 118 76 A 214 214 0 0 1 232 35"
+    fill="none"
+    stroke="#ffffff"
+    stroke-width="5.5"
+    stroke-linecap="round"
+    opacity="0.88"
+  />
+  <!-- Bottom Center Specular Glint -->
+  <path
+    d="M 218 461 A 214 214 0 0 0 282 461"
+    fill="none"
+    stroke="#ffffff"
+    stroke-width="5"
+    stroke-linecap="round"
+    opacity="0.85"
+  />
+
+  <!-- =======================================================================
+       LEFT & RIGHT HALFTONE DOT CONSTELLATIONS
+       ======================================================================= -->
+  <g fill="url(#dotGrad)" stroke="#7dd3fc" stroke-width="0.8">
+    <!-- Left Column 1 (Innermost, largest dots near the V waist) -->
+    <circle cx="164" cy="248" r="11.5" />
+    <circle cx="148" cy="222" r="10.5" />
+    <circle cx="148" cy="274" r="10.5" />
+    <circle cx="132" cy="196" r="9.5" />
+    <circle cx="132" cy="300" r="9.5" />
+
+    <!-- Left Column 2 -->
+    <circle cx="132" cy="248" r="9.5" />
+    <circle cx="118" cy="222" r="8.5" />
+    <circle cx="118" cy="274" r="8.5" />
+    <circle cx="106" cy="196" r="7.5" />
+    <circle cx="106" cy="300" r="7.5" />
+    <circle cx="114" cy="170" r="6.5" />
+    <circle cx="114" cy="326" r="6.5" />
+
+    <!-- Left Column 3 -->
+    <circle cx="102" cy="248" r="7.5" />
+    <circle cx="91" cy="223" r="6.5" />
+    <circle cx="91" cy="273" r="6.5" />
+    <circle cx="84" cy="198" r="5.5" />
+    <circle cx="84" cy="298" r="5.5" />
+    <circle cx="94" cy="150" r="4.5" />
+    <circle cx="94" cy="346" r="4.5" />
+
+    <!-- Left Column 4 (Outermost small dots) -->
+    <circle cx="75" cy="248" r="5" />
+    <circle cx="67" cy="225" r="4" />
+    <circle cx="67" cy="271" r="4" />
+    <circle cx="52" cy="248" r="3" />
+    <circle cx="102" cy="130" r="3.5" />
+    <circle cx="102" cy="366" r="3.5" />
+
+    <!-- Right Column 1 (Innermost, largest dots near the V waist) -->
+    <circle cx="336" cy="248" r="11.5" />
+    <circle cx="352" cy="222" r="10.5" />
+    <circle cx="352" cy="274" r="10.5" />
+    <circle cx="368" cy="196" r="9.5" />
+    <circle cx="368" cy="300" r="9.5" />
+
+    <!-- Right Column 2 -->
+    <circle cx="368" cy="248" r="9.5" />
+    <circle cx="382" cy="222" r="8.5" />
+    <circle cx="382" cy="274" r="8.5" />
+    <circle cx="394" cy="196" r="7.5" />
+    <circle cx="394" cy="300" r="7.5" />
+    <circle cx="386" cy="170" r="6.5" />
+    <circle cx="386" cy="326" r="6.5" />
+
+    <!-- Right Column 3 -->
+    <circle cx="398" cy="248" r="7.5" />
+    <circle cx="409" cy="223" r="6.5" />
+    <circle cx="409" cy="273" r="6.5" />
+    <circle cx="416" cy="198" r="5.5" />
+    <circle cx="416" cy="298" r="5.5" />
+    <circle cx="406" cy="150" r="4.5" />
+    <circle cx="406" cy="346" r="4.5" />
+
+    <!-- Right Column 4 (Outermost small dots) -->
+    <circle cx="425" cy="248" r="5" />
+    <circle cx="433" cy="225" r="4" />
+    <circle cx="433" cy="271" r="4" />
+    <circle cx="448" cy="248" r="3" />
+    <circle cx="398" cy="130" r="3.5" />
+    <circle cx="398" cy="366" r="3.5" />
+  </g>
+
+  <!-- =======================================================================
+       LEFT & RIGHT GEOMETRIC HOURGLASS / CHALICE WINGS
+       ======================================================================= -->
+  <!-- Left Continuous Wing -->
+  <path
+    d="M 242 82
+       A 168 168 0 0 0 120 162
+       L 196 238
+       L 196 258
+       L 120 334
+       A 168 168 0 0 0 228 412
+       L 228 382
+       A 138 138 0 0 1 154 326
+       L 218 262
+       L 218 234
+       L 154 170
+       A 138 138 0 0 1 242 112
+       Z"
+    fill="url(#wingFill)"
+    stroke="url(#wingStroke)"
+    stroke-width="2.5"
+    stroke-linejoin="round"
+    filter="url(#dropShadow)"
+  />
+
+  <!-- Right Continuous Wing -->
+  <path
+    d="M 258 82
+       A 168 168 0 0 1 380 162
+       L 304 238
+       L 304 258
+       L 380 334
+       A 168 168 0 0 1 272 412
+       L 272 382
+       A 138 138 0 0 0 346 326
+       L 282 262
+       L 282 234
+       L 346 170
+       A 138 138 0 0 0 258 112
+       Z"
+    fill="url(#wingFill)"
+    stroke="url(#wingStroke)"
+    stroke-width="2.5"
+    stroke-linejoin="round"
+    filter="url(#dropShadow)"
+  />
+
+  <!-- =======================================================================
+       BOTTOM CENTER VERTICAL PILLAR WITH V-NOTCH CROWN
+       ======================================================================= -->
+  <path
+    d="M 241 302
+       L 250 322
+       L 259 302
+       L 259 418
+       L 241 418
+       Z"
+    fill="url(#pillarGrad)"
+    stroke="#7dd3fc"
+    stroke-width="2"
+    stroke-linejoin="round"
+    filter="url(#dropShadow)"
+  />
+
+  <!-- =======================================================================
+       CENTRAL 4-POINTED FACETED STAR OF WISDOM (3D Beveled Diamond Star)
+       ======================================================================= -->
+  <g filter="url(#dropShadow)">
+    <!-- Top-Left Facet (Brightest Ice Cyan) -->
+    <path d="M 250 248 L 250 196 L 238 236 L 214 248 Z" fill="#bae6fd" />
+    <!-- Top-Right Facet (Sky Cyan) -->
+    <path d="M 250 248 L 250 196 L 262 236 L 286 248 Z" fill="#38bdf8" />
+    <!-- Bottom-Left Facet (Deep Azure) -->
+    <path d="M 250 248 L 214 248 L 238 260 L 250 300 Z" fill="#0284c7" />
+    <!-- Bottom-Right Facet (Royal Blue) -->
+    <path d="M 250 248 L 286 248 L 262 260 L 250 300 Z" fill="#0369a1" />
+    <!-- Star Crisp Outline -->
+    <path
+      d="M 250 196 L 262 236 L 286 248 L 262 260 L 250 300 L 238 260 L 214 248 L 238 236 Z"
+      fill="none"
+      stroke="#e0f2fe"
+      stroke-width="1.6"
+      stroke-linejoin="round"
+    />
+  </g>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <radialGradient id="kesBg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#14213d" />
+      <stop offset="100%" stop-color="#050a14" />
+    </radialGradient>
+    <linearGradient id="kesHybrid" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="50%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+  </defs>
+  <circle cx="100" cy="100" r="90" fill="url(#kesBg)" stroke="url(#kesHybrid)" stroke-width="3" />
+  <circle cx="100" cy="100" r="82" fill="none" stroke="#10b981" stroke-width="1" stroke-dasharray="3,4" opacity="0.6" />
+  
+  <!-- Interlocking Venn / Mobius infinity loop: Literature & Philosophy Synthesis -->
+  <circle cx="80" cy="100" r="40" fill="none" stroke="#f59e0b" stroke-width="3" opacity="0.8" />
+  <circle cx="120" cy="100" r="40" fill="none" stroke="#06b6d4" stroke-width="3" opacity="0.8" />
+  <!-- Center Intersection Sparkle (Hermeneutic Synthesis) -->
+  <path d="M 100 80 L 104 96 L 120 100 L 104 104 L 100 120 L 96 104 L 80 100 L 96 96 Z" fill="#ffffff" />
+  <circle cx="100" cy="100" r="2.5" fill="#10b981" />
+</svg>

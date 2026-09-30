@@ -1,0 +1,116 @@
+import {DailyVerse} from '../models/daily-verse.model';
+
+export const DAILY_VERSES: DailyVerse[] = [
+  {
+    id: 'verse-fuzuli-can',
+    poet: 'Fuzûlî',
+    poetDates: '1494 – 1556',
+    sourceWork: 'Dîvân (Gazeliyat)',
+    stanzaLine1: "Beni cândan usandırdı cefâdan yâr usanmaz mı",
+    stanzaLine2: "Felekler yandı âhımdan murâdım şem'i yanmaz mı",
+    meter: "Mef'ûlü / Mefâ'îlü / Mefâ'îlü / Fe'ûlün",
+    meterType: 'Aruz',
+    glossary: [
+      {word: 'Cân', meaning: 'Ruh, hayat cevheri, varlığın özü', origin: 'Farsça'},
+      {word: 'Cefâ', meaning: 'Eziyet, varoluşsal çile, kemâle erdiren sıkıntı', origin: 'Arapça'},
+      {word: 'Felek', meaning: 'Gök katları, kozmik nizam, kader çarkı', origin: 'Arapça'},
+      {word: 'Şem', meaning: 'Mum, ilahi nuru ve aydınlığı temsil eden çıra', origin: 'Arapça'},
+    ],
+    scholarlyCommentary:
+      "Fuzûlî bu beyitte alelade bir beşeri aşk serzenişi yapmaz; varlığın 'ıstırap üzerinden yetkinleştiği' ontolojik bir doruğu imler. Âşığın usanç duyması bir tükeniş değil, nefsin sınırlarını aşarak mutlak hakikate raptolma arzusudur. 'Feleklerin yanması', kozmolojik düzen ile insanın içsel hicranı arasındaki ontolojik bağın ifadesidir.",
+    philosophicalThemes: ['Ontoloji', 'Varoluşsal Istırap', 'Kozmoloji', 'Aşk'],
+  },
+  {
+    id: 'verse-seyh-galib-zubde',
+    poet: 'Şeyh Gâlib',
+    poetDates: '1757 – 1799',
+    sourceWork: 'Dîvân & Hüsn ü Aşk',
+    stanzaLine1: "Hoşça bak zâtına kim zübde-i âlemsin sen",
+    stanzaLine2: "Merdüm-i dîde-i ekvân olan âdemsin sen",
+    meter: "Fe'ilâtün / Fe'ilâtün / Fe'ilâtün / Fe'ilün",
+    meterType: 'Aruz',
+    glossary: [
+      {word: 'Zât', meaning: 'Öz, varlık cevheri, hakiki kendilik', origin: 'Arapça'},
+      {word: 'Zübde-i Âlem', meaning: 'Evrenin özü, kozmosun süzülmüş meyvesi', origin: 'Arapça'},
+      {word: 'Merdüm-i Dîde', meaning: 'Gözbebeği, basiretin ve idrakin merkezi', origin: 'Farsça'},
+      {word: 'Ekvân', meaning: 'Kâinat, tüm yaratılmış varlıklar mertebesi', origin: 'Arapça'},
+    ],
+    scholarlyCommentary:
+      "İslam felsefesindeki 'Âlem-i Asgar' (Küçük Evren olarak İnsan) ve Batı felsefesindeki Kantçı 'öznede billurlaşan evren' kavrayışının lirik zirvesidir. İnsan, evrenin kenarında tesadüfi bir nesne değil; evrenin kendini seyrettiği basiret gözüdür. Kendine hürmet ve tefekkürle bakmak, varlığın bütününe duyulan metafizik saygının ilk şartıdır.",
+    philosophicalThemes: ['Antropoloji', 'Âlem-i Asgar', 'Özbilinç', 'Varlık'],
+  },
+  {
+    id: 'verse-yunus-emre-ilim',
+    poet: 'Yunus Emre',
+    poetDates: '1238 – 1320',
+    sourceWork: 'Risâletü’n-Nushiyye & Dîvân',
+    stanzaLine1: "İlim ilim bilmekdür, ilim kendin bilmekdür",
+    stanzaLine2: "Sen kendin bilmezsin, ya nice okumakdur",
+    meter: "8'li Hece Ölçüsü (4+4 Duraklı)",
+    meterType: 'Hece',
+    glossary: [
+      {word: 'İlim', meaning: 'Sadece malumat değil; hakikati idrak ve basiret', origin: 'Arapça'},
+      {word: 'Kendin Bilmek', meaning: 'Sokratik Gnothi Seauton ilkesi; ontolojik özfarkındalık', origin: 'Türkçe'},
+      {word: 'Okumak', meaning: 'Yalnızca harfleri çözmek değil, varoluş kitabını hecelemek', origin: 'Türkçe'},
+    ],
+    scholarlyCommentary:
+      "Yunus'un bu dizesi, Delphoi tapınağındaki 'Kendini bil' düsturu ile tasavvufun 'Men arefe nefsehu fekad arefe rabbehu' (Kendini bilen Rabbini bilir) ilkesini Türkçe'nin en berrak nehriyle birleştirir. Dış dünyayı teorik olarak yığmak bilgelik getirmez; tefekkür içe dönüp kendi varlığının cevheriyle yüzleştiğinde ilim adını hak eder.",
+    philosophicalThemes: ['Epistemoloji', 'Kendini Bilmek', 'Hikmet', 'Basiret'],
+  },
+  {
+    id: 'verse-nabi-bag',
+    poet: 'Nâbî',
+    poetDates: '1642 – 1712',
+    sourceWork: 'Dîvân (Hikemî Şiir)',
+    stanzaLine1: "Bâğ-ı dehrin hem hazânın hem bahârın görmüşüz",
+    stanzaLine2: "Biz neşâtın da gamın da rûzgârın görmüşüz",
+    meter: "Fâ'ilâtün / Fâ'ilâtün / Fâ'ilâtün / Fâ'ilün",
+    meterType: 'Aruz',
+    glossary: [
+      {word: 'Bâğ-ı Dehr', meaning: 'Zaman ve dünya bahçesi, fani ömür sahnesi', origin: 'Farsça / Arapça'},
+      {word: 'Hazân', meaning: 'Sonbahar, çöküş, fani şeylerin solması', origin: 'Farsça'},
+      {word: 'Neşât', meaning: 'Sevinç, ferahlık, genişlik', origin: 'Arapça'},
+      {word: 'Rûzgâr', meaning: 'Zaman, talih, dönen rüzgâr', origin: 'Farsça'},
+    ],
+    scholarlyCommentary:
+      "Nâbî'nin hikemi üslubundaki bu vakar, Stoacı ataraksia (sarsılmaz iç huzur) ile Rindane tevekkülün sentezidir. Dünyanın ne neşesiyle sarhoş olan ne de hüznüyle kahrolan bir olgunluk. Hayatın zıt kutuplarını bir döngü olarak kabullenen zihin, varoluşsal rüzgârların ortasında dimdik ayakta kalır.",
+    philosophicalThemes: ['Stoacılık', 'Hikemî Tefekkür', 'Rindlik', 'Tevekkül'],
+  },
+  {
+    id: 'verse-baki-avaze',
+    poet: 'Bâkî',
+    poetDates: '1526 – 1600',
+    sourceWork: 'Dîvân (Sultanü’ş-Şuarâ)',
+    stanzaLine1: "Âvâzeyi bu âleme Dâvûd gibi sal",
+    stanzaLine2: "Bâkî kalan bu kubbede bir hoş sadâ imiş",
+    meter: "Mef'ûlü / Fâ'ilâtü / Mefâ'îlü / Fâ'ilün",
+    meterType: 'Aruz',
+    glossary: [
+      {word: 'Âvâze', meaning: 'Yüksek ses, etkileyici şöhret ve yankı', origin: 'Farsça'},
+      {word: 'Dâvûd', meaning: 'Sesinin güzelliğiyle dağları ve kuşları cezbettiğine inanılan peygamber', origin: 'İbranice / Arapça'},
+      {word: 'Kubbe', meaning: 'Gök kubbe, kainat tavanı', origin: 'Arapça'},
+      {word: 'Sadâ', meaning: 'Yankı, sözün zaman içindeki kalıcı tınısı', origin: 'Arapça'},
+    ],
+    scholarlyCommentary:
+      "Şair ismini (Bâkî) tevriyeli kullanarak hem kendi faniliğini kabul eder hem de sanatın ölümsüz yankısını yüceltir. Madde, unvan ve güç fani birer gölgedir; evrenin gök kubbesinde yankılanacak olan tek hakikat, insanın arkasında bıraktığı ahlaki ve estetik 'hoş sadâ'dır.",
+    philosophicalThemes: ['Estetik', 'Kalıcılık', 'Zaman', 'Fânilik'],
+  },
+  {
+    id: 'verse-misri-derman',
+    poet: 'Niyâzî-i Mısrî',
+    poetDates: '1618 – 1694',
+    sourceWork: 'Dîvân-ı İlâhiyyât',
+    stanzaLine1: "Dermân arardım derdime derdim bana dermân imiş",
+    stanzaLine2: "Bürhân arardım aslıma aslım bana bürhân imiş",
+    meter: "Mef'ûlü / Mefâ'îlü / Fe'ûlün",
+    meterType: 'Aruz',
+    glossary: [
+      {word: 'Dermân', meaning: 'İlaç, şifa, hal çaresi', origin: 'Farsça'},
+      {word: 'Bürhân', meaning: 'Aklı ikna eden kesin delil, kanıt', origin: 'Arapça'},
+      {word: 'Asıl', meaning: 'Kök, mutlak varlık kaynağı', origin: 'Arapça'},
+    ],
+    scholarlyCommentary:
+      "Diyalektik felsefenin ve tasavvufi vahdet idrakinin en yalın ifadesidir. Dert ile derman ayrı iki kutup değildir; hakikate giden yol bizzat o yoldaki arayışın ve sızının ta kendisidir. Dışarıda kesin kanıt arayan zihin, arayanın bizzat kanıtın kendisi olduğunu idrak ettiğinde uyanır.",
+    philosophicalThemes: ['Diyalektik', 'Vahdet-i Vücûd', 'Arayış', 'Hakikat'],
+  },
+];

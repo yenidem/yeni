@@ -1,0 +1,6 @@
+{
+  "name": "YENİDEM - Edebiyat ve Felsefe Platformu",
+  "description": "YENİDEM: Edebiyat, felsefe ve Türk dili üzerine akademik makaleler, lügat, vezin araçları ve dijital arşiv sistemi. Blok zinciri entegrasyonu ve güvenli yazar portföyü.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

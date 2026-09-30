@@ -1,0 +1,102 @@
+{
+  "entities": {
+    "article": {
+      "title": "Article",
+      "description": "Literary or philosophical article",
+      "type": "object",
+      "properties": {
+        "title": { "type": "string", "maxLength": 200 },
+        "content": { "type": "string" },
+        "category": { "type": "string", "enum": ["Edebiyat", "Felsefe", "Dil", "Eleştiri"] },
+        "authorId": { "type": "string", "pattern": "^[a-zA-Z0-9_\\-]+$" },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" },
+        "blockchainStatus": { "type": "string", "enum": ["pending", "pushed", "failed"] },
+        "blockchainHash": { "type": "string" }
+      },
+      "required": ["title", "content", "category", "authorId", "createdAt"]
+    },
+    "dictionaryEntry": {
+      "title": "Dictionary Entry",
+      "description": "Definition from the lügat",
+      "type": "object",
+      "properties": {
+        "word": { "type": "string", "maxLength": 100 },
+        "definition": { "type": "string" },
+        "etymology": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["word", "definition"]
+    },
+    "meterAnalysis": {
+      "title": "Meter Analysis",
+      "description": "Aruzi or Syllabic meter analysis results",
+      "type": "object",
+      "properties": {
+        "text": { "type": "string" },
+        "meter": { "type": "string" },
+        "pattern": { "type": "string" },
+        "authorId": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["text", "meter", "createdAt"]
+    },
+    "userProfile": {
+      "title": "User Profile",
+      "description": "Profile information for authors",
+      "type": "object",
+      "properties": {
+        "displayName": { "type": "string", "maxLength": 100 },
+        "email": { "type": "string", "format": "email" },
+        "role": { "type": "string", "enum": ["admin", "author"] },
+        "bio": { "type": "string", "maxLength": 500 }
+      },
+      "required": ["displayName", "email", "role"]
+    },
+    "issue": {
+      "title": "Mecmua Issue",
+      "description": "A thematic issue/fascicle of the journal",
+      "type": "object",
+      "properties": {
+        "issueNumber": { "type": "integer" },
+        "title": { "type": "string", "maxLength": 200 },
+        "season": { "type": "string" },
+        "themeKicker": { "type": "string" },
+        "articleIds": { "type": "array", "items": { "type": "string" } },
+        "editorialLetter": {
+          "type": "object",
+          "properties": {
+            "title": { "type": "string" },
+            "lead": { "type": "string" },
+            "body": { "type": "array", "items": { "type": "string" } },
+            "author": { "type": "string" },
+            "date": { "type": "string" }
+          }
+        }
+      },
+      "required": ["issueNumber", "title", "articleIds"]
+    }
+  },
+  "firestore": {
+    "articles": {
+      "schema": "article",
+      "description": "Collection of literary articles"
+    },
+    "dictionary": {
+      "schema": "dictionaryEntry",
+      "description": "Collection of lügat entries"
+    },
+    "meterAnalyses": {
+      "schema": "meterAnalysis",
+      "description": "History of meter analyses"
+    },
+    "users": {
+      "schema": "userProfile",
+      "description": "User profile data"
+    },
+    "issues": {
+      "schema": "issue",
+      "description": "Collection of journal issues"
+    }
+  }
+}

@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgCover" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#040d21" />
+      <stop offset="50%" stop-color="#081e48" />
+      <stop offset="100%" stop-color="#0f3170" />
+    </linearGradient>
+    <radialGradient id="cloudGlow" cx="50%" cy="95%" r="60%">
+      <stop offset="0%" stop-color="#7dd3fc" stop-opacity="0.35" />
+      <stop offset="55%" stop-color="#0ea5e9" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="sphereBg" cx="50%" cy="46%" r="48%" fx="50%" fy="34%">
+      <stop offset="0%" stop-color="#0c4fd6" />
+      <stop offset="40%" stop-color="#062880" />
+      <stop offset="80%" stop-color="#031347" />
+      <stop offset="100%" stop-color="#010926" />
+    </radialGradient>
+    <linearGradient id="wingFill" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7dd3fc" />
+      <stop offset="50%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background & Cloud Horizon Illumination -->
+  <rect width="1200" height="675" fill="url(#bgCover)" />
+  <rect width="1200" height="675" fill="url(#cloudGlow)" />
+
+  <!-- Subtle Grid / Star Accent -->
+  <circle cx="600" cy="300" r="245" fill="none" stroke="#38bdf8" stroke-opacity="0.15" stroke-width="1.5" stroke-dasharray="6 8" />
+  <circle cx="600" cy="300" r="195" fill="none" stroke="#fbbf24" stroke-opacity="0.2" stroke-width="1" />
+
+  <!-- Centered Official YENİDEM Sphere Emblem (Scaled around 600, 290) -->
+  <g transform="translate(435, 125) scale(0.66)">
+    <circle cx="250" cy="248" r="226" fill="url(#sphereBg)" stroke="#38bdf8" stroke-width="7" />
+    <circle cx="250" cy="248" r="214" fill="none" stroke="#bae6fd" stroke-opacity="0.65" stroke-width="3" />
+    <path d="M 118 76 A 214 214 0 0 1 232 35" fill="none" stroke="#ffffff" stroke-width="5.5" stroke-linecap="round" opacity="0.85" />
+    <path d="M 218 461 A 214 214 0 0 0 282 461" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" opacity="0.85" />
+
+    <!-- Halftone Dots -->
+    <g fill="#38bdf8" opacity="0.9">
+      <circle cx="164" cy="248" r="11" /><circle cx="148" cy="222" r="10" /><circle cx="148" cy="274" r="10" />
+      <circle cx="132" cy="196" r="9" /><circle cx="132" cy="300" r="9" /><circle cx="132" cy="248" r="9" />
+      <circle cx="118" cy="222" r="8" /><circle cx="118" cy="274" r="8" /><circle cx="102" cy="248" r="7" />
+      <circle cx="336" cy="248" r="11" /><circle cx="352" cy="222" r="10" /><circle cx="352" cy="274" r="10" />
+      <circle cx="368" cy="196" r="9" /><circle cx="368" cy="300" r="9" /><circle cx="368" cy="248" r="9" />
+      <circle cx="382" cy="222" r="8" /><circle cx="382" cy="274" r="8" /><circle cx="398" cy="248" r="7" />
+    </g>
+
+    <!-- Left & Right Hourglass Wings -->
+    <path
+      d="M 242 82 A 168 168 0 0 0 120 162 L 196 238 L 196 258 L 120 334 A 168 168 0 0 0 228 412 L 228 382 A 138 138 0 0 1 154 326 L 218 262 L 218 234 L 154 170 A 138 138 0 0 1 242 112 Z"
+      fill="url(#wingFill)"
+      stroke="#e0f2fe"
+      stroke-width="2.5"
+    />
+    <path
+      d="M 258 82 A 168 168 0 0 1 380 162 L 304 238 L 304 258 L 380 334 A 168 168 0 0 1 272 412 L 272 382 A 138 138 0 0 0 346 326 L 282 262 L 282 234 L 346 170 A 138 138 0 0 0 258 112 Z"
+      fill="url(#wingFill)"
+      stroke="#e0f2fe"
+      stroke-width="2.5"
+    />
+    <!-- Pillar & Star -->
+    <path d="M 241 302 L 250 322 L 259 302 L 259 418 L 241 418 Z" fill="url(#wingFill)" stroke="#7dd3fc" stroke-width="2" />
+    <path d="M 250 196 L 262 236 L 286 248 L 262 260 L 250 300 L 238 260 L 214 248 L 238 236 Z" fill="#bae6fd" stroke="#ffffff" stroke-width="2" />
+  </g>
+
+  <!-- Bottom Caption -->
+  <text x="600" y="555" text-anchor="middle" fill="#ffffff" font-family="Inter, Roboto, sans-serif" font-size="27" font-weight="800" letter-spacing="2.5">
+    YENİDEM • EDEBİYAT, FELSEFE VE TEFEKKÜR MECMUASI
+  </text>
+  <text x="600" y="592" text-anchor="middle" fill="#7dd3fc" font-family="Inter, Roboto, sans-serif" font-size="17" font-weight="600" letter-spacing="1.5">
+    Orçun KUNDAKCI Akademik Külliyatı • Standart Blok Zinciri Görseli (SHA3-512 &amp; AI Onaylı)
+  </text>
+</svg>

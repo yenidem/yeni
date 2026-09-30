@@ -1,0 +1,54 @@
+# ============================================================================
+# YENİDEM — Cloudflare Workers / Pages + D1 SQL + R2 WORM + Zero-Trust Config
+# Kurucu Müellif: Orçun KUNDAKCI
+# Mimari: Kuantum-Dirençli (SHA3-512 + BLAKE2b-512 + SLH-DSA) & %96 Konsensüs
+# ============================================================================
+
+name = "yenidem-akademik-kulliyat"
+compatibility_date = "2026-09-01"
+compatibility_flags = ["nodejs_compat"]
+pages_build_output_dir = "dist/app/browser"
+
+[vars]
+APP_ENV = "production"
+CF_WAF_STRICT_MODE = "enabled"
+CF_TURNSTILE_ENFORCED = "true"
+GENESIS_CANON_LOCK = "IMMUTABLE_16_ARTICLES"
+DESIGN_CONSTITUTION_LOCK = "SHA3_512_ENFORCED"
+CONSENSUS_THRESHOLD_PERCENT = "96.0"
+PRE_APPROVAL_THRESHOLD_PERCENT = "85.0"
+MINIMUM_VERIFIED_MEMBERS = "1000000"
+
+# 1. CLOUDFLARE D1 (Serverless Edge SQLite Veritabanı)
+# Kurulum: npx wrangler d1 create yenidem-kulliyat-d1
+# Şema Yükleme: npx wrangler d1 execute yenidem-kulliyat-d1 --file=./cloudflare-d1-schema.sql
+[[d1_databases]]
+binding = "DB"
+database_name = "yenidem-kulliyat-d1"
+database_id = "00000000-0000-0000-0000-000000000000" # wrangler d1 create sonrası otomatik atanır
+migrations_dir = "migrations"
+
+# 2. CLOUDFLARE R2 (Katman-1 WORM Değiştirilemez Medya & Genesis Snapshot Kasası)
+# Object Lock (WORM) aktif edilerek yüklenen standart kapak görselleri (<250KB) ve
+# Genesis JSON mühürleri silinemez/değiştirilemez olarak saklanır.
+[[r2_buckets]]
+binding = "WORM_BUCKET"
+bucket_name = "yenidem-pqc-worm-media"
+
+# 3. CLOUDFLARE KV (Anti-Replay Nonce, Rate-Limit & 2FA Oturum Kalkanı)
+[[kv_namespaces]]
+binding = "SECURITY_KV"
+id = "yenidem_security_edge_kv"
+
+# ============================================================================
+# PAROLA VE GİZLİ ANAHTARLAR (ZERO-PLAINTEXT HSM SECRET VAULT)
+# Hiçbir şifre veya API anahtarı bu dosyaya veya GitHub'a YAZILMAZ!
+# Tüm sırlar Cloudflare Donanımsal Şifre Kasasına (Encrypted Secrets) şu
+# komutlarla tanımlanır:
+#   npx wrangler secret put CF_D1_API_TOKEN
+#   npx wrangler secret put AUTHOR_TOTP_SECRET
+#   npx wrangler secret put SECURITY_PEPPER_SECRET
+#   npx wrangler secret put CODE_INTEGRITY_SIGNING_KEY
+#   npx wrangler secret put CF_TURNSTILE_SECRET_KEY
+#   npx wrangler secret put GEMINI_API_KEY
+# ============================================================================
