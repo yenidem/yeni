@@ -11,11 +11,6 @@ on:
 
   workflow_dispatch:
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
 concurrency:
   group: github-pages
   cancel-in-progress: true
@@ -29,47 +24,56 @@ env:
 
 jobs:
   # ============================================================
-  # BUILD / VERIFY
+  # BUILD / VERIFY / PACKAGE
   # ============================================================
   verify-and-build:
     name: Build, Verify and Package
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+
+    permissions:
+      contents: read
 
     steps:
       # --------------------------------------------------------
-      # Source
+      # Source checkout
       # --------------------------------------------------------
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           fetch-depth: 1
+
+      # --------------------------------------------------------
+      # PNPM
+      # Must be installed before setup-node cache: pnpm.
+      # --------------------------------------------------------
+      - name: Setup PNPM
+        uses: pnpm/action-setup@v6
+        with:
+          version: ${{ env.PNPM_VERSION }}
+          run_install: false
 
       # --------------------------------------------------------
       # Node.js
       # --------------------------------------------------------
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7
         with:
           node-version: ${{ env.NODE_VERSION }}
           cache: pnpm
           cache-dependency-path: pnpm-lock.yaml
 
       # --------------------------------------------------------
-      # PNPM
-      # --------------------------------------------------------
-      - name: Setup PNPM
-        uses: pnpm/action-setup@v4
-        with:
-          version: ${{ env.PNPM_VERSION }}
-          run_install: false
-
-      # --------------------------------------------------------
-      # Environment verification
+      # Toolchain verification
       # --------------------------------------------------------
       - name: Verify toolchain
         shell: bash
         run: |
           set -euo pipefail
+
+          echo "=============================================="
+          echo "Toolchain"
+          echo "=============================================="
 
           echo "Node:"
           node --version
@@ -77,14 +81,46 @@ jobs:
           echo "PNPM:"
           pnpm --version
 
-          echo "Angular:"
-          pnpm exec ng version
+          echo "Corepack:"
+          corepack --version
+
+          echo "=============================================="
+
+          test "$(pnpm --version)" = "${PNPM_VERSION}" || {
+            echo "[CRITICAL] PNPM version mismatch."
+            echo "Expected: ${PNPM_VERSION}"
+            echo "Actual:   $(pnpm --version)"
+            exit 1
+          }
+
+          node --version | grep -Eq '^v22\.' || {
+            echo "[CRITICAL] Node.js 22 is required."
+            echo "Actual: $(node --version)"
+            exit 1
+          }
+
+          echo "[OK] Node.js and PNPM versions verified."
 
       # --------------------------------------------------------
-      # Dependencies
+      # Deterministic dependency installation
       # --------------------------------------------------------
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          pnpm install --frozen-lockfile
+
+      # --------------------------------------------------------
+      # Angular CLI verification
+      # Must run AFTER dependency installation.
+      # --------------------------------------------------------
+      - name: Verify Angular CLI
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          pnpm exec ng version
 
       # --------------------------------------------------------
       # GitHub Pages configuration
@@ -130,41 +166,47 @@ jobs:
               .update(content)
               .digest("hex");
 
-            console.log(
-              `[VERIFIED] ${file}`
-            );
-
-            console.log(
-              `SHA3-512: ${sha3}`
-            );
+            console.log(`[VERIFIED] ${file}`);
+            console.log(`SHA3-512: ${sha3}`);
           }
 
           if (failed) {
             process.exit(1);
           }
+
+          console.log("[OK] Protected source files verified.");
           NODE
 
       # --------------------------------------------------------
       # Lint
       # --------------------------------------------------------
       - name: Run lint
-        run: pnpm exec ng lint
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          pnpm exec ng lint
 
       # --------------------------------------------------------
       # Production build
       # --------------------------------------------------------
       - name: Build Angular application
-        run: pnpm run build -- --configuration=${{ env.BUILD_CONFIGURATION }}
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          pnpm run build -- \
+            --configuration="${BUILD_CONFIGURATION}"
 
       # --------------------------------------------------------
-      # Verify Angular output
+      # Verify Angular production output
       # --------------------------------------------------------
       - name: Verify production build
         shell: bash
         run: |
           set -euo pipefail
 
-          echo "Expected build directory:"
+          echo "Expected output directory:"
           echo "${DIST_DIR}"
           echo
 
@@ -182,7 +224,7 @@ jobs:
             echo "${DIST_DIR}/index.html"
             echo
             echo "Available files:"
-            find "${DIST_DIR}" -maxdepth 3 -type f -print | sort
+            find "${DIST_DIR}" -maxdepth 4 -type f -print | sort
             exit 1
           fi
 
@@ -192,7 +234,7 @@ jobs:
           find "${DIST_DIR}" -maxdepth 3 -type f -print | sort
 
       # --------------------------------------------------------
-      # Validate index.html
+      # Validate Angular bootstrap document
       # --------------------------------------------------------
       - name: Validate index.html
         shell: bash
@@ -201,13 +243,18 @@ jobs:
 
           INDEX="${DIST_DIR}/index.html"
 
-          grep -q "<app-root" "${INDEX}" || {
-            echo "[CRITICAL] Angular app-root element not found."
+          grep -q '<app-root' "${INDEX}" || {
+            echo "[CRITICAL] Angular <app-root> element not found."
             exit 1
           }
 
-          grep -q "<base href=\"/\"" "${INDEX}" || {
-            echo "[CRITICAL] Expected <base href=\"/\"> not found."
+          grep -q '<base href="/">' "${INDEX}" || {
+            echo '[CRITICAL] Expected <base href="/"> not found.'
+            exit 1
+          }
+
+          grep -q '<!doctype html>' "${INDEX}" || {
+            echo "[CRITICAL] HTML5 doctype not found."
             exit 1
           }
 
@@ -216,20 +263,30 @@ jobs:
       # --------------------------------------------------------
       # Custom domain
       # --------------------------------------------------------
-      - name: Create CNAME
+      - name: Create custom domain CNAME
         shell: bash
         run: |
           set -euo pipefail
 
           printf '%s\n' "${CUSTOM_DOMAIN}" > "${DIST_DIR}/CNAME"
 
-          echo "CNAME:"
+          test -f "${DIST_DIR}/CNAME"
+
+          EXPECTED_DOMAIN="${CUSTOM_DOMAIN}"
+          ACTUAL_DOMAIN="$(cat "${DIST_DIR}/CNAME")"
+
+          if [ "${ACTUAL_DOMAIN}" != "${EXPECTED_DOMAIN}" ]; then
+            echo "[CRITICAL] CNAME mismatch."
+            echo "Expected: ${EXPECTED_DOMAIN}"
+            echo "Actual:   ${ACTUAL_DOMAIN}"
+            exit 1
+          fi
+
+          echo "[OK] CNAME:"
           cat "${DIST_DIR}/CNAME"
 
-          test "$(cat "${DIST_DIR}/CNAME")" = "${CUSTOM_DOMAIN}"
-
       # --------------------------------------------------------
-      # SPA fallback
+      # GitHub Pages SPA fallback
       # --------------------------------------------------------
       - name: Create SPA fallback
         shell: bash
@@ -243,9 +300,9 @@ jobs:
           echo "[OK] 404.html created."
 
       # --------------------------------------------------------
-      # No Jekyll processing
+      # Disable Jekyll processing
       # --------------------------------------------------------
-      - name: Disable Jekyll processing
+      - name: Create .nojekyll
         shell: bash
         run: |
           set -euo pipefail
@@ -257,7 +314,7 @@ jobs:
           echo "[OK] .nojekyll created."
 
       # --------------------------------------------------------
-      # Integrity certificate
+      # Build integrity certificate
       # --------------------------------------------------------
       - name: Generate build integrity certificate
         shell: bash
@@ -279,7 +336,9 @@ jobs:
 
           for (const file of files) {
             if (!fs.existsSync(file)) {
-              throw new Error(`Protected file missing: ${file}`);
+              throw new Error(
+                `[CRITICAL] Protected file missing: ${file}`
+              );
             }
 
             const content = fs.readFileSync(file);
@@ -295,19 +354,24 @@ jobs:
             });
           }
 
-          const canonical = hashes
-            .map((entry) => `${entry.file}:${entry.sha3_512}`)
+          const canonicalData = hashes
+            .map(
+              (entry) =>
+                `${entry.file}:${entry.sha3_512}`
+            )
             .join("\n");
 
           const merkleRoot = crypto
             .createHash("sha3-512")
-            .update(canonical)
+            .update(canonicalData)
             .digest("hex");
+
+          const generatedAt = new Date().toISOString();
 
           const certificate = {
             schema: "YENİDEM-CODE-DESIGN-CERT-PQC-1",
             algorithm: "SHA3-512",
-            generatedAt: new Date().toISOString(),
+            generatedAt,
             files: hashes,
             merkleRootSha3_512: merkleRoot
           };
@@ -322,7 +386,7 @@ jobs:
             [
               "YENİDEM CODE-DESIGN-CERT-PQC",
               "",
-              `Generated: ${certificate.generatedAt}`,
+              `Generated: ${generatedAt}`,
               "",
               ...hashes.map(
                 (entry) =>
@@ -338,27 +402,27 @@ jobs:
           console.log("==================================================");
           console.log("CODE-DESIGN-CERT-PQC");
           console.log("==================================================");
-          console.log(`Algorithm: SHA3-512`);
+          console.log("Algorithm: SHA3-512");
           console.log(`Merkle Root: ${merkleRoot}`);
           console.log("==================================================");
           NODE
 
       # --------------------------------------------------------
-      # Verify final Pages artifact
+      # Final Pages artifact validation
       # --------------------------------------------------------
-      - name: Verify Pages artifact
+      - name: Verify final Pages artifact
         shell: bash
         run: |
           set -euo pipefail
 
-          REQUIRED_FILES=(
+          required_files=(
             "${DIST_DIR}/index.html"
             "${DIST_DIR}/404.html"
             "${DIST_DIR}/CNAME"
             "${DIST_DIR}/.nojekyll"
           )
 
-          for file in "${REQUIRED_FILES[@]}"; do
+          for file in "${required_files[@]}"; do
             if [ ! -f "${file}" ]; then
               echo "[CRITICAL] Required artifact file missing:"
               echo "${file}"
@@ -368,14 +432,18 @@ jobs:
             echo "[OK] ${file}"
           done
 
+          test "$(cat "${DIST_DIR}/CNAME")" = "${CUSTOM_DOMAIN}"
+
+          test -s "${DIST_DIR}/index.html"
+
           echo
-          echo "Final artifact:"
+          echo "Final Pages artifact:"
           du -sh "${DIST_DIR}"
           echo
           find "${DIST_DIR}" -maxdepth 2 -type f -print | sort
 
       # --------------------------------------------------------
-      # Upload Pages artifact
+      # Upload GitHub Pages artifact
       # --------------------------------------------------------
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v4
@@ -388,12 +456,17 @@ jobs:
   deploy:
     name: Deploy to GitHub Pages
     needs: verify-and-build
-
     if: >
       github.event_name == 'push' &&
       github.ref == 'refs/heads/main'
 
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
 
     environment:
       name: github-pages
