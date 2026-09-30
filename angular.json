@@ -41,11 +41,6 @@
             "styles": [
               "src/styles.css"
             ],
-            "server": "src/main.server.ts",
-            "outputMode": "server",
-            "ssr": {
-              "entry": "src/server.ts"
-            },
             "externalDependencies": ["@google/genai", "firebase-admin", "firebase-admin/app", "firebase-admin/auth", "firebase-admin/firestore", "xhr2"]
           },
           "configurations": {
@@ -62,7 +57,8 @@
                   "maximumError": "8kB"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "all",
+              "baseHref": "/"
             },
             "development": {
               "optimization": false,
