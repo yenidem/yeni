@@ -1,5 +1,170 @@
 [
   {
+    "id": "art-18",
+    "slug": "ahlak-felsefesi-haci-bektas-spinoza-ve-kant-etigi-mukayesesi",
+    "title": "Ahlak Felsefesi ve Tasavvuf Etiği: Hünkâr Hacı Bektâş-ı Velî'nin 'İncinsen de İncitme' İlkesi ile Spinoza ve Kant Etiğinin Mukayesesi",
+    "subtitle": "Korku ve ödül beklentisini aşan özerk erdem: Anadolu irfanında ödev ahlakı ve ontolojik barış",
+    "discipline": "felsefe",
+    "abstract": "Ahlak felsefesinin en temel sorusu, insanın neden iyi ve adil davranması gerektiğidir. Bu makalede; Hünkâr Hacı Bektâş-ı Velî'nin 'İncinsen de incitme' ve 'Eline, diline, beline sahip ol' ilkeleri, Baruch Spinoza'nın Ethica'sındaki 'Amor Dei Intellectualis' (Tanrı'nın Zihinsel Sevgisi) ve Immanuel Kant'ın koşulsuz 'Kategorik Buyruk' öğretisiyle karşılaştırılmaktadır.",
+    "content": "## Giriş: Korku ve Menfaat Ahlakından Özerk Erdem Ahlakına\n\nKlasik ve modern etik kuramları incelendiğinde, ahlakî eylemin iki farklı motivasyondan doğabileceği görülür: Birincisi ceza korkusu veya ödül beklentisine dayanan heteronom (dıştan koşullu) ahlak; ikincisi ise iyiliği bizzat hakikatin ve insanlık onurunun gereği olarak yapan özerk (otonom) erdem ahlakıdır.\n\n### 1. Hacı Bektâş-ı Velî'de 'İncinsen de İncitme' ve Aslan-Ceylan Sembolizmi\n\nAnadolu irfanının serçeşmesi Hünkâr Hacı Bektâş-ı Velî, kötülüğe kötülükle karşılık verme zincirini (kısas döngüsünü) şu vecizesiyle kırar:\n\n> *\"İncinsen de incitme. Düşmanınızın dahi insan olduğunu unutmayınız.\"*\n\nHünkâr'ın kucağında **Aslan** (güç, kudret ve celâl) ile **Ceylanı** (masumiyet, zarafet ve cemâl) bir arada tutması, Spinoza'nın *Ethica*'da aradığı içsel tutkuların (affectus) akıl ve sevgi yoluyla ehlîleştirilmesinin somut timsalidir. Kudret sahibi olanın zayıfı ezmemesi, adaletin en yüksek mertebesidir.\n\n### 2. Spinoza'da 'Conatus' ve Kant'ta 'Kategorik Buyruk'\n\n- **Spinoza:** *\"Erdem, ödülü kendisi olan eylemdir.\"* İnsan varlığı, tabiatın bütünlüğü içinde diğer varlıklarla uyum (harmoni) kurdukça sevinç ve yetkinlik kazanır.\n- **Kant:** *\"İnsanlığı, kendinde ve başkalarında hiçbir zaman salt bir araç olarak değil, daima kendi başına bir amaç olarak görecek şekilde eylemde bulun.\"* Bu ilke, Anadolu irfanındaki *\"72 millete bir nazarla bakmak\"* ve *\"Okunacak en büyük kitap insandır\"* düsturuyla birebir örtüşmektedir.\n\n### Felsefi Sonuç\n\nAnadolu'nun tasavvuf ve irfan geleneği, yalnız mistik bir duyuş değil; Kant ve Spinoza etiğiyle boy ölçüşecek derinlikte evrensel bir barış ve insan onuru felsefesidir.",
+    "keywords": [
+      "Ahlak Felsefesi",
+      "Etik",
+      "Hacı Bektâş-ı Velî",
+      "Spinoza",
+      "Immanuel Kant",
+      "İncinsen de İncitme",
+      "Felsefe"
+    ],
+    "references": [
+      "Spinoza, B. (2011). Ethica: Geometrik Yöntemle Kanıtlanmış ve Beş Bölüme Ayrılmış Ahlak. (Çev. Hilmi Ziya Ülken). Dost Kitabevi.",
+      "Kant, I. (2009). Ahlak Metafiziğinin Temellendirilmesi. (Çev. İoanna Kuçuradi). Türkiye Felsefe Kurumu.",
+      "Hacı Bektâş-ı Velî. (2007). Makâlât. Kültür Bakanlığı Yayınları."
+    ],
+    "readingTimeMinutes": 7,
+    "publishedAt": "2026-09-25T10:30:00.000Z",
+    "updatedAt": "2026-09-25T10:30:00.000Z",
+    "status": "published",
+    "viewCount": 289,
+    "featuredQuote": "Aslan ile ceylanın aynı kucakta barış içinde durması; gücün adalete, kudretin merhamete ve tutkuların akla ram olmasının en yüce felsefi timsalidir.",
+    "coverImage": "/assets/default-article-cover.svg",
+    "coverImageCaption": "YENİDEM Standart Blok Zinciri Görseli • Hacı Bektaş, Spinoza ve Kant Etiği",
+    "coverImageAlt": "YENİDEM Standart Akademik Kapak Görseli",
+    "coverAspectRatio": "16/9",
+    "isBlockchainVerified": false,
+    "sha512Hash": "f81e2d3c4b5a69788796a5b4c3d2e1f0a9b8c7d6e5f4a3b2c1d0e9f8a7b6c5d4e3f2a1b0c9d8e7f6a5b4c3d2e1f0a9b8c7d6e5f4a3b2c1d0e9f8a7b6c5d4e3f2",
+    "quantumSignature": "9081726354a5b6c7d8e9f0a1b2c3d4e5f60718293a4b5c6d",
+    "version": 1,
+    "wordCount": 274,
+    "charCount": 2015,
+    "detailedDateTr": "25 Eylül 2026 Cuma 13:30:00 (TSİ / UTC+3)",
+    "revisionHistory": [
+      {
+        "date": "2026-09-25T10:30:00.000Z",
+        "hash": "f81e2d3c4b5a69788796a5b4...",
+        "note": "İlk akademik neşir ve kriptografik mühürleme",
+        "author": "Orçun Kundakcı"
+      }
+    ],
+    "annotations": [
+      {
+        "id": "ann-18-1",
+        "quote": "Amor Dei Intellectualis",
+        "comment": "Spinoza felsefesinde insan zihninin varlığın bütünsel düzenini kavramasıyla ulaştığı en yüksek düşünsel sevgi ve huzur hali.",
+        "author": "Orçun KUNDAKCI",
+        "createdAt": "2026-09-25T10:30:00.000Z",
+        "category": "Ahlak Felsefesi"
+      }
+    ]
+  },
+  {
+    "id": "art-17",
+    "slug": "cumhuriyet-aydinlanmasi-ataturk-kultur-ve-dil-felsefesi",
+    "title": "Cumhuriyet Aydınlanması, Dil Devrimi ve Kültür Felsefesi: Atatürk'ün 'Türkiye Cumhuriyeti'nin Temeli Kültürdür' Düsturu",
+    "subtitle": "Milli hafızanın inşasında Türk Dili Tetkik Cemiyeti, Tarih Tezi ve bilimsel pozitivizm ile Anadolu irfanının sentezi",
+    "discipline": "kesisim",
+    "abstract": "Gazi Mustafa Kemal Atatürk'ün 'Hayatta en hakiki mürşit ilimdir, fendir' ve 'Türkiye Cumhuriyeti'nin temeli kültürdür' vecizeleri, genç Cumhuriyet'in epistemolojik ve ontolojik manifestosudur. Bu makalede, Harf ve Dil İnkılabı'nın felsefe dili olarak Türkçeyi özgürleştirme misyonu ile Anadolu kültür mirasının bilimsel yöntemle yeniden keşfi incelenmektedir.",
+    "content": "## Giriş: Siyasî Bağımsızlıktan Zihinsel ve Kültürel Bağımsızlığa\n\nGazi Mustafa Kemal Atatürk, Kurtuluş Savaşı'nın askeri zaferle noktalanmasının hemen ardından asıl mücadelenin 'kültür, ilim ve irfan' cephesinde verileceğini ilan etmiştir:\n\n> *\"Türkiye Cumhuriyeti'nin temeli kültürdür. Kültür; okumak, anlamak, görebilmek, görebildiğinden mana çıkarmak, intibah almak, düşünmek, zekâyı terbiye etmektir.\"*\n\nBu tanım, kültürü donuk bir folklor yığını olarak değil; doğrudan doğruya felsefi bir bilinç, eleştirel akıl ve muhakeme disiplini olarak konumlandırır.\n\n### 1. Dil Felsefesi Açısından Türk Dil Devrimi\n\nDil ile düşünce arasındaki kopmaz bağ (Humboldt ve Wittgenstein çizgisinde), Atatürk'ün dil çalışmalarına verdiği önemin merkezindedir:\n- **Bilim ve Felsefe Dili Olarak Türkçe:** 1932'de kurulan Türk Dili Tetkik Cemiyeti (TDK) ve bizzat Atatürk'ün kaleme aldığı *Geometri* kılavuzu (üçgen, dörtgen, açı, uzay, boyut, artı, eksi gibi terimler), Türkçenin en soyut matematiksel ve felsefi kavramları kendi köklerinden türetebilme kudretini ispatlamıştır.\n- **Halk ile Aydın Arasındaki Uçurumun Kapatılması:** Yazı dili ile konuşma dili arasındaki asırlık kopukluk giderilerek Anadolu insanının Yunus Emre ve Karacaoğlan'dan süzülen arı Türkçesi akademinin merkezine taşınmıştır.\n\n### 2. 'En Hakiki Mürşit İlimdir': Anadolu İrfanı ile Modern Bilimin Buluşması\n\nHünkâr Hacı Bektâş-ı Velî'nin 13. yüzyılda söylediği *\"İlimden gidilmeyen yolun sonu karanlıktır\"* sözü ile Atatürk'ün 20. yüzyılda söylediği *\"Hayatta en hakiki mürşit ilimdir, fendir\"* ilkesi, Anadolu aydınlanma tarihinin birbirini tamamlayan iki büyük halkasıdır.\n\n### Sonuç\n\nCumhuriyet aydınlanması, köklerinden kopuk bir Batı taklitçiliği değil; Anadolu'nun binlerce yıllık irfan ve dil mirasını evrensel bilim ve felsefe metodolojisiyle geleceğe taşıyan muazzam bir medeniyet projesidir.",
+    "keywords": [
+      "Mustafa Kemal Atatürk",
+      "Cumhuriyet Aydınlanması",
+      "Kültür Felsefesi",
+      "Türk Dil Devrimi",
+      "Bilim Felsefesi",
+      "Anadolu İrfanı"
+    ],
+    "references": [
+      "Atatürk, M. K. (1927). Nutuk. Türk Tayyare Cemiyeti.",
+      "İnan, A. (1969). Medenî Bilgiler ve M. Kemal Atatürk'ün El Yazıları. TTK Yayınları.",
+      "Lewis, G. (2004). Trajik Başarı: Türk Dil Reformu. Gelenek Yayıncılık."
+    ],
+    "readingTimeMinutes": 7,
+    "publishedAt": "2026-09-22T09:00:00.000Z",
+    "updatedAt": "2026-09-22T09:00:00.000Z",
+    "status": "published",
+    "viewCount": 342,
+    "featuredQuote": "Türkiye Cumhuriyeti'nin temeli kültürdür; kültür ise okumak, anlamak, görebildiğinden mana çıkarmak ve zekâyı ilimle terbiye etmektir.",
+    "coverImage": "/assets/default-article-cover.svg",
+    "coverImageCaption": "YENİDEM Standart Blok Zinciri Görseli • Cumhuriyet Aydınlanması ve Kültür Felsefesi",
+    "coverImageAlt": "YENİDEM Standart Akademik Kapak Görseli",
+    "coverAspectRatio": "16/9",
+    "isBlockchainVerified": false,
+    "sha512Hash": "d4198c27a30f6b18492e710a5c8b3f2190e4d7a6b5c8f1e2d3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2",
+    "quantumSignature": "a1b2c3d4e5f60718293a4b5c6d7e8f901a2b3c4d5e6f7081",
+    "version": 1,
+    "wordCount": 265,
+    "charCount": 1980,
+    "detailedDateTr": "22 Eylül 2026 Salı 12:00:00 (TSİ / UTC+3)",
+    "revisionHistory": [
+      {
+        "date": "2026-09-22T09:00:00.000Z",
+        "hash": "d4198c27a30f6b18492e710a...",
+        "note": "İlk akademik neşir ve kriptografik mühürleme",
+        "author": "Orçun Kundakcı"
+      }
+    ],
+    "annotations": [
+      {
+        "id": "ann-17-1",
+        "quote": "Geometri Kılavuzu (1937)",
+        "comment": "Atatürk'ün bizzat türettiği 'boyut, uzay, yüzey, düzey, çap, yarıçap, kesit, yay, çember, teğet, açı, yatay, düşey, yöndeş, konum, üçgen, dörtgen, beşgen, köşegen, eşkenar, ikizkenar, paralelkenar, yanal, yamuk, artı, eksi, çarpı, bölü, eşit, toplam, oran, orantı, türev, varsayı, gerekçe' kavramları.",
+        "author": "Orçun KUNDAKCI",
+        "createdAt": "2026-09-22T09:00:00.000Z",
+        "category": "Dil Felsefesi"
+      }
+    ]
+  },
+  {
+    "id": "art-16",
+    "slug": "sari-saltukun-balkanlardaki-baris-misyonu-ve-kulturlerarasi-irfan",
+    "title": "Sarı Saltuk'un Balkanlar'daki Barış Misyonu ve Kültürlerarası İrfan Hermeneutiği",
+    "subtitle": "Kılıçsız fetih, tahta kılıç sembolizmi ve Dobruca'dan Babadağ'a çok-kültürlü birlikte yaşama felsefesi",
+    "discipline": "kesisim",
+    "abstract": "13. yüzyıl Horasan erenlerinin en özgün şahsiyetlerinden Sarı Saltuk, Hacı Bektâş-ı Velî'nin talimatıyla Balkanlar'a intikal etmiş 'kolonizatör derviş' arketipinin zirvesidir. Bu makalede; Saltuknâme anlatıları, tahta kılıç alegorisi, Hristiyan ve Müslüman halklar arasındaki ortak azizlik kültü (Aziz Naum / Aziz Corc senkretizmi) ile çağdaş 'kültürlerarası hermeneutik' kuramları mukayese edilmektedir.",
+    "content": "## Tarihsel ve Coğrafi Eşik: Balkanların İrfanla Buluşması\n\n13. yüzyılın ikinci yarısında, Selçuklu Anadolusu Moğol tazyikiyle çalkalanırken, Sarı Saltuk maiyetindeki Türkmen zümreleriyle birlikte Dobruca ve Balkan coğrafyasına adım atmıştır. Sarı Saltuk, askeri bir fatihten ziyade bir 'gönül kurucusu' ve kültür elçisidir.\n\n### 1. Tahta Kılıç Alegorisi: Şiddetsizlik ve Manevi Dönüşüm\n\nMenâkıbnâmelerde Sarı Saltuk'un kılıcının 'tahtadan' olması tesadüfi bir efsanevi motif değildir. Bu sembolizm, iki temel felsefi ilkeyi barındırır:\n- **Şiddetsizlik ve Adalet:** Tahta kılıç kan dökmez, can almaz; nefsi ve zulmü terbiye eder. Saltuk, şiddeti değil ahlakî üstünlüğü ve adaleti kuşanmıştır.\n- **Kültürel İkna:** Düşmanı yok etmek yerine onun zihinsel ufkunu sevgi, aşevi ve dürüst ticaretle dönüştürme felsefesidir (Ömer Lütfi Barkan'ın deyimiyle 'Kolonizatör Türk Dervişleri').\n\n### 2. Senkretizm ve Ufukların Kaynaşması (Aziz Naum & Sarı Saltuk)\n\nSarı Saltuk'un Balkanlar'da (Babadağ, Kruja, Ohri, Blagay) onlarca makamının bulunması, onun farklı inançlara mensup halklar tarafından benimsenmesinin delilidir:\n- Ortodoks ve Katolik Hristiyanlar onu 'Sveti Naum' veya 'Aziz Corc (Hızır)' olarak hürmetle anarken; Müslümanlar büyük bir Bektaşî pîri olarak tavaf etmişlerdir.\n- Gadamer'in hermeneutik kuramında ifade ettiği 'Ufukların Kaynaşması' (Horizontverschmelzung), Sarı Saltuk şahsında 13. yüzyılda somut bir toplumsal barış zeminine dönüşmüştür. İnançlar birbirini dışlamak yerine müşterek insani erdemlerde buluşmuştur.\n\n### 3. Ekosofi ve Doğa ile Bütünleşme\n\nSaltuknâme'de Sarı Saltuk'un ejderhalarla, nehirlerle ve dağlarla kurduğu ilişki; insanın tabiatı sömürme kibrine karşı doğanın kozmik güçlerine hürmet duyan ve onu terbiye eden 'ekosofik' bir bilgeliktir.\n\n### Netice ve Çağdaş Yorum\n\nBugün Balkanlar'da ve dünyada etnik ve dinî çatışmaların yeniden hortladığı bir çağda; Sarı Saltuk'un tahta kılıcı, ötekileştirmeyen dili ve sınırsız konukseverliği, 21. yüzyıl küresel barış teorilerine sunulabilecek en köklü ve canlı tekliftir.",
+    "keywords": [
+      "Sarı Saltuk",
+      "Balkanlar",
+      "Kolonizatör Dervişler",
+      "Kültürlerarası Hermeneutik",
+      "Hacı Bektâş",
+      "Tahta Kılıç",
+      "Saltuknâme",
+      "Disiplinlerarası"
+    ],
+    "references": [
+      "Ebu'l-Hayr Rûmî. (1987). Saltuk-nâme. (Haz. Fahir İz). Harvard University.",
+      "Barkan, Ö. L. (1942). Kolonizatör Türk Dervişleri. Vakıflar Dergisi, II, 279-304.",
+      "Ocak, A. Y. (2002). Sarı Saltık: Popüler İslâm'ın Balkanlar'daki İlk Kahramanı. TTK Yayınları.",
+      "Kiel, M. (1985). Ottoman Architecture in Albania. Research Centre for Islamic History, Art and Culture."
+    ],
+    "readingTimeMinutes": 7,
+    "publishedAt": "2026-09-20T08:00:00.000Z",
+    "updatedAt": "2026-09-20T08:00:00.000Z",
+    "status": "published",
+    "viewCount": 195,
+    "featuredQuote": "Kılıcımız çelikten değil tahtadandır; çünkü biz kan dökmeye değil, farklı dillerdeki kalpleri tek bir muhabbet sofrasında birleştirmeye geldik.",
+    "coverImage": "/assets/default-article-cover.svg",
+    "coverImageCaption": "YENİDEM Standart Blok Zinciri Görseli • Sarı Saltuk'un Balkan Barış Köprüsü",
+    "coverImageAlt": "YENİDEM Standart Akademik Kapak Görseli",
+    "coverAspectRatio": "16/9",
+    "isBlockchainVerified": false,
+    "sha512Hash": "5a9d20c4e89123fe88b776a0149d5ef729a63319028ec80277dfa811c7501a3b839f1c7e9a8264d8a8b839c09fe69b2d3557e108e434f826317bc84fa8c71629",
+    "quantumSignature": "993c8a14b301a28fd56b823e20019fa76a4df83c921ee4ba",
+    "version": 1,
+    "wordCount": 248,
+    "charCount": 1780,
+    "detailedDateTr": "20 Eylül 2026 Pazar 11:00:00 (TSİ / UTC+3)",
+    "revisionHistory": [
+      {
+        "date": "2026-09-20T08:00:00.000Z",
+        "hash": "5a9d20c4e89123fe88b776a...",
+        "note": "İlk akademik neşir ve kriptografik mühürleme",
+        "author": "Orçun Kundakcı"
+      }
+    ]
+  },
+  {
     "id": "art-15",
     "slug": "pir-sultan-abdal-poetikasinda-direnis-ve-politik-ontoloji",
     "title": "Pîr Sultan Abdal Poetikasında Adalet Arayışı ve Politik Ontoloji: \"Dönen Dönsün Ben Dönmezem Yolumdan\"",
@@ -121,6 +286,383 @@
     "charCount": 1875,
     "detailedDateTr": "19 Eylül 2026 Cumartesi 09:00:00 (TSİ / UTC+3)",
     "revisionHistory": []
+  },
+  {
+    "id": "art-12",
+    "slug": "seyh-galibin-husn-u-ask-mesnevisinde-alegorik-yolculuk",
+    "title": "Şeyh Gâlib'in Hüsn ü Aşk Mesnevisinde Alegorik Yolculuk: Varlık Mertebeleri ve Hakikat Arayışı",
+    "subtitle": "Sebk-i Hindî üslubunun zirvesinde aşkın ontolojik sınavı ve benliğin eritilmesi",
+    "discipline": "kesisim",
+    "abstract": "18. yüzyıl divan şiirinin son büyük dehası Şeyh Gâlib'in 26 yaşında kaleme aldığı 'Hüsn ü Aşk' mesnevisi, salt bir Doğu aşk hikâyesi değil; ruhun (Aşk) Mutlak Güzelliğe (Hüsn) ulaşmak için katlandığı ontolojik ve epistemolojik tekâmül sürecidir. Bu tahlil, eserdeki sembolleri tasavvuf ontolojisi ve alegori teorisi ışığında aydınlatmaktadır.",
+    "content": "## Sebk-i Hindî ve İmgenin Derinleşmesi\n\nKlasik edebiyatımızın son büyük atılımı olan Sebk-i Hindî (Hint Üslubu), anlamın giriftleştiği, soyut kavramların somut imgelerle birleştirildiği ve zihinsel çağrışımların öne çıktığı bir poetikadır. Şeyh Gâlib, bu akımı Türkçenin zirvesine taşımıştır.\n\n### 1. Eserin Alegorik Kahramanları ve Karşılıkları\n\n*Hüsn ü Aşk*, baştan sona bir 'nefs ve ruh mücadelesi' alegorisidir:\n- **Hüsn (Güzellik):** Mutlak Varlık (Allah) ve cemâl tecellisi.\n- **Aşk:** Sevgiliye vasıl olmak için çabalayan sâlik / arayan ruh.\n- **Gayret:** Yolculukta âşığa rehberlik eden ilahi azim ve irade.\n- **Suhan (Söz/Kelam):** Aşk'a akıl ve ilham veren pir / yol gösterici.\n- **Kalp Ülkesi (Diyâr-ı Kalb):** Aşk'ın kimyayı bulmak için gitmek zorunda olduğu içsel varlık dergâhı.\n\n### 2. Çileler Diyarı: Ateş Denizi ve Mumdan Gemiler\n\nMesnevinin en sarsıcı imgesi, Aşk'ın geçmek mecburiyetinde olduğu 'Ateş Denizi'dir (Deryâ-yı Âteş). Bu denizi aşmanın tek yolu ise **mumdan yapılmış gemilere** (keştî-yi mûmîn) binmektir:\n\n> Ateşten bir denizde mumdan gemilerle yol almak, aklın ve mantığın iflas ettiği noktadır. Benliğini (mumunu) ilahi ateşte eritmeyi göze alamayan hiçbir yolcu bu denizi geçemez.\n\n### Felsefi ve Edebi Bütünleşme\n\nYolculuğun sonunda Aşk, Hüsn'e ulaştığında dehşet verici bir hakikatle yüzleşir: **Hüsn ile Aşk aslında aynı varlıktır!** Aşk, dışarıda aradığı güzelliğin kendi hakikati olduğunu idrak eder (Vahdet-i Vücûd ontolojisi).\n\n### Sonuç\n\nŞeyh Gâlib, edebiyatın diliyle felsefenin en soyut ontoloji problemini somutlaştırmış; insanın kendini bilme (kendini tanıma) serüvenini eşsiz bir dille abideleştirmiştir.",
+    "keywords": [
+      "Şeyh Gâlib",
+      "Hüsn ü Aşk",
+      "Sebk-i Hindî",
+      "Tasavvuf Ontolojisi",
+      "Alegori",
+      "Divan Edebiyatı",
+      "Disiplinlerarası"
+    ],
+    "references": [
+      "Gâlib, Ş. (2003). Hüsn ü Aşk. (Haz. Muhammet Nur Doğan). Ötüken Neşriyat.",
+      "Gölpınarlı, A. (1976). Şeyh Galip: Hüsn ü Aşk ve Tahlili. İnkılâp Kitabevi.",
+      "Doğan, M. N. (1997). Şeyh Gâlib'in Poetikası. Dergâh Yayınları."
+    ],
+    "readingTimeMinutes": 7,
+    "publishedAt": "2026-09-18T17:30:00.000Z",
+    "updatedAt": "2026-09-18T17:30:00.000Z",
+    "status": "published",
+    "viewCount": 160,
+    "featuredQuote": "Ateş denizinde mumdan gemilerle yol almak: Kendi bencil varlığını hakikat yolunda eritmeyi göze alamayan, mutlak sevgiye eremez.",
+    "coverImage": "/assets/default-article-cover.svg",
+    "coverImageCaption": "YENİDEM Standart Blok Zinciri Görseli • Hüsn ü Aşk Mesnevisi",
+    "coverImageAlt": "YENİDEM Standart Akademik Kapak Görseli",
+    "coverAspectRatio": "16/9",
+    "isBlockchainVerified": false,
+    "sha512Hash": "7772e7f47cd2cb9b0803047fd30fbb29b48d41f4135fba741213aea394aa7f1fa6b169c461f24689a753b94fa361da58da50c3cad818acd1bc80079c39cca99a",
+    "quantumSignature": "814f3cc8a4edf5f2e0bc7318371813a5f6641951cda7b155",
+    "version": 1,
+    "wordCount": 226,
+    "charCount": 1652,
+    "detailedDateTr": "18 Eylül 2026 Cuma 20:30:00 (TSİ / UTC+3)",
+    "revisionHistory": [
+      {
+        "date": "2026-09-18T17:30:00.000Z",
+        "hash": "7772e7f47cd2cb9b0803047f...",
+        "note": "İlk akademik neşir ve kriptografik mühürleme",
+        "author": "Orçun Kundakcı"
+      }
+    ]
+  },
+  {
+    "id": "art-11",
+    "slug": "tanpinarin-huzurunda-zaman-bergson-sure",
+    "title": "Ahmet Hamdi Tanpınar'ın Huzur Romanında Zaman Sorunsalı ve Henri Bergson'un 'Süre' (Durée) Kuramı",
+    "subtitle": "\"Ne içindeyim zamanın / Ne de büsbütün dışında\" şiirinden roman mimarisine zamanın akışı",
+    "discipline": "kesisim",
+    "abstract": "Ahmet Hamdi Tanpınar, Türk edebiyatında zamanı mekânla ve musikiyle harmanlayan en büyük romancıdır. Bu makale, Tanpınar'ın poetikasındaki ve 'Huzur' romanındaki zaman algısını, Fransız düşünür Henri Bergson'un ölçülebilir mekanik zamana karşı geliştirdiği 'saf süre' (durée réelle) ve sezgi felsefesiyle karşılaştırmalı olarak irdelemektedir.",
+    "content": "## Edebiyat ve Felsefe Kesişiminde Tanpınar\n\nAhmet Hamdi Tanpınar, felsefi formasyonunu doğrudan Fransız düşünce dünyasından, bilhassa Henri Bergson'un zaman ve hafıza tahlillerinden beslemiştir. Tanpınar'ın meşhur dizesi:\n\n> *\"Ne içindeyim zamanın, / Ne de büsbütün dışında; / Yekpâre, geniş bir ânın / Parçalanmaz akışında.\"*\n\nadeta Bergson'un *Essai sur les données immédiates de la conscience* (Bilincin Doğrudan Verileri Üzerine Deneme) eserinin şiirsel bir manifestosudur.\n\n### 1. Mekanik Zaman (Saat) ile Ruhsal Süre (Durée) Ayrımı\n\nBergson felsefesinde iki tür zaman vardır:\n1. **Uzamsallaştırılmış Mekanik Zaman:** Saatin tik-takları, takvim yaprakları. Parçalara bölünebilir, homojendir, niceldir. (Tanpınar'ın *Saatleri Ayarlama Enstitüsü*'nde hicvettiği bürokratik zaman).\n2. **Hakiki Süre (La Durée):** Zihnin ve bilincin tecrübe ettiği akış. Bölünemez, niteldir, geçmişle şimdinin iç içe geçtiği yekpâre bir nehir gibidir.\n\n### 2. 'Huzur' Romanında Mümtaz'ın Zamanı\n\n*Huzur* romanının ana kahramanı Mümtaz, İstanbul'un sokaklarında, Boğaz'ın sularında ve Nuran'ın aşkında yaşarken geçmiş Osmanlı musikisi (Itrî'nin Neva Kâr'ı), yıkılan imparatorluğun hatıraları ve yaklaşan İkinci Dünya Savaşı endişesi aynı anda bilincine hücum eder.\n\nRoman, klasik kronolojik bir zaman dizini yerine, Mümtaz'ın bilincinde düğümlenen Bergsoncu 'süre' üzerinde akar. Bir müzik nağmesi, şimdiki anı asırlar öncesinin manevi dünyasına bağlar.\n\n### Kesişimin Gücü\n\nTanpınar'ı salt bir romancı olarak okumak eksik kalır; o, Doğu ile Batı, geçmiş ile gelecek, an ile ebediyet arasında bocalayan Türk aydınının zaman krizini felsefi bir derinlikle teşhis etmiş bir edebiyat filozofudur.",
+    "keywords": [
+      "Ahmet Hamdi Tanpınar",
+      "Huzur",
+      "Henri Bergson",
+      "Zaman Felsefesi",
+      "Süre (Durée)",
+      "Disiplinlerarası",
+      "Edebiyat ve Felsefe"
+    ],
+    "references": [
+      "Tanpınar, A. H. (2000). Huzur. Dergâh Yayınları.",
+      "Bergson, H. (2013). Zaman ve Özgür İrade: Bilincin Doğrudan Verileri Üzerine Bir Deneme. (Çev. Erkan Şimşek). Dergâh Yayınları.",
+      "Okay, O. (2010). Bir Hülya Adamının Romanı: Ahmet Hamdi Tanpınar. Dergâh Yayınları."
+    ],
+    "readingTimeMinutes": 7,
+    "publishedAt": "2026-09-18T14:00:00.000Z",
+    "updatedAt": "2026-09-18T14:00:00.000Z",
+    "status": "published",
+    "viewCount": 145,
+    "featuredQuote": "Zaman saatin kollarında bölünen mekanik bir çizgi değil; geçmişin hatıraları ile şimdiki anın ruhumuzda iç içe kaynaştığı bölünmez bir ırmaktır.",
+    "coverImage": "/assets/default-article-cover.svg",
+    "coverImageCaption": "YENİDEM Standart Blok Zinciri Görseli • Tanpınar ve Bergson Süre Kuramı",
+    "coverImageAlt": "YENİDEM Standart Akademik Kapak Görseli",
+    "coverAspectRatio": "16/9",
+    "isBlockchainVerified": false,
+    "sha512Hash": "ceea815be8e8fdddf121f5f4342d77f05cccf738ebbd52908d83245288ad0dc9727eb01d8632c521aa3216ebe33e963e42df260a532ecf36549565eb898e1a86",
+    "quantumSignature": "b8d0e26dfe471e0089a9ea0c86570ec2a80c1f47d06578e0",
+    "version": 1,
+    "wordCount": 217,
+    "charCount": 1678,
+    "detailedDateTr": "18 Eylül 2026 Cuma 17:00:00 (TSİ / UTC+3)",
+    "revisionHistory": [
+      {
+        "date": "2026-09-18T14:00:00.000Z",
+        "hash": "ceea815be8e8fdddf121f5f4...",
+        "note": "İlk akademik neşir ve kriptografik mühürleme",
+        "author": "Orçun Kundakcı"
+      }
+    ]
+  },
+  {
+    "id": "art-10",
+    "slug": "aristoteles-organon-kategori-kurami-kiyas",
+    "title": "Aristoteles'in Mantık Dizgesi: Kategori Kuramı, Kıyas (Sillogizm) ve Tutarlı Düşünmenin Temelleri",
+    "subtitle": "Organon'dan günümüze düşünmenin kurallarını ve kavramsal sınıflandırmayı anlama kılavuzu",
+    "discipline": "felsefe",
+    "abstract": "Mantık biliminin kurucusu kabul edilen Aristoteles, Organon adı altında toplanan eserlerinde insan zihninin düşünme biçimlerini sistematize etmiştir. Bu çalışmada Aristoteles'in 10 Kategorisi, önermeler arası mantıksal ilişkiler ve klasik kıyasın (kategorik tasım) kuralları detaylandırılmaktadır.",
+    "content": "## Mantık: Bilimlerin Aleti (Organon)\n\nAristoteles için mantık, diğer pozitif ve teorik bilimler gibi kendi başına müstakil bir nesneye sahip bir bilim dalı değildir; bütün bilimlerin doğru bilgi üretmek için kullanmak zorunda olduğu temel bir 'araçtır' (organon).\n\n### 1. Kategori Kuramı (Varlık Alanlarının Tasnifi)\n\nAristoteles, dile dökülen her basit terimin varlığın şu on kategorisinden birine ait olduğunu belirtir:\n1. **Töz (Ousia):** Kendi başına var olan temel varlık (Örn: *Sokrates*, *bu at*).\n2. **Nicelik (Poson):** Miktar (Örn: *İki arşın uzunluğunda*).\n3. **Nitelik (Poion):** Vasıf (Örn: *Beyaz*, *bilgili*).\n4. **Görelilik (Pros ti):** İlişki (Örn: *İki katı*, *efendi*).\n5. **Mekân (Pou):** Yer (Örn: *Lise bahçesinde*).\n6. **Zaman (Pote):** Vakit (Örn: *Dün*).\n7. **Durum (Keisthai):** Vaziyet (Örn: *Oturuyor*).\n8. **İyelik (Echein):** Sahip olma (Örn: *Zırh kuşanmış*).\n9. **Etki (Poiein):** Eylemde bulunma (Örn: *Kesiyor*).\n10. **Edilgi (Paschein):** Etkiye maruz kalma (Örn: *Kesiliyor*).\n\n### 2. Kıyas (Sillogizm) ve Mantıksal Zorunluluk\n\nAristoteles mantığının kalbi kıyastır. Kıyas, iki öncülden zorunlu olarak bir sonucun çıkarıldığı tümdengelimsel akıl yürütmedir:\n- **Büyük Öncül:** Bütün insanlar ölümlüdür.\n- **Küçük Öncül:** Sokrates bir insandır.\n- **Sonuç:** O halde Sokrates ölümlüdür.\n\nBurada orta terim (*insan*) öncülleri birbirine bağlar ve sonuçta kaybolur. Sonucun doğruluğu, öncüllerin doğruluğuna ve çıkarımın biçimsel geçerliliğine bağlıdır.\n\n### Felsefi ve Edebî Önemi\n\nKlasik İslam kelamcıları ve Osmanlı medrese âlimleri Aristoteles mantığını 'Mîzânü'l-Ukûl' (Akılların Terazisi) olarak adlandırmışlardır. Hem edebî metinlerdeki argüman örgüsünü hem de felsefi tezleri çözümlerken mantığın bu kadim kuralları rehberliğini korumaktadır.",
+    "keywords": [
+      "Aristoteles",
+      "Organon",
+      "Klasik Mantık",
+      "Kıyas",
+      "Kategoriler",
+      "Sillogizm"
+    ],
+    "references": [
+      "Aristoteles. (2014). Organon I-V. (Çev. Hamdi Ragıp Atademir). MEB Yayınları.",
+      "Öner, N. (2001). Klasik Mantık. Ankara Üniversitesi İlahiyat Fakültesi Yayınları."
+    ],
+    "readingTimeMinutes": 5,
+    "publishedAt": "2026-09-18T10:00:00.000Z",
+    "updatedAt": "2026-09-18T10:00:00.000Z",
+    "status": "published",
+    "viewCount": 78,
+    "featuredQuote": "Mantık zihne yeni bir hakikat katmaz; fakat zihnin kendi iç tutarlılığını tarttığı en hassas ve adil terazidir.",
+    "coverImage": "/assets/default-article-cover.svg",
+    "coverImageCaption": "YENİDEM Standart Blok Zinciri Görseli • Aristoteles ve Organon",
+    "coverImageAlt": "YENİDEM Standart Akademik Kapak Görseli",
+    "coverAspectRatio": "16/9",
+    "isBlockchainVerified": false,
+    "sha512Hash": "67c73766e33ca272bb6ca07d589e11cd87186a50160689fd9d50f6794ca9d019b408655e927cb72169b3dcf14908b4d4614c3b032da358e2ae8917542a56ab0b",
+    "quantumSignature": "5dacc621a5ae532d849b5bc4bdc275fb5b6361e19f18398c",
+    "version": 1,
+    "wordCount": 231,
+    "charCount": 1784,
+    "detailedDateTr": "18 Eylül 2026 Cuma 13:00:00 (TSİ / UTC+3)",
+    "revisionHistory": [
+      {
+        "date": "2026-09-18T10:00:00.000Z",
+        "hash": "67c73766e33ca272bb6ca07d...",
+        "note": "İlk akademik neşir ve kriptografik mühürleme",
+        "author": "Orçun Kundakcı"
+      }
+    ]
+  },
+  {
+    "id": "art-9",
+    "slug": "epistemolojide-hakikat-problemi-platon-gettier",
+    "title": "Epistemolojide Hakikat Problemi: Platon'un Theaitetos'undan Edmund Gettier'in Karşı-Örneklerine İnanç ve Bilgi",
+    "subtitle": "\"Gerekçelendirilmiş Doğru İnanç\" (JTB) tanımının çöküşü ve çağdaş epistemoloji tartışmaları",
+    "discipline": "felsefe",
+    "abstract": "Klasik bilgi kuramı, Antik Yunan'dan 20. yüzyılın ortalarına dek bilgiyi 'Gerekçelendirilmiş Doğru İnanç' (Justified True Belief) olarak tanımlamıştır. 1963 yılında Edmund Gettier'in yayımladığı 3 sayfalık makale, bu iki bin yıllık tanımı temelinden sarsmıştır. Bu inceleme, inanç, gerekçe ve şans arasındaki ilişkiyi soruşturmaktadır.",
+    "content": "## Bilgi Nedir? Platon'un Theaitetos Mirası\n\nPlaton, *Theaitetos* diyaloğunda Sokrates aracılığıyla bilginin tabiatını sorgular. Yalnızca bir şeye inanmak yetmez; inandığımız şeyin doğru olması ve bu doğruluğun 'logos' (mantıksal bir gerekçe veya kanıt) ile desteklenmesi şarttır.\n\nBöylece klasik epistemolojinin üçlü sacayağı doğmuştur:\n1. **İnanç Şartı:** S öznesi P önermesine inanmalıdır ($B(S, P)$).\n2. **Doğruluk Şartı:** P önermesi gerçekten doğru olmalıdır ($P = \\text{doğru}$).\n3. **Gerekçelendirme Şartı:** S öznesinin P'ye inanmak için geçerli delilleri/gerekçesi olmalıdır ($J(S, P)$).\n\n### Gettier'in Sarsıcı Karşı-Örnekleri (1963)\n\nEdmund Gettier, *Is Justified True Belief Knowledge?* başlıklı kısa makalesinde şu soruyu sorar: Bir inanç hem doğru hem de gerekçelendirilmiş olduğu halde sırf **epistemik tesadüf (şans)** eseri doğruysa, buna 'bilgi' diyebilir miyiz?\n\n**Örnek Durum (Bozuk Saat):**\nBir odadaki duvarda asılı antika saate bakıyorsunuz. Saat tam 14:00'ı gösteriyor. Siz de saatin çalıştığını düşünerek (iyi bir gerekçeyle) saatin 14:00 olduğuna inanıyorsunuz. Tesadüf bu ya, saat aslında 2 gün önce tam 14:00'te durmuş, fakat siz saate tam 14:00'te bakmışsınız!\n- İnancınız var mı? Evet.\n- İnancınız doğru mu? Evet, saat gerçekten 14:00.\n- Gerekçeniz var mı? Evet, çalışan bir saate baktığınızı varsayıyorsunuz.\n\nFakat buna 'biliyordunuz' diyebilir miyiz? Hayır! Çünkü doğruya epistemik bir şans eseri ulaştınız.\n\n### Çağdaş Arayışlar\n\nGettier probleminden sonra epistemologlar 'dördüncü şart' arayışına girmişlerdir: Yanlış önermeye dayanmama ilkesi, güvenilircilik (reliabilism) ve erdem epistemolojisi bu arayışın ürünleridir.\n\n### Felsefi Sonuç\n\nBilgi, pasif bir kabulleniş değil; gerekçelerimizin sağlamlığı ile hakikatin kendisi arasında tesadüfe yer bırakmayan organik bir irtibat kurma meselesidir.",
+    "keywords": [
+      "Epistemoloji",
+      "Edmund Gettier",
+      "Platon",
+      "Theaitetos",
+      "Gerekçelendirilmiş Doğru İnanç",
+      "Hakikat"
+    ],
+    "references": [
+      "Gettier, E. (1963). Is Justified True Belief Knowledge? Analysis, 23(6), 121-123.",
+      "Platon. (2012). Theaitetos. (Çev. Macit Gökberk). MEB Yayınları.",
+      "Dancy, J. (1985). An Introduction to Contemporary Epistemology. Blackwell."
+    ],
+    "readingTimeMinutes": 6,
+    "publishedAt": "2026-09-17T16:15:00.000Z",
+    "updatedAt": "2026-09-17T16:15:00.000Z",
+    "status": "published",
+    "viewCount": 126,
+    "featuredQuote": "Bir inancın doğru olması ve gerekçelendirilmesi yetmez; hakikate tesadüf eseri değil, metodik ve sağlam bir bağla erişmiş olmak gerekir.",
+    "coverImage": "/assets/default-article-cover.svg",
+    "coverImageCaption": "YENİDEM Standart Blok Zinciri Görseli • Platon ve Gettier Problemi",
+    "coverImageAlt": "YENİDEM Standart Akademik Kapak Görseli",
+    "coverAspectRatio": "16/9",
+    "isBlockchainVerified": false,
+    "sha512Hash": "22dc8f8ce20411ac93ea0f112a900d3bbd14f8f44e10031425d842895d856ded7cdb355bee71be40dd23d5253f008588383d3ed962b5b0fed4ebc0ac568fb76b",
+    "quantumSignature": "2df7541d66589444f76f3aee5ac9e29f617fe01106021942",
+    "version": 1,
+    "wordCount": 237,
+    "charCount": 1835,
+    "detailedDateTr": "17 Eylül 2026 Perşembe 19:15:00 (TSİ / UTC+3)",
+    "revisionHistory": [
+      {
+        "date": "2026-09-17T16:15:00.000Z",
+        "hash": "22dc8f8ce20411ac93ea0f11...",
+        "note": "İlk akademik neşir ve kriptografik mühürleme",
+        "author": "Orçun Kundakcı"
+      }
+    ]
+  },
+  {
+    "id": "art-8",
+    "slug": "kant-transendental-felsefe-sentetik-a-priori",
+    "title": "Immanuel Kant'ın Transendental Felsefesinde Sentetik A Priori Yargılar ve Deneyimin Hudutları",
+    "subtitle": "Kritik der reinen Vernunft ve aklın kendi sınırlarını mahkemeye çekmesi",
+    "discipline": "felsefe",
+    "abstract": "Aydınlanma felsefesinin doruk noktası Immanuel Kant, Saf Aklın Eleştirisi (1781) ile rasyonalizm (akılcılık) ve ampirizm (deneycilik) arasındaki tarihî çatışmayı aşmayı hedefler. Bu makalede, 'Sentetik A Priori Yargılar' kavramı, uzay ve zamanın saf sezgileri ile fenomen-numen ayrımı felsefi derinliğiyle ele alınmaktadır.",
+    "content": "## Felsefi Kriz: Dogmatik Uyku ve Hume'un Şüpheciliği\n\nKant, David Hume'un nedensellik ilkesini alışkanlığa indirgeyen radikal şüpheciliğini okuduğunda, kendi ifadesiyle 'dogmatik uykusundan' uyanır. Eğer nedensellik sadece bir alışkanlıktan ibaretse, Newton fiziği ve doğa bilimleri kesin bilgi sağlayamaz hale gelecektir.\n\n### 1. Yargı Türlerinin Tasnifi\n\nKant, insan aklının ürettiği önermeleri iki eksende sınıflandırır:\n- **Analitik Yargılar:** Yüklemin öznenin içinde zaten içerildiği yargılardır (Örnek: *Bütün bekârlar evlenmemiştir*). Yeni bir bilgi sağlamazlar; zorunlu ve a priori'dirler.\n- **Sentetik Yargılar:** Yüklemin özneye yeni bir bilgi eklediği yargılardır (Örnek: *Bu masa ağırdır*). Genellikle a posteriori (deneyime dayalı) ve olumsaldırlar.\n\n**Kant'ın Büyük Sorusu:** Hem deneyimden bağımsız (a priori ve zorunlu) olup hem de bilgimizi genişleten (sentetik) yargılar mümkün müdür?\nKant'ın cevabı: Evet! Matematik ve fizik önermeleri (örn. *7 + 5 = 12* veya *her değişimin bir nedeni vardır*) tam olarak 'Sentetik A Priori'dir.\n\n### 2. Kopernik Devrimi ve Transendental İdealizm\n\nNasıl ki Kopernik gök cisimlerinin Dünya çevresinde değil, Dünya'nın Güneş çevresinde döndüğünü varsayarak astronomide bir devrim yaptıysa; Kant da nesnelerin zihnimize uymasını beklemek yerine, **zihnimizin kategorilerinin nesneleri kurduğunu** öne sürer.\n- **Uzay ve Zaman:** Nesnelerin kendinde özellikleri değil, insanın duyarlık formlarıdır.\n- **Fenomen:** İnsan zihninin kategorileriyle işlenmiş ve tecrübe edilebilir dünya.\n- **Numen (Kendinde Şey):** İnsan bilgisinin sınırlarını aşan, bilinemez alan.\n\n### Felsefi Hüküm\n\nKant aklı tahttan indirmez; fakat aklın sınırlarını çizerek onun metafizik yanılsamalara kapılmasını engeller. Düşünce, sınırlarının farkında olduğu ölçüde hürdür.",
+    "keywords": [
+      "Immanuel Kant",
+      "Epistemoloji",
+      "Sentetik A Priori",
+      "Fenomen-Numen",
+      "Saf Aklın Eleştirisi",
+      "Felsefe"
+    ],
+    "references": [
+      "Kant, I. (2015). Saf Aklın Eleştirisi. (Çev. Aziz Yardımlı). İdea Yayınevi.",
+      "Heimsoeth, H. (1986). Kant'ın Felsefesi. Remzi Kitabevi.",
+      "Cassirer, E. (1996). Kant'ın Yaşamı ve Öğretisi. İnkılâp Kitabevi."
+    ],
+    "readingTimeMinutes": 7,
+    "publishedAt": "2026-09-17T09:40:00.000Z",
+    "updatedAt": "2026-09-17T09:40:00.000Z",
+    "status": "published",
+    "viewCount": 118,
+    "featuredQuote": "Görüsüz kavramlar boş, kavramsız görüler kördür: Zihin dünyayı biçimlendirirken kendi kategorilerinin sınırlarına tabidir.",
+    "coverImage": "/assets/default-article-cover.svg",
+    "coverImageCaption": "YENİDEM Standart Blok Zinciri Görseli • Saf Aklın Eleştirisi ve Kantçı Epistemoloji",
+    "coverImageAlt": "YENİDEM Standart Akademik Kapak Görseli",
+    "coverAspectRatio": "16/9",
+    "isBlockchainVerified": false,
+    "sha512Hash": "0fa93ba272af7ba56ccf4f1d900b4f7d03295b93b5e151485d0157891426fdd439a76f53e345bfa1a2ee8dd1ff4b145ee51343c49c1770075ddbc6a49cee1a8a",
+    "quantumSignature": "f254b208459af2c858d33d7f1c4e2c34d44f4776d5cb2230",
+    "version": 1,
+    "wordCount": 226,
+    "charCount": 1795,
+    "detailedDateTr": "17 Eylül 2026 Perşembe 12:40:00 (TSİ / UTC+3)",
+    "revisionHistory": [
+      {
+        "date": "2026-09-17T09:40:00.000Z",
+        "hash": "0fa93ba272af7ba56ccf4f1d...",
+        "note": "İlk akademik neşir ve kriptografik mühürleme",
+        "author": "Orçun Kundakcı"
+      }
+    ]
+  },
+  {
+    "id": "art-7",
+    "slug": "baki-divaninda-dunyanin-faniligi-ve-rindane-yasam",
+    "title": "Bâkî Divanı'nda Dünyanın Fâniliği ve Rindâne Yaşam Felsefesi",
+    "subtitle": "\"Bâkî kalan bu kubbede bir hoş sadâ imiş\" mısraının etik ve estetik arka planı",
+    "discipline": "tde",
+    "abstract": "Klasik edebiyatımızın 'Sultânü'ş-Şuarâ' unvanlı şairi Bâkî, 16. yüzyıl Osmanlısının ihtişamını terennüm ederken bile fânilik fikrini zihninden uzaklaştırmaz. Bu yazıda Bâkî'nin zevk, neşve ve rindlik perdesi ardındaki derin ontolojik hüznü ve 'hoş sadâ' kavramının temsil ettiği edebî ölümsüzlük arayışı incelenmektedir.",
+    "content": "## Kanunî Devrinin İhtişamı ve Fânilik İdraki\n\nBâkî, Kanunî Sultan Süleyman devrinin debdebesini, zaferlerini ve saray zarafetini en yüksek aruz ahengiyle şiirleştiren şairdir. Ne var ki onun şiirinde zevk (hedonizm), bayağı bir dünyevilik değil; kaçınılmaz ölüme karşı sanat yoluyla dikilmiş bir zafer anıtıdır.\n\n### Meşhur Beytin Şerhi\n\n> *\"Âvâzeyi bu 'âleme Dâvûd gibi sal / Bâkî kalan bu kubbede bir hoş sadâ imiş\"*\n\n1. **Hz. Davud ve Âvâze Telmihi:**\n   İslami rivayetlerde Hz. Davud'un sesi o denli güzel ve tesirlidir ki kuşlar uçmayı bırakıp onu dinler, dağlar ona yankıyla eşlik eder. Bâkî, şair olarak kendi sesini Davud'un sesine benzeterek edebî iddiasını (fahriye) ortaya koyar.\n\n2. **Gök Kubbe ve Akis Metaforu:**\n   Dünya, gökyüzünün masmavi kubbesi altında bir cami kubbesine teşbih edilmiştir. Kubbe altındaki sesler yankılanır, ancak kubbenin kendisi gibi dünya da gelip geçicidir. Geriye kalacak tek şey, kötülük ve hırs değil; insan ruhuna dokunan 'hoş bir ses'tir.\n\n### Rindlik ve Tevazu\n\nBâkî mahlası hem şairin adıdır hem de Arapça 'ebedî, ölümsüz, kalıcı olan' manasına gelir. Şair burada hünerli bir tevriye yapar: Kendisi ölüp gitse bile, şiirlerinin oluşturduğu bu 'hoş sadâ' kalıcı olacaktır.",
+    "keywords": [
+      "Bâkî",
+      "Sultânü'ş-Şuarâ",
+      "Divan Şiiri",
+      "Rindlik",
+      "Fânilik",
+      "Metin Tahlili"
+    ],
+    "references": [
+      "Küçük, S. (1994). Bâkî Dîvânı. Türk Dil Kurumu Yayınları.",
+      "Çavuşoğlu, M. (1981). Bâkî: Hayatı, Edebî Şahsiyeti ve Divanından Seçmeler. Tercüman Yayınları."
+    ],
+    "readingTimeMinutes": 5,
+    "publishedAt": "2026-09-16T14:20:00.000Z",
+    "updatedAt": "2026-09-16T14:20:00.000Z",
+    "status": "published",
+    "viewCount": 105,
+    "featuredQuote": "Gök kubbenin altındaki ihtişam gelip geçicidir; ömür defteri kapandığında insandan arta kalan tek hakikat, geride bıraktığı 'hoş bir seda'dır.",
+    "coverImage": "/assets/default-article-cover.svg",
+    "coverImageCaption": "YENİDEM Standart Blok Zinciri Görseli • Bâkî Kalan Bu Kubbede Hoş Bir Sadâ",
+    "coverImageAlt": "YENİDEM Standart Akademik Kapak Görseli",
+    "coverAspectRatio": "16/9",
+    "isBlockchainVerified": false,
+    "sha512Hash": "c4094b99023f7df26f1af2d08bcd1ade65c61917df9a44c6e8557b696fdaa0e73cd1edffab326d27272b9966001ab9c404c535b9c121de9a2267153b43b18ad8",
+    "quantumSignature": "ca19bd66a920d7a5d994053cc1d5e6ea9956c55b04c5d2de",
+    "version": 1,
+    "wordCount": 180,
+    "charCount": 1220,
+    "detailedDateTr": "16 Eylül 2026 Çarşamba 17:20:00 (TSİ / UTC+3)",
+    "revisionHistory": [
+      {
+        "date": "2026-09-16T14:20:00.000Z",
+        "hash": "c4094b99023f7df26f1af2d0...",
+        "note": "İlk akademik neşir ve kriptografik mühürleme",
+        "author": "Orçun Kundakcı"
+      }
+    ]
+  },
+  {
+    "id": "art-6",
+    "slug": "eski-anadolu-turkcesinde-cumle-sentaksi-dede-korkut",
+    "title": "Eski Anadolu Türkçesinde Cümle Sentaksı: Dede Korkut Kitabı'nda Zarf-Fiil Ekleri ve İfade Derinliği",
+    "subtitle": "Oğuz Türkçesinin kuruluş evresinde bağlama ögeleri ve sentaktik ritim",
+    "discipline": "tde",
+    "abstract": "Eski Anadolu Türkçesi (EAT), 13. ve 15. yüzyıllar arasında Anadolu sahasında yazı dili hüviyeti kazanan Oğuz Türkçesinin ilk dönemidir. Dede Korkut Kitabı (Dresden ve Vatikan nüshaları), bu dönemin söz dizimi hususiyetlerini ve bilhassa cümleleri art arda bağlayan zarf-fiil (gerundium) zenginliğini en canlı biçimde yansıtır.",
+    "content": "## Gramer ve Tarihî Dilbilim Çerçevesi\n\nEski Anadolu Türkçesi, Göktürk ve Uygur Türkçesinden devralınan sentaktik yapıyı korurken, Anadolu'daki yeni coğrafi ve kültürel ortamda sade, vurucu ve dinamik bir anlatım geliştirmiştir.\n\n### 1. Zarf-Fiillerin (Ulaçların) Cümle Birleştirici Rolü\n\nModern Türkçede yan yana gelen bağımsız sıralı cümleler, EAT metinlerinde ve hususiyle Dede Korkut'ta zengin zarf-fiil ekleriyle tek bir ana fiile bağlanır:\n\n- **-uban / -üben eki:** *\"Salur Kazan yerinden örü duruban, gara tağlar başına çığuban, dört yana göz gezdürdi.\"*\n  Burada eylemler kopuk değil; birbiri ardına gelişen sinematografik bir hareket zinciri olarak kurulur.\n- **-ı / -i ve -a / -e ekleri:** Fiillerin süreklilik ve eşzamanlılık bildiren biçimleri cümlenin musikisini ve ritmini besler.\n\n### 2. Dede Korkut'ta 'Soylama' Sentaksı\n\nKorkut Ata'nın kopuz eşliğinde söylediği soylamalar, nesir ile nazım arasında salınan eşsiz bir 'seci' ve ritmik sentaks düzenine sahiptir. Cümle ögeleri, hitabın şiddetine göre yer değiştirir; devrik cümle yapısı bir kusur değil, aksine duygunun ve yiğitlik nidasının doğrudan yansımasıdır.\n\n### Dilbilimsel Çıkarım\n\nTürkçenin morfolojik gücü, isim ve fiil köklerine eklenen eklerin çok işlevliliğinde yatar. EAT metinlerini tahlil etmek, dilimizin köklerindeki mantık mimarisini ve bin yıllık söz kudretini kavramanın vazgeçilmez anahtarıdır.",
+    "keywords": [
+      "Eski Anadolu Türkçesi",
+      "Dede Korkut",
+      "Sentaks",
+      "Zarf-Fiil",
+      "Tarihî Türk Dili",
+      "Morfoloji"
+    ],
+    "references": [
+      "Ergin, M. (1989). Dede Korkut Kitabı I-II. Türk Dil Kurumu Yayınları.",
+      "Timurtaş, F. K. (1994). Eski Türkiye Türkçesi. Enderun Kitabevi.",
+      "Gencan, T. N. (2001). Dilbilgisi. Ayraç Yayınevi."
+    ],
+    "readingTimeMinutes": 5,
+    "publishedAt": "2026-09-15T11:00:00.000Z",
+    "updatedAt": "2026-09-15T11:00:00.000Z",
+    "status": "published",
+    "viewCount": 87,
+    "featuredQuote": "Dede Korkut'ta cümle, durağan bir kelime dizisi değildir; kopuzun tellerinden boşalan eylemlerin art arda kenetlendiği canlı bir nehir gibidir.",
+    "coverImage": "/assets/default-article-cover.svg",
+    "coverImageCaption": "YENİDEM Standart Blok Zinciri Görseli • Dede Korkut Kitabı ve Eski Anadolu Türkçesi",
+    "coverImageAlt": "YENİDEM Standart Akademik Kapak Görseli",
+    "coverAspectRatio": "16/9",
+    "isBlockchainVerified": false,
+    "sha512Hash": "aef52eb13d2b77a127660c3fd2e1f1fab5749414c68d2712bb5b221979cfbf27adb9d702a2f62af51f6e4fd10704b31c4b09b0da40b95210325050b3b8c5127b",
+    "quantumSignature": "0ec8eb5615a9a102a2126de13964eeea3ce2d177b0b9bd3d",
+    "version": 1,
+    "wordCount": 186,
+    "charCount": 1382,
+    "detailedDateTr": "15 Eylül 2026 Salı 14:00:00 (TSİ / UTC+3)",
+    "revisionHistory": [
+      {
+        "date": "2026-09-15T11:00:00.000Z",
+        "hash": "aef52eb13d2b77a127660c3f...",
+        "note": "İlk akademik neşir ve kriptografik mühürleme",
+        "author": "Orçun Kundakcı"
+      }
+    ]
+  },
+  {
+    "id": "art-5",
+    "slug": "fuzulinin-su-kasidesinde-tesnelik-mazmunu",
+    "title": "Fuzûlî'nin Su Kasidesi'nde Teşnelik Mazmunu ve Metin Şerhi Usulü",
+    "subtitle": "\"Hâk-i pâyine yetem dir ömrlerdir muttasıl / Başını taştan taşa urup gezer âvâre su\"",
+    "discipline": "tde",
+    "abstract": "16. yüzyıl klasik Türk edebiyatının zirve şahsiyeti Fuzûlî'nin kaleme aldığı Su Kasidesi, na't türünün ve su mazmununun edebiyatımızdaki en yetkin örneğidir. Bu tahlilde, suyun 'akış' eylemi ile âşığın ontolojik 'teşneliği' (susuzluğu) arasındaki semantik bağ, geleneksel şerh basamakları ve belagat sanatları ekseninde çözümlenmektedir.",
+    "content": "## Kasidenin Poetika Zemini\n\nFuzûlî'nin Su Kasidesi, *fâ'ilâtün fâ'ilâtün fâ'ilâtün fâ'ilün* vezniyle kaleme alınmış olup, redifi 'su' olan bir şaheserdir. Şair, tabiatın en saf ve akıcı unsuru olan suyu, hem kozmik bir hakikat hem de Hz. Peygamber'in eşiğine ulaşmaya can atan bir derviş gibi kurgular.\n\n### 1. Beytin Sentaks ve Kelime Kadrosu Tahlili\n\n> *\"Hâk-i pâyine yetem dir ömrlerdir muttasıl / Başını taştan taşa urup gezer âvâre su\"*\n\n- **Hâk-i pây:** Ayak tozu, eşik toprağı (Tevazu ve hürmet göstergesi).\n- **Yetem dir:** Ulaşayım der (Eski Anadolu Türkçesi / Azeri sahası istek kipi çekimi).\n- **Muttasıl:** Aralıksız, kesintisiz, ezelden ebede süren akış.\n- **Âvâre:** Başıboş, serseri, aşk sarhoşluğundan yönünü şaşırmış.\n\n### 2. Belagat Sanatları: Hüsn-i Ta'lil ve Teşhis\n\nBeyitte kurulan hüsn-i ta'lil (güzel sebebe bağlama) harikuladedir. Suyun ırmak yataklarında yerçekimi sebebiyle kayalara çarparak akması tabii/fiziki bir hadisedir. Fakat Fuzûlî bu fiziksel olayı iptal eder; suyun taşlara vurarak akışını, sevgiliye (Hz. Peygamber'e) ulaşamamanın verdiği ıstıraba ve kederden başını taştan taşa vuran bir mecnuna teşbih eder (Teşhis/Kişileştirme).\n\n### 3. Ontolojik Şerh: Teşnelik ve Aşk\n\nFuzûlî poetikasında 'acı' ve 'susuzluk', giderilmesi istenen bir eksiklik değil, varoluşun kemale erme vasıtasıdır. Fuzûlî dünya pınarından su içmek istemez; çünkü o su fânidir. Onun aradığı su, ruhun ebedî susuzluğunu dindirecek olan hakikat feyzidir.\n\n### Netice\n\nKlasik metin şerhi, kelimelerin sözlük manalarını sıralamaktan ibaret değildir; şairin dil denizinde inşa ettiği bu eşsiz belagat ve mana mimarisini katman katman gün yüzüne çıkarmaktır.",
+    "keywords": [
+      "Fuzûlî",
+      "Su Kasidesi",
+      "Metin Şerhi",
+      "Hüsn-i Ta'lil",
+      "Teşhis",
+      "Divan Şiiri",
+      "TDE"
+    ],
+    "references": [
+      "Çavuşoğlu, M. (1986). Divanlar Arasında. Dergâh Yayınları.",
+      "Karahan, A. (1989). Fuzûlî: Muhiti, Hayatı ve Şahsiyeti. MEB Yayınları.",
+      "Akalın, L. S. (1993). Fuzûlî ve Su Kasidesi Şerhi. Kültür Bakanlığı."
+    ],
+    "readingTimeMinutes": 6,
+    "publishedAt": "2026-09-14T08:30:00.000Z",
+    "updatedAt": "2026-09-14T08:30:00.000Z",
+    "status": "published",
+    "viewCount": 94,
+    "featuredQuote": "Suyun kayalara çarparak akışı tabiat kanunu değil; sevgilinin ayak bastığı toprağa erişebilmek için asırlardır başını taştan taşa vuran bir mecnunun hicranıdır.",
+    "coverImage": "/assets/default-article-cover.svg",
+    "coverImageCaption": "YENİDEM Standart Blok Zinciri Görseli • Su Kasidesi Şerhi",
+    "coverImageAlt": "YENİDEM Standart Akademik Kapak Görseli",
+    "coverAspectRatio": "16/9",
+    "isBlockchainVerified": false,
+    "sha512Hash": "0da5a233693b36532e5a0722d52fff96a652dc8389940468ddb5fdf4be0d3d033480d7f4b0514ee84e12d0785993dd13dbc77a6116e0c6190d9980bf5cd41c00",
+    "quantumSignature": "ef1e23b3f30c8d532b3afe8f59693e9aab7f6f5381c08167",
+    "version": 1,
+    "wordCount": 232,
+    "charCount": 1663,
+    "detailedDateTr": "14 Eylül 2026 Pazartesi 11:30:00 (TSİ / UTC+3)",
+    "revisionHistory": [
+      {
+        "date": "2026-09-14T08:30:00.000Z",
+        "hash": "0da5a233693b36532e5a0722...",
+        "note": "İlk akademik neşir ve kriptografik mühürleme",
+        "author": "Orçun Kundakcı"
+      }
+    ]
   },
   {
     "id": "art-4",
@@ -325,537 +867,6 @@
         "author": "Orçun KUNDAKCI",
         "createdAt": "2026-08-15T10:00:00.000Z",
         "category": "Ontoloji"
-      }
-    ]
-  },
-  {
-    "id": "art-5",
-    "slug": "fuzulinin-su-kasidesinde-tesnelik-mazmunu",
-    "title": "Fuzûlî'nin Su Kasidesi'nde Teşnelik Mazmunu ve Metin Şerhi Usulü",
-    "subtitle": "\"Hâk-i pâyine yetem dir ömrlerdir muttasıl / Başını taştan taşa urup gezer âvâre su\"",
-    "discipline": "tde",
-    "abstract": "16. yüzyıl klasik Türk edebiyatının zirve şahsiyeti Fuzûlî'nin kaleme aldığı Su Kasidesi, na't türünün ve su mazmununun edebiyatımızdaki en yetkin örneğidir. Bu tahlilde, suyun 'akış' eylemi ile âşığın ontolojik 'teşneliği' (susuzluğu) arasındaki semantik bağ, geleneksel şerh basamakları ve belagat sanatları ekseninde çözümlenmektedir.",
-    "content": "## Kasidenin Poetika Zemini\n\nFuzûlî'nin Su Kasidesi, *fâ'ilâtün fâ'ilâtün fâ'ilâtün fâ'ilün* vezniyle kaleme alınmış olup, redifi 'su' olan bir şaheserdir. Şair, tabiatın en saf ve akıcı unsuru olan suyu, hem kozmik bir hakikat hem de Hz. Peygamber'in eşiğine ulaşmaya can atan bir derviş gibi kurgular.\n\n### 1. Beytin Sentaks ve Kelime Kadrosu Tahlili\n\n> *\"Hâk-i pâyine yetem dir ömrlerdir muttasıl / Başını taştan taşa urup gezer âvâre su\"*\n\n- **Hâk-i pây:** Ayak tozu, eşik toprağı (Tevazu ve hürmet göstergesi).\n- **Yetem dir:** Ulaşayım der (Eski Anadolu Türkçesi / Azeri sahası istek kipi çekimi).\n- **Muttasıl:** Aralıksız, kesintisiz, ezelden ebede süren akış.\n- **Âvâre:** Başıboş, serseri, aşk sarhoşluğundan yönünü şaşırmış.\n\n### 2. Belagat Sanatları: Hüsn-i Ta'lil ve Teşhis\n\nBeyitte kurulan hüsn-i ta'lil (güzel sebebe bağlama) harikuladedir. Suyun ırmak yataklarında yerçekimi sebebiyle kayalara çarparak akması tabii/fiziki bir hadisedir. Fakat Fuzûlî bu fiziksel olayı iptal eder; suyun taşlara vurarak akışını, sevgiliye (Hz. Peygamber'e) ulaşamamanın verdiği ıstıraba ve kederden başını taştan taşa vuran bir mecnuna teşbih eder (Teşhis/Kişileştirme).\n\n### 3. Ontolojik Şerh: Teşnelik ve Aşk\n\nFuzûlî poetikasında 'acı' ve 'susuzluk', giderilmesi istenen bir eksiklik değil, varoluşun kemale erme vasıtasıdır. Fuzûlî dünya pınarından su içmek istemez; çünkü o su fânidir. Onun aradığı su, ruhun ebedî susuzluğunu dindirecek olan hakikat feyzidir.\n\n### Netice\n\nKlasik metin şerhi, kelimelerin sözlük manalarını sıralamaktan ibaret değildir; şairin dil denizinde inşa ettiği bu eşsiz belagat ve mana mimarisini katman katman gün yüzüne çıkarmaktır.",
-    "keywords": [
-      "Fuzûlî",
-      "Su Kasidesi",
-      "Metin Şerhi",
-      "Hüsn-i Ta'lil",
-      "Teşhis",
-      "Divan Şiiri",
-      "TDE"
-    ],
-    "references": [
-      "Çavuşoğlu, M. (1986). Divanlar Arasında. Dergâh Yayınları.",
-      "Karahan, A. (1989). Fuzûlî: Muhiti, Hayatı ve Şahsiyeti. MEB Yayınları.",
-      "Akalın, L. S. (1993). Fuzûlî ve Su Kasidesi Şerhi. Kültür Bakanlığı."
-    ],
-    "readingTimeMinutes": 6,
-    "publishedAt": "2026-09-14T08:30:00.000Z",
-    "updatedAt": "2026-09-14T08:30:00.000Z",
-    "status": "published",
-    "viewCount": 94,
-    "featuredQuote": "Suyun kayalara çarparak akışı tabiat kanunu değil; sevgilinin ayak bastığı toprağa erişebilmek için asırlardır başını taştan taşa vuran bir mecnunun hicranıdır.",
-    "coverImage": "/assets/default-article-cover.svg",
-    "coverImageCaption": "YENİDEM Standart Blok Zinciri Görseli • Su Kasidesi Şerhi",
-    "coverImageAlt": "YENİDEM Standart Akademik Kapak Görseli",
-    "coverAspectRatio": "16/9",
-    "wordCount": 232,
-    "charCount": 1663,
-    "detailedDateTr": "14 Eylül 2026 Pazartesi 11:30:00 (TSİ / UTC+3)",
-    "sha512Hash": "0da5a233693b36532e5a0722d52fff96a652dc8389940468ddb5fdf4be0d3d033480d7f4b0514ee84e12d0785993dd13dbc77a6116e0c6190d9980bf5cd41c00",
-    "quantumSignature": "ef1e23b3f30c8d532b3afe8f59693e9aab7f6f5381c08167",
-    "version": 1,
-    "revisionHistory": [
-      {
-        "date": "2026-09-14T08:30:00.000Z",
-        "hash": "0da5a233693b36532e5a0722...",
-        "note": "İlk akademik neşir ve kriptografik mühürleme",
-        "author": "Orçun Kundakcı"
-      }
-    ]
-  },
-  {
-    "id": "art-6",
-    "slug": "eski-anadolu-turkcesinde-cumle-sentaksi-dede-korkut",
-    "title": "Eski Anadolu Türkçesinde Cümle Sentaksı: Dede Korkut Kitabı'nda Zarf-Fiil Ekleri ve İfade Derinliği",
-    "subtitle": "Oğuz Türkçesinin kuruluş evresinde bağlama ögeleri ve sentaktik ritim",
-    "discipline": "tde",
-    "abstract": "Eski Anadolu Türkçesi (EAT), 13. ve 15. yüzyıllar arasında Anadolu sahasında yazı dili hüviyeti kazanan Oğuz Türkçesinin ilk dönemidir. Dede Korkut Kitabı (Dresden ve Vatikan nüshaları), bu dönemin söz dizimi hususiyetlerini ve bilhassa cümleleri art arda bağlayan zarf-fiil (gerundium) zenginliğini en canlı biçimde yansıtır.",
-    "content": "## Gramer ve Tarihî Dilbilim Çerçevesi\n\nEski Anadolu Türkçesi, Göktürk ve Uygur Türkçesinden devralınan sentaktik yapıyı korurken, Anadolu'daki yeni coğrafi ve kültürel ortamda sade, vurucu ve dinamik bir anlatım geliştirmiştir.\n\n### 1. Zarf-Fiillerin (Ulaçların) Cümle Birleştirici Rolü\n\nModern Türkçede yan yana gelen bağımsız sıralı cümleler, EAT metinlerinde ve hususiyle Dede Korkut'ta zengin zarf-fiil ekleriyle tek bir ana fiile bağlanır:\n\n- **-uban / -üben eki:** *\"Salur Kazan yerinden örü duruban, gara tağlar başına çığuban, dört yana göz gezdürdi.\"*\n  Burada eylemler kopuk değil; birbiri ardına gelişen sinematografik bir hareket zinciri olarak kurulur.\n- **-ı / -i ve -a / -e ekleri:** Fiillerin süreklilik ve eşzamanlılık bildiren biçimleri cümlenin musikisini ve ritmini besler.\n\n### 2. Dede Korkut'ta 'Soylama' Sentaksı\n\nKorkut Ata'nın kopuz eşliğinde söylediği soylamalar, nesir ile nazım arasında salınan eşsiz bir 'seci' ve ritmik sentaks düzenine sahiptir. Cümle ögeleri, hitabın şiddetine göre yer değiştirir; devrik cümle yapısı bir kusur değil, aksine duygunun ve yiğitlik nidasının doğrudan yansımasıdır.\n\n### Dilbilimsel Çıkarım\n\nTürkçenin morfolojik gücü, isim ve fiil köklerine eklenen eklerin çok işlevliliğinde yatar. EAT metinlerini tahlil etmek, dilimizin köklerindeki mantık mimarisini ve bin yıllık söz kudretini kavramanın vazgeçilmez anahtarıdır.",
-    "keywords": [
-      "Eski Anadolu Türkçesi",
-      "Dede Korkut",
-      "Sentaks",
-      "Zarf-Fiil",
-      "Tarihî Türk Dili",
-      "Morfoloji"
-    ],
-    "references": [
-      "Ergin, M. (1989). Dede Korkut Kitabı I-II. Türk Dil Kurumu Yayınları.",
-      "Timurtaş, F. K. (1994). Eski Türkiye Türkçesi. Enderun Kitabevi.",
-      "Gencan, T. N. (2001). Dilbilgisi. Ayraç Yayınevi."
-    ],
-    "readingTimeMinutes": 5,
-    "publishedAt": "2026-09-15T11:00:00.000Z",
-    "updatedAt": "2026-09-15T11:00:00.000Z",
-    "status": "published",
-    "viewCount": 87,
-    "featuredQuote": "Dede Korkut'ta cümle, durağan bir kelime dizisi değildir; kopuzun tellerinden boşalan eylemlerin art arda kenetlendiği canlı bir nehir gibidir.",
-    "coverImage": "/assets/default-article-cover.svg",
-    "coverImageCaption": "YENİDEM Standart Blok Zinciri Görseli • Dede Korkut Kitabı ve Eski Anadolu Türkçesi",
-    "coverImageAlt": "YENİDEM Standart Akademik Kapak Görseli",
-    "coverAspectRatio": "16/9",
-    "wordCount": 186,
-    "charCount": 1382,
-    "detailedDateTr": "15 Eylül 2026 Salı 14:00:00 (TSİ / UTC+3)",
-    "sha512Hash": "aef52eb13d2b77a127660c3fd2e1f1fab5749414c68d2712bb5b221979cfbf27adb9d702a2f62af51f6e4fd10704b31c4b09b0da40b95210325050b3b8c5127b",
-    "quantumSignature": "0ec8eb5615a9a102a2126de13964eeea3ce2d177b0b9bd3d",
-    "version": 1,
-    "revisionHistory": [
-      {
-        "date": "2026-09-15T11:00:00.000Z",
-        "hash": "aef52eb13d2b77a127660c3f...",
-        "note": "İlk akademik neşir ve kriptografik mühürleme",
-        "author": "Orçun Kundakcı"
-      }
-    ]
-  },
-  {
-    "id": "art-7",
-    "slug": "baki-divaninda-dunyanin-faniligi-ve-rindane-yasam",
-    "title": "Bâkî Divanı'nda Dünyanın Fâniliği ve Rindâne Yaşam Felsefesi",
-    "subtitle": "\"Bâkî kalan bu kubbede bir hoş sadâ imiş\" mısraının etik ve estetik arka planı",
-    "discipline": "tde",
-    "abstract": "Klasik edebiyatımızın 'Sultânü'ş-Şuarâ' unvanlı şairi Bâkî, 16. yüzyıl Osmanlısının ihtişamını terennüm ederken bile fânilik fikrini zihninden uzaklaştırmaz. Bu yazıda Bâkî'nin zevk, neşve ve rindlik perdesi ardındaki derin ontolojik hüznü ve 'hoş sadâ' kavramının temsil ettiği edebî ölümsüzlük arayışı incelenmektedir.",
-    "content": "## Kanunî Devrinin İhtişamı ve Fânilik İdraki\n\nBâkî, Kanunî Sultan Süleyman devrinin debdebesini, zaferlerini ve saray zarafetini en yüksek aruz ahengiyle şiirleştiren şairdir. Ne var ki onun şiirinde zevk (hedonizm), bayağı bir dünyevilik değil; kaçınılmaz ölüme karşı sanat yoluyla dikilmiş bir zafer anıtıdır.\n\n### Meşhur Beytin Şerhi\n\n> *\"Âvâzeyi bu 'âleme Dâvûd gibi sal / Bâkî kalan bu kubbede bir hoş sadâ imiş\"*\n\n1. **Hz. Davud ve Âvâze Telmihi:**\n   İslami rivayetlerde Hz. Davud'un sesi o denli güzel ve tesirlidir ki kuşlar uçmayı bırakıp onu dinler, dağlar ona yankıyla eşlik eder. Bâkî, şair olarak kendi sesini Davud'un sesine benzeterek edebî iddiasını (fahriye) ortaya koyar.\n\n2. **Gök Kubbe ve Akis Metaforu:**\n   Dünya, gökyüzünün masmavi kubbesi altında bir cami kubbesine teşbih edilmiştir. Kubbe altındaki sesler yankılanır, ancak kubbenin kendisi gibi dünya da gelip geçicidir. Geriye kalacak tek şey, kötülük ve hırs değil; insan ruhuna dokunan 'hoş bir ses'tir.\n\n### Rindlik ve Tevazu\n\nBâkî mahlası hem şairin adıdır hem de Arapça 'ebedî, ölümsüz, kalıcı olan' manasına gelir. Şair burada hünerli bir tevriye yapar: Kendisi ölüp gitse bile, şiirlerinin oluşturduğu bu 'hoş sadâ' kalıcı olacaktır.",
-    "keywords": [
-      "Bâkî",
-      "Sultânü'ş-Şuarâ",
-      "Divan Şiiri",
-      "Rindlik",
-      "Fânilik",
-      "Metin Tahlili"
-    ],
-    "references": [
-      "Küçük, S. (1994). Bâkî Dîvânı. Türk Dil Kurumu Yayınları.",
-      "Çavuşoğlu, M. (1981). Bâkî: Hayatı, Edebî Şahsiyeti ve Divanından Seçmeler. Tercüman Yayınları."
-    ],
-    "readingTimeMinutes": 5,
-    "publishedAt": "2026-09-16T14:20:00.000Z",
-    "updatedAt": "2026-09-16T14:20:00.000Z",
-    "status": "published",
-    "viewCount": 105,
-    "featuredQuote": "Gök kubbenin altındaki ihtişam gelip geçicidir; ömür defteri kapandığında insandan arta kalan tek hakikat, geride bıraktığı 'hoş bir seda'dır.",
-    "coverImage": "/assets/default-article-cover.svg",
-    "coverImageCaption": "YENİDEM Standart Blok Zinciri Görseli • Bâkî Kalan Bu Kubbede Hoş Bir Sadâ",
-    "coverImageAlt": "YENİDEM Standart Akademik Kapak Görseli",
-    "coverAspectRatio": "16/9",
-    "wordCount": 180,
-    "charCount": 1220,
-    "detailedDateTr": "16 Eylül 2026 Çarşamba 17:20:00 (TSİ / UTC+3)",
-    "sha512Hash": "c4094b99023f7df26f1af2d08bcd1ade65c61917df9a44c6e8557b696fdaa0e73cd1edffab326d27272b9966001ab9c404c535b9c121de9a2267153b43b18ad8",
-    "quantumSignature": "ca19bd66a920d7a5d994053cc1d5e6ea9956c55b04c5d2de",
-    "version": 1,
-    "revisionHistory": [
-      {
-        "date": "2026-09-16T14:20:00.000Z",
-        "hash": "c4094b99023f7df26f1af2d0...",
-        "note": "İlk akademik neşir ve kriptografik mühürleme",
-        "author": "Orçun Kundakcı"
-      }
-    ]
-  },
-  {
-    "id": "art-8",
-    "slug": "kant-transendental-felsefe-sentetik-a-priori",
-    "title": "Immanuel Kant'ın Transendental Felsefesinde Sentetik A Priori Yargılar ve Deneyimin Hudutları",
-    "subtitle": "Kritik der reinen Vernunft ve aklın kendi sınırlarını mahkemeye çekmesi",
-    "discipline": "felsefe",
-    "abstract": "Aydınlanma felsefesinin doruk noktası Immanuel Kant, Saf Aklın Eleştirisi (1781) ile rasyonalizm (akılcılık) ve ampirizm (deneycilik) arasındaki tarihî çatışmayı aşmayı hedefler. Bu makalede, 'Sentetik A Priori Yargılar' kavramı, uzay ve zamanın saf sezgileri ile fenomen-numen ayrımı felsefi derinliğiyle ele alınmaktadır.",
-    "content": "## Felsefi Kriz: Dogmatik Uyku ve Hume'un Şüpheciliği\n\nKant, David Hume'un nedensellik ilkesini alışkanlığa indirgeyen radikal şüpheciliğini okuduğunda, kendi ifadesiyle 'dogmatik uykusundan' uyanır. Eğer nedensellik sadece bir alışkanlıktan ibaretse, Newton fiziği ve doğa bilimleri kesin bilgi sağlayamaz hale gelecektir.\n\n### 1. Yargı Türlerinin Tasnifi\n\nKant, insan aklının ürettiği önermeleri iki eksende sınıflandırır:\n- **Analitik Yargılar:** Yüklemin öznenin içinde zaten içerildiği yargılardır (Örnek: *Bütün bekârlar evlenmemiştir*). Yeni bir bilgi sağlamazlar; zorunlu ve a priori'dirler.\n- **Sentetik Yargılar:** Yüklemin özneye yeni bir bilgi eklediği yargılardır (Örnek: *Bu masa ağırdır*). Genellikle a posteriori (deneyime dayalı) ve olumsaldırlar.\n\n**Kant'ın Büyük Sorusu:** Hem deneyimden bağımsız (a priori ve zorunlu) olup hem de bilgimizi genişleten (sentetik) yargılar mümkün müdür?\nKant'ın cevabı: Evet! Matematik ve fizik önermeleri (örn. *7 + 5 = 12* veya *her değişimin bir nedeni vardır*) tam olarak 'Sentetik A Priori'dir.\n\n### 2. Kopernik Devrimi ve Transendental İdealizm\n\nNasıl ki Kopernik gök cisimlerinin Dünya çevresinde değil, Dünya'nın Güneş çevresinde döndüğünü varsayarak astronomide bir devrim yaptıysa; Kant da nesnelerin zihnimize uymasını beklemek yerine, **zihnimizin kategorilerinin nesneleri kurduğunu** öne sürer.\n- **Uzay ve Zaman:** Nesnelerin kendinde özellikleri değil, insanın duyarlık formlarıdır.\n- **Fenomen:** İnsan zihninin kategorileriyle işlenmiş ve tecrübe edilebilir dünya.\n- **Numen (Kendinde Şey):** İnsan bilgisinin sınırlarını aşan, bilinemez alan.\n\n### Felsefi Hüküm\n\nKant aklı tahttan indirmez; fakat aklın sınırlarını çizerek onun metafizik yanılsamalara kapılmasını engeller. Düşünce, sınırlarının farkında olduğu ölçüde hürdür.",
-    "keywords": [
-      "Immanuel Kant",
-      "Epistemoloji",
-      "Sentetik A Priori",
-      "Fenomen-Numen",
-      "Saf Aklın Eleştirisi",
-      "Felsefe"
-    ],
-    "references": [
-      "Kant, I. (2015). Saf Aklın Eleştirisi. (Çev. Aziz Yardımlı). İdea Yayınevi.",
-      "Heimsoeth, H. (1986). Kant'ın Felsefesi. Remzi Kitabevi.",
-      "Cassirer, E. (1996). Kant'ın Yaşamı ve Öğretisi. İnkılâp Kitabevi."
-    ],
-    "readingTimeMinutes": 7,
-    "publishedAt": "2026-09-17T09:40:00.000Z",
-    "updatedAt": "2026-09-17T09:40:00.000Z",
-    "status": "published",
-    "viewCount": 118,
-    "featuredQuote": "Görüsüz kavramlar boş, kavramsız görüler kördür: Zihin dünyayı biçimlendirirken kendi kategorilerinin sınırlarına tabidir.",
-    "coverImage": "/assets/default-article-cover.svg",
-    "coverImageCaption": "YENİDEM Standart Blok Zinciri Görseli • Saf Aklın Eleştirisi ve Kantçı Epistemoloji",
-    "coverImageAlt": "YENİDEM Standart Akademik Kapak Görseli",
-    "coverAspectRatio": "16/9",
-    "wordCount": 226,
-    "charCount": 1795,
-    "detailedDateTr": "17 Eylül 2026 Perşembe 12:40:00 (TSİ / UTC+3)",
-    "sha512Hash": "0fa93ba272af7ba56ccf4f1d900b4f7d03295b93b5e151485d0157891426fdd439a76f53e345bfa1a2ee8dd1ff4b145ee51343c49c1770075ddbc6a49cee1a8a",
-    "quantumSignature": "f254b208459af2c858d33d7f1c4e2c34d44f4776d5cb2230",
-    "version": 1,
-    "revisionHistory": [
-      {
-        "date": "2026-09-17T09:40:00.000Z",
-        "hash": "0fa93ba272af7ba56ccf4f1d...",
-        "note": "İlk akademik neşir ve kriptografik mühürleme",
-        "author": "Orçun Kundakcı"
-      }
-    ]
-  },
-  {
-    "id": "art-9",
-    "slug": "epistemolojide-hakikat-problemi-platon-gettier",
-    "title": "Epistemolojide Hakikat Problemi: Platon'un Theaitetos'undan Edmund Gettier'in Karşı-Örneklerine İnanç ve Bilgi",
-    "subtitle": "\"Gerekçelendirilmiş Doğru İnanç\" (JTB) tanımının çöküşü ve çağdaş epistemoloji tartışmaları",
-    "discipline": "felsefe",
-    "abstract": "Klasik bilgi kuramı, Antik Yunan'dan 20. yüzyılın ortalarına dek bilgiyi 'Gerekçelendirilmiş Doğru İnanç' (Justified True Belief) olarak tanımlamıştır. 1963 yılında Edmund Gettier'in yayımladığı 3 sayfalık makale, bu iki bin yıllık tanımı temelinden sarsmıştır. Bu inceleme, inanç, gerekçe ve şans arasındaki ilişkiyi soruşturmaktadır.",
-    "content": "## Bilgi Nedir? Platon'un Theaitetos Mirası\n\nPlaton, *Theaitetos* diyaloğunda Sokrates aracılığıyla bilginin tabiatını sorgular. Yalnızca bir şeye inanmak yetmez; inandığımız şeyin doğru olması ve bu doğruluğun 'logos' (mantıksal bir gerekçe veya kanıt) ile desteklenmesi şarttır.\n\nBöylece klasik epistemolojinin üçlü sacayağı doğmuştur:\n1. **İnanç Şartı:** S öznesi P önermesine inanmalıdır ($B(S, P)$).\n2. **Doğruluk Şartı:** P önermesi gerçekten doğru olmalıdır ($P = \\text{doğru}$).\n3. **Gerekçelendirme Şartı:** S öznesinin P'ye inanmak için geçerli delilleri/gerekçesi olmalıdır ($J(S, P)$).\n\n### Gettier'in Sarsıcı Karşı-Örnekleri (1963)\n\nEdmund Gettier, *Is Justified True Belief Knowledge?* başlıklı kısa makalesinde şu soruyu sorar: Bir inanç hem doğru hem de gerekçelendirilmiş olduğu halde sırf **epistemik tesadüf (şans)** eseri doğruysa, buna 'bilgi' diyebilir miyiz?\n\n**Örnek Durum (Bozuk Saat):**\nBir odadaki duvarda asılı antika saate bakıyorsunuz. Saat tam 14:00'ı gösteriyor. Siz de saatin çalıştığını düşünerek (iyi bir gerekçeyle) saatin 14:00 olduğuna inanıyorsunuz. Tesadüf bu ya, saat aslında 2 gün önce tam 14:00'te durmuş, fakat siz saate tam 14:00'te bakmışsınız!\n- İnancınız var mı? Evet.\n- İnancınız doğru mu? Evet, saat gerçekten 14:00.\n- Gerekçeniz var mı? Evet, çalışan bir saate baktığınızı varsayıyorsunuz.\n\nFakat buna 'biliyordunuz' diyebilir miyiz? Hayır! Çünkü doğruya epistemik bir şans eseri ulaştınız.\n\n### Çağdaş Arayışlar\n\nGettier probleminden sonra epistemologlar 'dördüncü şart' arayışına girmişlerdir: Yanlış önermeye dayanmama ilkesi, güvenilircilik (reliabilism) ve erdem epistemolojisi bu arayışın ürünleridir.\n\n### Felsefi Sonuç\n\nBilgi, pasif bir kabulleniş değil; gerekçelerimizin sağlamlığı ile hakikatin kendisi arasında tesadüfe yer bırakmayan organik bir irtibat kurma meselesidir.",
-    "keywords": [
-      "Epistemoloji",
-      "Edmund Gettier",
-      "Platon",
-      "Theaitetos",
-      "Gerekçelendirilmiş Doğru İnanç",
-      "Hakikat"
-    ],
-    "references": [
-      "Gettier, E. (1963). Is Justified True Belief Knowledge? Analysis, 23(6), 121-123.",
-      "Platon. (2012). Theaitetos. (Çev. Macit Gökberk). MEB Yayınları.",
-      "Dancy, J. (1985). An Introduction to Contemporary Epistemology. Blackwell."
-    ],
-    "readingTimeMinutes": 6,
-    "publishedAt": "2026-09-17T16:15:00.000Z",
-    "updatedAt": "2026-09-17T16:15:00.000Z",
-    "status": "published",
-    "viewCount": 126,
-    "featuredQuote": "Bir inancın doğru olması ve gerekçelendirilmesi yetmez; hakikate tesadüf eseri değil, metodik ve sağlam bir bağla erişmiş olmak gerekir.",
-    "coverImage": "/assets/default-article-cover.svg",
-    "coverImageCaption": "YENİDEM Standart Blok Zinciri Görseli • Platon ve Gettier Problemi",
-    "coverImageAlt": "YENİDEM Standart Akademik Kapak Görseli",
-    "coverAspectRatio": "16/9",
-    "wordCount": 237,
-    "charCount": 1835,
-    "detailedDateTr": "17 Eylül 2026 Perşembe 19:15:00 (TSİ / UTC+3)",
-    "sha512Hash": "22dc8f8ce20411ac93ea0f112a900d3bbd14f8f44e10031425d842895d856ded7cdb355bee71be40dd23d5253f008588383d3ed962b5b0fed4ebc0ac568fb76b",
-    "quantumSignature": "2df7541d66589444f76f3aee5ac9e29f617fe01106021942",
-    "version": 1,
-    "revisionHistory": [
-      {
-        "date": "2026-09-17T16:15:00.000Z",
-        "hash": "22dc8f8ce20411ac93ea0f11...",
-        "note": "İlk akademik neşir ve kriptografik mühürleme",
-        "author": "Orçun Kundakcı"
-      }
-    ]
-  },
-  {
-    "id": "art-10",
-    "slug": "aristoteles-organon-kategori-kurami-kiyas",
-    "title": "Aristoteles'in Mantık Dizgesi: Kategori Kuramı, Kıyas (Sillogizm) ve Tutarlı Düşünmenin Temelleri",
-    "subtitle": "Organon'dan günümüze düşünmenin kurallarını ve kavramsal sınıflandırmayı anlama kılavuzu",
-    "discipline": "felsefe",
-    "abstract": "Mantık biliminin kurucusu kabul edilen Aristoteles, Organon adı altında toplanan eserlerinde insan zihninin düşünme biçimlerini sistematize etmiştir. Bu çalışmada Aristoteles'in 10 Kategorisi, önermeler arası mantıksal ilişkiler ve klasik kıyasın (kategorik tasım) kuralları detaylandırılmaktadır.",
-    "content": "## Mantık: Bilimlerin Aleti (Organon)\n\nAristoteles için mantık, diğer pozitif ve teorik bilimler gibi kendi başına müstakil bir nesneye sahip bir bilim dalı değildir; bütün bilimlerin doğru bilgi üretmek için kullanmak zorunda olduğu temel bir 'araçtır' (organon).\n\n### 1. Kategori Kuramı (Varlık Alanlarının Tasnifi)\n\nAristoteles, dile dökülen her basit terimin varlığın şu on kategorisinden birine ait olduğunu belirtir:\n1. **Töz (Ousia):** Kendi başına var olan temel varlık (Örn: *Sokrates*, *bu at*).\n2. **Nicelik (Poson):** Miktar (Örn: *İki arşın uzunluğunda*).\n3. **Nitelik (Poion):** Vasıf (Örn: *Beyaz*, *bilgili*).\n4. **Görelilik (Pros ti):** İlişki (Örn: *İki katı*, *efendi*).\n5. **Mekân (Pou):** Yer (Örn: *Lise bahçesinde*).\n6. **Zaman (Pote):** Vakit (Örn: *Dün*).\n7. **Durum (Keisthai):** Vaziyet (Örn: *Oturuyor*).\n8. **İyelik (Echein):** Sahip olma (Örn: *Zırh kuşanmış*).\n9. **Etki (Poiein):** Eylemde bulunma (Örn: *Kesiyor*).\n10. **Edilgi (Paschein):** Etkiye maruz kalma (Örn: *Kesiliyor*).\n\n### 2. Kıyas (Sillogizm) ve Mantıksal Zorunluluk\n\nAristoteles mantığının kalbi kıyastır. Kıyas, iki öncülden zorunlu olarak bir sonucun çıkarıldığı tümdengelimsel akıl yürütmedir:\n- **Büyük Öncül:** Bütün insanlar ölümlüdür.\n- **Küçük Öncül:** Sokrates bir insandır.\n- **Sonuç:** O halde Sokrates ölümlüdür.\n\nBurada orta terim (*insan*) öncülleri birbirine bağlar ve sonuçta kaybolur. Sonucun doğruluğu, öncüllerin doğruluğuna ve çıkarımın biçimsel geçerliliğine bağlıdır.\n\n### Felsefi ve Edebî Önemi\n\nKlasik İslam kelamcıları ve Osmanlı medrese âlimleri Aristoteles mantığını 'Mîzânü'l-Ukûl' (Akılların Terazisi) olarak adlandırmışlardır. Hem edebî metinlerdeki argüman örgüsünü hem de felsefi tezleri çözümlerken mantığın bu kadim kuralları rehberliğini korumaktadır.",
-    "keywords": [
-      "Aristoteles",
-      "Organon",
-      "Klasik Mantık",
-      "Kıyas",
-      "Kategoriler",
-      "Sillogizm"
-    ],
-    "references": [
-      "Aristoteles. (2014). Organon I-V. (Çev. Hamdi Ragıp Atademir). MEB Yayınları.",
-      "Öner, N. (2001). Klasik Mantık. Ankara Üniversitesi İlahiyat Fakültesi Yayınları."
-    ],
-    "readingTimeMinutes": 5,
-    "publishedAt": "2026-09-18T10:00:00.000Z",
-    "updatedAt": "2026-09-18T10:00:00.000Z",
-    "status": "published",
-    "viewCount": 78,
-    "featuredQuote": "Mantık zihne yeni bir hakikat katmaz; fakat zihnin kendi iç tutarlılığını tarttığı en hassas ve adil terazidir.",
-    "coverImage": "/assets/default-article-cover.svg",
-    "coverImageCaption": "YENİDEM Standart Blok Zinciri Görseli • Aristoteles ve Organon",
-    "coverImageAlt": "YENİDEM Standart Akademik Kapak Görseli",
-    "coverAspectRatio": "16/9",
-    "wordCount": 231,
-    "charCount": 1784,
-    "detailedDateTr": "18 Eylül 2026 Cuma 13:00:00 (TSİ / UTC+3)",
-    "sha512Hash": "67c73766e33ca272bb6ca07d589e11cd87186a50160689fd9d50f6794ca9d019b408655e927cb72169b3dcf14908b4d4614c3b032da358e2ae8917542a56ab0b",
-    "quantumSignature": "5dacc621a5ae532d849b5bc4bdc275fb5b6361e19f18398c",
-    "version": 1,
-    "revisionHistory": [
-      {
-        "date": "2026-09-18T10:00:00.000Z",
-        "hash": "67c73766e33ca272bb6ca07d...",
-        "note": "İlk akademik neşir ve kriptografik mühürleme",
-        "author": "Orçun Kundakcı"
-      }
-    ]
-  },
-  {
-    "id": "art-11",
-    "slug": "tanpinarin-huzurunda-zaman-bergson-sure",
-    "title": "Ahmet Hamdi Tanpınar'ın Huzur Romanında Zaman Sorunsalı ve Henri Bergson'un 'Süre' (Durée) Kuramı",
-    "subtitle": "\"Ne içindeyim zamanın / Ne de büsbütün dışında\" şiirinden roman mimarisine zamanın akışı",
-    "discipline": "kesisim",
-    "abstract": "Ahmet Hamdi Tanpınar, Türk edebiyatında zamanı mekânla ve musikiyle harmanlayan en büyük romancıdır. Bu makale, Tanpınar'ın poetikasındaki ve 'Huzur' romanındaki zaman algısını, Fransız düşünür Henri Bergson'un ölçülebilir mekanik zamana karşı geliştirdiği 'saf süre' (durée réelle) ve sezgi felsefesiyle karşılaştırmalı olarak irdelemektedir.",
-    "content": "## Edebiyat ve Felsefe Kesişiminde Tanpınar\n\nAhmet Hamdi Tanpınar, felsefi formasyonunu doğrudan Fransız düşünce dünyasından, bilhassa Henri Bergson'un zaman ve hafıza tahlillerinden beslemiştir. Tanpınar'ın meşhur dizesi:\n\n> *\"Ne içindeyim zamanın, / Ne de büsbütün dışında; / Yekpâre, geniş bir ânın / Parçalanmaz akışında.\"*\n\nadeta Bergson'un *Essai sur les données immédiates de la conscience* (Bilincin Doğrudan Verileri Üzerine Deneme) eserinin şiirsel bir manifestosudur.\n\n### 1. Mekanik Zaman (Saat) ile Ruhsal Süre (Durée) Ayrımı\n\nBergson felsefesinde iki tür zaman vardır:\n1. **Uzamsallaştırılmış Mekanik Zaman:** Saatin tik-takları, takvim yaprakları. Parçalara bölünebilir, homojendir, niceldir. (Tanpınar'ın *Saatleri Ayarlama Enstitüsü*'nde hicvettiği bürokratik zaman).\n2. **Hakiki Süre (La Durée):** Zihnin ve bilincin tecrübe ettiği akış. Bölünemez, niteldir, geçmişle şimdinin iç içe geçtiği yekpâre bir nehir gibidir.\n\n### 2. 'Huzur' Romanında Mümtaz'ın Zamanı\n\n*Huzur* romanının ana kahramanı Mümtaz, İstanbul'un sokaklarında, Boğaz'ın sularında ve Nuran'ın aşkında yaşarken geçmiş Osmanlı musikisi (Itrî'nin Neva Kâr'ı), yıkılan imparatorluğun hatıraları ve yaklaşan İkinci Dünya Savaşı endişesi aynı anda bilincine hücum eder.\n\nRoman, klasik kronolojik bir zaman dizini yerine, Mümtaz'ın bilincinde düğümlenen Bergsoncu 'süre' üzerinde akar. Bir müzik nağmesi, şimdiki anı asırlar öncesinin manevi dünyasına bağlar.\n\n### Kesişimin Gücü\n\nTanpınar'ı salt bir romancı olarak okumak eksik kalır; o, Doğu ile Batı, geçmiş ile gelecek, an ile ebediyet arasında bocalayan Türk aydınının zaman krizini felsefi bir derinlikle teşhis etmiş bir edebiyat filozofudur.",
-    "keywords": [
-      "Ahmet Hamdi Tanpınar",
-      "Huzur",
-      "Henri Bergson",
-      "Zaman Felsefesi",
-      "Süre (Durée)",
-      "Disiplinlerarası",
-      "Edebiyat ve Felsefe"
-    ],
-    "references": [
-      "Tanpınar, A. H. (2000). Huzur. Dergâh Yayınları.",
-      "Bergson, H. (2013). Zaman ve Özgür İrade: Bilincin Doğrudan Verileri Üzerine Bir Deneme. (Çev. Erkan Şimşek). Dergâh Yayınları.",
-      "Okay, O. (2010). Bir Hülya Adamının Romanı: Ahmet Hamdi Tanpınar. Dergâh Yayınları."
-    ],
-    "readingTimeMinutes": 7,
-    "publishedAt": "2026-09-18T14:00:00.000Z",
-    "updatedAt": "2026-09-18T14:00:00.000Z",
-    "status": "published",
-    "viewCount": 145,
-    "featuredQuote": "Zaman saatin kollarında bölünen mekanik bir çizgi değil; geçmişin hatıraları ile şimdiki anın ruhumuzda iç içe kaynaştığı bölünmez bir ırmaktır.",
-    "coverImage": "/assets/default-article-cover.svg",
-    "coverImageCaption": "YENİDEM Standart Blok Zinciri Görseli • Tanpınar ve Bergson Süre Kuramı",
-    "coverImageAlt": "YENİDEM Standart Akademik Kapak Görseli",
-    "coverAspectRatio": "16/9",
-    "wordCount": 217,
-    "charCount": 1678,
-    "detailedDateTr": "18 Eylül 2026 Cuma 17:00:00 (TSİ / UTC+3)",
-    "sha512Hash": "ceea815be8e8fdddf121f5f4342d77f05cccf738ebbd52908d83245288ad0dc9727eb01d8632c521aa3216ebe33e963e42df260a532ecf36549565eb898e1a86",
-    "quantumSignature": "b8d0e26dfe471e0089a9ea0c86570ec2a80c1f47d06578e0",
-    "version": 1,
-    "revisionHistory": [
-      {
-        "date": "2026-09-18T14:00:00.000Z",
-        "hash": "ceea815be8e8fdddf121f5f4...",
-        "note": "İlk akademik neşir ve kriptografik mühürleme",
-        "author": "Orçun Kundakcı"
-      }
-    ]
-  },
-  {
-    "id": "art-12",
-    "slug": "seyh-galibin-husn-u-ask-mesnevisinde-alegorik-yolculuk",
-    "title": "Şeyh Gâlib'in Hüsn ü Aşk Mesnevisinde Alegorik Yolculuk: Varlık Mertebeleri ve Hakikat Arayışı",
-    "subtitle": "Sebk-i Hindî üslubunun zirvesinde aşkın ontolojik sınavı ve benliğin eritilmesi",
-    "discipline": "kesisim",
-    "abstract": "18. yüzyıl divan şiirinin son büyük dehası Şeyh Gâlib'in 26 yaşında kaleme aldığı 'Hüsn ü Aşk' mesnevisi, salt bir Doğu aşk hikâyesi değil; ruhun (Aşk) Mutlak Güzelliğe (Hüsn) ulaşmak için katlandığı ontolojik ve epistemolojik tekâmül sürecidir. Bu tahlil, eserdeki sembolleri tasavvuf ontolojisi ve alegori teorisi ışığında aydınlatmaktadır.",
-    "content": "## Sebk-i Hindî ve İmgenin Derinleşmesi\n\nKlasik edebiyatımızın son büyük atılımı olan Sebk-i Hindî (Hint Üslubu), anlamın giriftleştiği, soyut kavramların somut imgelerle birleştirildiği ve zihinsel çağrışımların öne çıktığı bir poetikadır. Şeyh Gâlib, bu akımı Türkçenin zirvesine taşımıştır.\n\n### 1. Eserin Alegorik Kahramanları ve Karşılıkları\n\n*Hüsn ü Aşk*, baştan sona bir 'nefs ve ruh mücadelesi' alegorisidir:\n- **Hüsn (Güzellik):** Mutlak Varlık (Allah) ve cemâl tecellisi.\n- **Aşk:** Sevgiliye vasıl olmak için çabalayan sâlik / arayan ruh.\n- **Gayret:** Yolculukta âşığa rehberlik eden ilahi azim ve irade.\n- **Suhan (Söz/Kelam):** Aşk'a akıl ve ilham veren pir / yol gösterici.\n- **Kalp Ülkesi (Diyâr-ı Kalb):** Aşk'ın kimyayı bulmak için gitmek zorunda olduğu içsel varlık dergâhı.\n\n### 2. Çileler Diyarı: Ateş Denizi ve Mumdan Gemiler\n\nMesnevinin en sarsıcı imgesi, Aşk'ın geçmek mecburiyetinde olduğu 'Ateş Denizi'dir (Deryâ-yı Âteş). Bu denizi aşmanın tek yolu ise **mumdan yapılmış gemilere** (keştî-yi mûmîn) binmektir:\n\n> Ateşten bir denizde mumdan gemilerle yol almak, aklın ve mantığın iflas ettiği noktadır. Benliğini (mumunu) ilahi ateşte eritmeyi göze alamayan hiçbir yolcu bu denizi geçemez.\n\n### Felsefi ve Edebi Bütünleşme\n\nYolculuğun sonunda Aşk, Hüsn'e ulaştığında dehşet verici bir hakikatle yüzleşir: **Hüsn ile Aşk aslında aynı varlıktır!** Aşk, dışarıda aradığı güzelliğin kendi hakikati olduğunu idrak eder (Vahdet-i Vücûd ontolojisi).\n\n### Sonuç\n\nŞeyh Gâlib, edebiyatın diliyle felsefenin en soyut ontoloji problemini somutlaştırmış; insanın kendini bilme (kendini tanıma) serüvenini eşsiz bir dille abideleştirmiştir.",
-    "keywords": [
-      "Şeyh Gâlib",
-      "Hüsn ü Aşk",
-      "Sebk-i Hindî",
-      "Tasavvuf Ontolojisi",
-      "Alegori",
-      "Divan Edebiyatı",
-      "Disiplinlerarası"
-    ],
-    "references": [
-      "Gâlib, Ş. (2003). Hüsn ü Aşk. (Haz. Muhammet Nur Doğan). Ötüken Neşriyat.",
-      "Gölpınarlı, A. (1976). Şeyh Galip: Hüsn ü Aşk ve Tahlili. İnkılâp Kitabevi.",
-      "Doğan, M. N. (1997). Şeyh Gâlib'in Poetikası. Dergâh Yayınları."
-    ],
-    "readingTimeMinutes": 7,
-    "publishedAt": "2026-09-18T17:30:00.000Z",
-    "updatedAt": "2026-09-18T17:30:00.000Z",
-    "status": "published",
-    "viewCount": 160,
-    "featuredQuote": "Ateş denizinde mumdan gemilerle yol almak: Kendi bencil varlığını hakikat yolunda eritmeyi göze alamayan, mutlak sevgiye eremez.",
-    "coverImage": "/assets/default-article-cover.svg",
-    "coverImageCaption": "YENİDEM Standart Blok Zinciri Görseli • Hüsn ü Aşk Mesnevisi",
-    "coverImageAlt": "YENİDEM Standart Akademik Kapak Görseli",
-    "coverAspectRatio": "16/9",
-    "wordCount": 226,
-    "charCount": 1652,
-    "detailedDateTr": "18 Eylül 2026 Cuma 20:30:00 (TSİ / UTC+3)",
-    "sha512Hash": "7772e7f47cd2cb9b0803047fd30fbb29b48d41f4135fba741213aea394aa7f1fa6b169c461f24689a753b94fa361da58da50c3cad818acd1bc80079c39cca99a",
-    "quantumSignature": "814f3cc8a4edf5f2e0bc7318371813a5f6641951cda7b155",
-    "version": 1,
-    "revisionHistory": [
-      {
-        "date": "2026-09-18T17:30:00.000Z",
-        "hash": "7772e7f47cd2cb9b0803047f...",
-        "note": "İlk akademik neşir ve kriptografik mühürleme",
-        "author": "Orçun Kundakcı"
-      }
-    ]
-  },
-  {
-    "id": "art-16",
-    "slug": "sari-saltukun-balkanlardaki-baris-misyonu-ve-kulturlerarasi-irfan",
-    "title": "Sarı Saltuk'un Balkanlar'daki Barış Misyonu ve Kültürlerarası İrfan Hermeneutiği",
-    "subtitle": "Kılıçsız fetih, tahta kılıç sembolizmi ve Dobruca'dan Babadağ'a çok-kültürlü birlikte yaşama felsefesi",
-    "discipline": "kesisim",
-    "abstract": "13. yüzyıl Horasan erenlerinin en özgün şahsiyetlerinden Sarı Saltuk, Hacı Bektâş-ı Velî'nin talimatıyla Balkanlar'a intikal etmiş 'kolonizatör derviş' arketipinin zirvesidir. Bu makalede; Saltuknâme anlatıları, tahta kılıç alegorisi, Hristiyan ve Müslüman halklar arasındaki ortak azizlik kültü (Aziz Naum / Aziz Corc senkretizmi) ile çağdaş 'kültürlerarası hermeneutik' kuramları mukayese edilmektedir.",
-    "content": "## Tarihsel ve Coğrafi Eşik: Balkanların İrfanla Buluşması\n\n13. yüzyılın ikinci yarısında, Selçuklu Anadolusu Moğol tazyikiyle çalkalanırken, Sarı Saltuk maiyetindeki Türkmen zümreleriyle birlikte Dobruca ve Balkan coğrafyasına adım atmıştır. Sarı Saltuk, askeri bir fatihten ziyade bir 'gönül kurucusu' ve kültür elçisidir.\n\n### 1. Tahta Kılıç Alegorisi: Şiddetsizlik ve Manevi Dönüşüm\n\nMenâkıbnâmelerde Sarı Saltuk'un kılıcının 'tahtadan' olması tesadüfi bir efsanevi motif değildir. Bu sembolizm, iki temel felsefi ilkeyi barındırır:\n- **Şiddetsizlik ve Adalet:** Tahta kılıç kan dökmez, can almaz; nefsi ve zulmü terbiye eder. Saltuk, şiddeti değil ahlakî üstünlüğü ve adaleti kuşanmıştır.\n- **Kültürel İkna:** Düşmanı yok etmek yerine onun zihinsel ufkunu sevgi, aşevi ve dürüst ticaretle dönüştürme felsefesidir (Ömer Lütfi Barkan'ın deyimiyle 'Kolonizatör Türk Dervişleri').\n\n### 2. Senkretizm ve Ufukların Kaynaşması (Aziz Naum & Sarı Saltuk)\n\nSarı Saltuk'un Balkanlar'da (Babadağ, Kruja, Ohri, Blagay) onlarca makamının bulunması, onun farklı inançlara mensup halklar tarafından benimsenmesinin delilidir:\n- Ortodoks ve Katolik Hristiyanlar onu 'Sveti Naum' veya 'Aziz Corc (Hızır)' olarak hürmetle anarken; Müslümanlar büyük bir Bektaşî pîri olarak tavaf etmişlerdir.\n- Gadamer'in hermeneutik kuramında ifade ettiği 'Ufukların Kaynaşması' (Horizontverschmelzung), Sarı Saltuk şahsında 13. yüzyılda somut bir toplumsal barış zeminine dönüşmüştür. İnançlar birbirini dışlamak yerine müşterek insani erdemlerde buluşmuştur.\n\n### 3. Ekosofi ve Doğa ile Bütünleşme\n\nSaltuknâme'de Sarı Saltuk'un ejderhalarla, nehirlerle ve dağlarla kurduğu ilişki; insanın tabiatı sömürme kibrine karşı doğanın kozmik güçlerine hürmet duyan ve onu terbiye eden 'ekosofik' bir bilgeliktir.\n\n### Netice ve Çağdaş Yorum\n\nBugün Balkanlar'da ve dünyada etnik ve dinî çatışmaların yeniden hortladığı bir çağda; Sarı Saltuk'un tahta kılıcı, ötekileştirmeyen dili ve sınırsız konukseverliği, 21. yüzyıl küresel barış teorilerine sunulabilecek en köklü ve canlı tekliftir.",
-    "keywords": [
-      "Sarı Saltuk",
-      "Balkanlar",
-      "Kolonizatör Dervişler",
-      "Kültürlerarası Hermeneutik",
-      "Hacı Bektâş",
-      "Tahta Kılıç",
-      "Saltuknâme",
-      "Disiplinlerarası"
-    ],
-    "references": [
-      "Ebu'l-Hayr Rûmî. (1987). Saltuk-nâme. (Haz. Fahir İz). Harvard University.",
-      "Barkan, Ö. L. (1942). Kolonizatör Türk Dervişleri. Vakıflar Dergisi, II, 279-304.",
-      "Ocak, A. Y. (2002). Sarı Saltık: Popüler İslâm'ın Balkanlar'daki İlk Kahramanı. TTK Yayınları.",
-      "Kiel, M. (1985). Ottoman Architecture in Albania. Research Centre for Islamic History, Art and Culture."
-    ],
-    "readingTimeMinutes": 7,
-    "publishedAt": "2026-09-20T08:00:00.000Z",
-    "updatedAt": "2026-09-20T08:00:00.000Z",
-    "status": "published",
-    "viewCount": 195,
-    "featuredQuote": "Kılıcımız çelikten değil tahtadandır; çünkü biz kan dökmeye değil, farklı dillerdeki kalpleri tek bir muhabbet sofrasında birleştirmeye geldik.",
-    "coverImage": "/assets/default-article-cover.svg",
-    "coverImageCaption": "YENİDEM Standart Blok Zinciri Görseli • Sarı Saltuk'un Balkan Barış Köprüsü",
-    "coverImageAlt": "YENİDEM Standart Akademik Kapak Görseli",
-    "coverAspectRatio": "16/9",
-    "wordCount": 248,
-    "charCount": 1780,
-    "detailedDateTr": "20 Eylül 2026 Pazar 11:00:00 (TSİ / UTC+3)",
-    "sha512Hash": "5a9d20c4e89123fe88b776a0149d5ef729a63319028ec80277dfa811c7501a3b839f1c7e9a8264d8a8b839c09fe69b2d3557e108e434f826317bc84fa8c71629",
-    "quantumSignature": "993c8a14b301a28fd56b823e20019fa76a4df83c921ee4ba",
-    "version": 1,
-    "revisionHistory": [
-      {
-        "date": "2026-09-20T08:00:00.000Z",
-        "hash": "5a9d20c4e89123fe88b776a...",
-        "note": "İlk akademik neşir ve kriptografik mühürleme",
-        "author": "Orçun Kundakcı"
-      }
-    ]
-  },
-  {
-    "id": "art-17",
-    "slug": "cumhuriyet-aydinlanmasi-ataturk-kultur-ve-dil-felsefesi",
-    "title": "Cumhuriyet Aydınlanması, Dil Devrimi ve Kültür Felsefesi: Atatürk'ün 'Türkiye Cumhuriyeti'nin Temeli Kültürdür' Düsturu",
-    "subtitle": "Milli hafızanın inşasında Türk Dili Tetkik Cemiyeti, Tarih Tezi ve bilimsel pozitivizm ile Anadolu irfanının sentezi",
-    "discipline": "kesisim",
-    "abstract": "Gazi Mustafa Kemal Atatürk'ün 'Hayatta en hakiki mürşit ilimdir, fendir' ve 'Türkiye Cumhuriyeti'nin temeli kültürdür' vecizeleri, genç Cumhuriyet'in epistemolojik ve ontolojik manifestosudur. Bu makalede, Harf ve Dil İnkılabı'nın felsefe dili olarak Türkçeyi özgürleştirme misyonu ile Anadolu kültür mirasının bilimsel yöntemle yeniden keşfi incelenmektedir.",
-    "content": "## Giriş: Siyasî Bağımsızlıktan Zihinsel ve Kültürel Bağımsızlığa\n\nGazi Mustafa Kemal Atatürk, Kurtuluş Savaşı'nın askeri zaferle noktalanmasının hemen ardından asıl mücadelenin 'kültür, ilim ve irfan' cephesinde verileceğini ilan etmiştir:\n\n> *\"Türkiye Cumhuriyeti'nin temeli kültürdür. Kültür; okumak, anlamak, görebilmek, görebildiğinden mana çıkarmak, intibah almak, düşünmek, zekâyı terbiye etmektir.\"*\n\nBu tanım, kültürü donuk bir folklor yığını olarak değil; doğrudan doğruya felsefi bir bilinç, eleştirel akıl ve muhakeme disiplini olarak konumlandırır.\n\n### 1. Dil Felsefesi Açısından Türk Dil Devrimi\n\nDil ile düşünce arasındaki kopmaz bağ (Humboldt ve Wittgenstein çizgisinde), Atatürk'ün dil çalışmalarına verdiği önemin merkezindedir:\n- **Bilim ve Felsefe Dili Olarak Türkçe:** 1932'de kurulan Türk Dili Tetkik Cemiyeti (TDK) ve bizzat Atatürk'ün kaleme aldığı *Geometri* kılavuzu (üçgen, dörtgen, açı, uzay, boyut, artı, eksi gibi terimler), Türkçenin en soyut matematiksel ve felsefi kavramları kendi köklerinden türetebilme kudretini ispatlamıştır.\n- **Halk ile Aydın Arasındaki Uçurumun Kapatılması:** Yazı dili ile konuşma dili arasındaki asırlık kopukluk giderilerek Anadolu insanının Yunus Emre ve Karacaoğlan'dan süzülen arı Türkçesi akademinin merkezine taşınmıştır.\n\n### 2. 'En Hakiki Mürşit İlimdir': Anadolu İrfanı ile Modern Bilimin Buluşması\n\nHünkâr Hacı Bektâş-ı Velî'nin 13. yüzyılda söylediği *\"İlimden gidilmeyen yolun sonu karanlıktır\"* sözü ile Atatürk'ün 20. yüzyılda söylediği *\"Hayatta en hakiki mürşit ilimdir, fendir\"* ilkesi, Anadolu aydınlanma tarihinin birbirini tamamlayan iki büyük halkasıdır.\n\n### Sonuç\n\nCumhuriyet aydınlanması, köklerinden kopuk bir Batı taklitçiliği değil; Anadolu'nun binlerce yıllık irfan ve dil mirasını evrensel bilim ve felsefe metodolojisiyle geleceğe taşıyan muazzam bir medeniyet projesidir.",
-    "keywords": [
-      "Mustafa Kemal Atatürk",
-      "Cumhuriyet Aydınlanması",
-      "Kültür Felsefesi",
-      "Türk Dil Devrimi",
-      "Bilim Felsefesi",
-      "Anadolu İrfanı"
-    ],
-    "references": [
-      "Atatürk, M. K. (1927). Nutuk. Türk Tayyare Cemiyeti.",
-      "İnan, A. (1969). Medenî Bilgiler ve M. Kemal Atatürk'ün El Yazıları. TTK Yayınları.",
-      "Lewis, G. (2004). Trajik Başarı: Türk Dil Reformu. Gelenek Yayıncılık."
-    ],
-    "readingTimeMinutes": 7,
-    "publishedAt": "2026-09-22T09:00:00.000Z",
-    "updatedAt": "2026-09-22T09:00:00.000Z",
-    "status": "published",
-    "viewCount": 342,
-    "featuredQuote": "Türkiye Cumhuriyeti'nin temeli kültürdür; kültür ise okumak, anlamak, görebildiğinden mana çıkarmak ve zekâyı ilimle terbiye etmektir.",
-    "coverImage": "/assets/default-article-cover.svg",
-    "coverImageCaption": "YENİDEM Standart Blok Zinciri Görseli • Cumhuriyet Aydınlanması ve Kültür Felsefesi",
-    "coverImageAlt": "YENİDEM Standart Akademik Kapak Görseli",
-    "coverAspectRatio": "16/9",
-    "annotations": [
-      {
-        "id": "ann-17-1",
-        "quote": "Geometri Kılavuzu (1937)",
-        "comment": "Atatürk'ün bizzat türettiği 'boyut, uzay, yüzey, düzey, çap, yarıçap, kesit, yay, çember, teğet, açı, yatay, düşey, yöndeş, konum, üçgen, dörtgen, beşgen, köşegen, eşkenar, ikizkenar, paralelkenar, yanal, yamuk, artı, eksi, çarpı, bölü, eşit, toplam, oran, orantı, türev, varsayı, gerekçe' kavramları.",
-        "author": "Orçun KUNDAKCI",
-        "createdAt": "2026-09-22T09:00:00.000Z",
-        "category": "Dil Felsefesi"
-      }
-    ],
-    "wordCount": 265,
-    "charCount": 1980,
-    "detailedDateTr": "22 Eylül 2026 Salı 12:00:00 (TSİ / UTC+3)",
-    "sha512Hash": "d4198c27a30f6b18492e710a5c8b3f2190e4d7a6b5c8f1e2d3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2",
-    "quantumSignature": "a1b2c3d4e5f60718293a4b5c6d7e8f901a2b3c4d5e6f7081",
-    "version": 1,
-    "revisionHistory": [
-      {
-        "date": "2026-09-22T09:00:00.000Z",
-        "hash": "d4198c27a30f6b18492e710a...",
-        "note": "İlk akademik neşir ve kriptografik mühürleme",
-        "author": "Orçun Kundakcı"
-      }
-    ]
-  },
-  {
-    "id": "art-18",
-    "slug": "ahlak-felsefesi-haci-bektas-spinoza-ve-kant-etigi-mukayesesi",
-    "title": "Ahlak Felsefesi ve Tasavvuf Etiği: Hünkâr Hacı Bektâş-ı Velî'nin 'İncinsen de İncitme' İlkesi ile Spinoza ve Kant Etiğinin Mukayesesi",
-    "subtitle": "Korku ve ödül beklentisini aşan özerk erdem: Anadolu irfanında ödev ahlakı ve ontolojik barış",
-    "discipline": "felsefe",
-    "abstract": "Ahlak felsefesinin en temel sorusu, insanın neden iyi ve adil davranması gerektiğidir. Bu makalede; Hünkâr Hacı Bektâş-ı Velî'nin 'İncinsen de incitme' ve 'Eline, diline, beline sahip ol' ilkeleri, Baruch Spinoza'nın Ethica'sındaki 'Amor Dei Intellectualis' (Tanrı'nın Zihinsel Sevgisi) ve Immanuel Kant'ın koşulsuz 'Kategorik Buyruk' öğretisiyle karşılaştırılmaktadır.",
-    "content": "## Giriş: Korku ve Menfaat Ahlakından Özerk Erdem Ahlakına\n\nKlasik ve modern etik kuramları incelendiğinde, ahlakî eylemin iki farklı motivasyondan doğabileceği görülür: Birincisi ceza korkusu veya ödül beklentisine dayanan heteronom (dıştan koşullu) ahlak; ikincisi ise iyiliği bizzat hakikatin ve insanlık onurunun gereği olarak yapan özerk (otonom) erdem ahlakıdır.\n\n### 1. Hacı Bektâş-ı Velî'de 'İncinsen de İncitme' ve Aslan-Ceylan Sembolizmi\n\nAnadolu irfanının serçeşmesi Hünkâr Hacı Bektâş-ı Velî, kötülüğe kötülükle karşılık verme zincirini (kısas döngüsünü) şu vecizesiyle kırar:\n\n> *\"İncinsen de incitme. Düşmanınızın dahi insan olduğunu unutmayınız.\"*\n\nHünkâr'ın kucağında **Aslan** (güç, kudret ve celâl) ile **Ceylanı** (masumiyet, zarafet ve cemâl) bir arada tutması, Spinoza'nın *Ethica*'da aradığı içsel tutkuların (affectus) akıl ve sevgi yoluyla ehlîleştirilmesinin somut timsalidir. Kudret sahibi olanın zayıfı ezmemesi, adaletin en yüksek mertebesidir.\n\n### 2. Spinoza'da 'Conatus' ve Kant'ta 'Kategorik Buyruk'\n\n- **Spinoza:** *\"Erdem, ödülü kendisi olan eylemdir.\"* İnsan varlığı, tabiatın bütünlüğü içinde diğer varlıklarla uyum (harmoni) kurdukça sevinç ve yetkinlik kazanır.\n- **Kant:** *\"İnsanlığı, kendinde ve başkalarında hiçbir zaman salt bir araç olarak değil, daima kendi başına bir amaç olarak görecek şekilde eylemde bulun.\"* Bu ilke, Anadolu irfanındaki *\"72 millete bir nazarla bakmak\"* ve *\"Okunacak en büyük kitap insandır\"* düsturuyla birebir örtüşmektedir.\n\n### Felsefi Sonuç\n\nAnadolu'nun tasavvuf ve irfan geleneği, yalnız mistik bir duyuş değil; Kant ve Spinoza etiğiyle boy ölçüşecek derinlikte evrensel bir barış ve insan onuru felsefesidir.",
-    "keywords": [
-      "Ahlak Felsefesi",
-      "Etik",
-      "Hacı Bektâş-ı Velî",
-      "Spinoza",
-      "Immanuel Kant",
-      "İncinsen de İncitme",
-      "Felsefe"
-    ],
-    "references": [
-      "Spinoza, B. (2011). Ethica: Geometrik Yöntemle Kanıtlanmış ve Beş Bölüme Ayrılmış Ahlak. (Çev. Hilmi Ziya Ülken). Dost Kitabevi.",
-      "Kant, I. (2009). Ahlak Metafiziğinin Temellendirilmesi. (Çev. İoanna Kuçuradi). Türkiye Felsefe Kurumu.",
-      "Hacı Bektâş-ı Velî. (2007). Makâlât. Kültür Bakanlığı Yayınları."
-    ],
-    "readingTimeMinutes": 7,
-    "publishedAt": "2026-09-25T10:30:00.000Z",
-    "updatedAt": "2026-09-25T10:30:00.000Z",
-    "status": "published",
-    "viewCount": 289,
-    "featuredQuote": "Aslan ile ceylanın aynı kucakta barış içinde durması; gücün adalete, kudretin merhamete ve tutkuların akla ram olmasının en yüce felsefi timsalidir.",
-    "coverImage": "/assets/default-article-cover.svg",
-    "coverImageCaption": "YENİDEM Standart Blok Zinciri Görseli • Hacı Bektaş, Spinoza ve Kant Etiği",
-    "coverImageAlt": "YENİDEM Standart Akademik Kapak Görseli",
-    "coverAspectRatio": "16/9",
-    "annotations": [
-      {
-        "id": "ann-18-1",
-        "quote": "Amor Dei Intellectualis",
-        "comment": "Spinoza felsefesinde insan zihninin varlığın bütünsel düzenini kavramasıyla ulaştığı en yüksek düşünsel sevgi ve huzur hali.",
-        "author": "Orçun KUNDAKCI",
-        "createdAt": "2026-09-25T10:30:00.000Z",
-        "category": "Ahlak Felsefesi"
-      }
-    ],
-    "wordCount": 274,
-    "charCount": 2015,
-    "detailedDateTr": "25 Eylül 2026 Cuma 13:30:00 (TSİ / UTC+3)",
-    "sha512Hash": "f81e2d3c4b5a69788796a5b4c3d2e1f0a9b8c7d6e5f4a3b2c1d0e9f8a7b6c5d4e3f2a1b0c9d8e7f6a5b4c3d2e1f0a9b8c7d6e5f4a3b2c1d0e9f8a7b6c5d4e3f2",
-    "quantumSignature": "9081726354a5b6c7d8e9f0a1b2c3d4e5f60718293a4b5c6d",
-    "version": 1,
-    "revisionHistory": [
-      {
-        "date": "2026-09-25T10:30:00.000Z",
-        "hash": "f81e2d3c4b5a69788796a5b4...",
-        "note": "İlk akademik neşir ve kriptografik mühürleme",
-        "author": "Orçun Kundakcı"
       }
     ]
   }
